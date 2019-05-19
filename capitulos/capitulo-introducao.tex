@@ -1,0 +1,36 @@
+% ----------------------------------------------------------
+% Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
+% ----------------------------------------------------------
+\chapter[Introdução]{Introdução}
+%\addcontentsline{toc}{chapter}{Introdução}
+% ----------------------------------------------------------
+
+A automação de casas e prédios, conhecida como domótica, é uma área que vem crescendo cada vez mais. Diretamente ligada ao controle e automação de residências, seus objetivos fundamentais são de oferecer conforto, facilidade de acesso, controle e segurança.\cite{teza2002alguns}
+
+Setenta por cento da superfície do planeta é coberta por água, quase toda salgada e, portanto, imprópria para o consumo humano. Apenas 2,5\% desse total é potável e a maior parte das reservas (cerca de 80\%) está concentrada em geleiras nas calotas polares. 
+Essa quantidade mínima de recursos aliada ao contínuo e intenso crescimento demográfico ao longo dos anos, o desenvolvimento industrial e, por consequência, o aumento do consumo de água nas grandes cidades, tem sido um dos principais temas de discussões e palestras de conscientização por todo o mundo.\cite{aguaconsumo}
+
+Um assunto recorrente que há muito deixou de ser restrito às regiões áridas e desérticas com baixa disponibilidade de água per capita, faz com que governos e organizações de todo o mundo estejam com atenções voltadas para a criação de políticas de consumo sustentável, programas de educação ambiental, alternativas e soluções para a redução e controle do uso da água.\cite{ferreirasistema} 
+
+Portanto, esse trabalho apresenta um protótipo capaz de adquirir dados em um ponto de consumo escolhido pelo usuário e apresentar essas informações através de gráficos em um dispositivo móvel.
+
+
+\section{Justificativas e Relev{\^a}ncia}
+%
+Ao passar dos anos, os desperdícios da água utilizada atingem níveis nunca imaginados \cite{rebouccas2003agua}. Ao se juntar o interesse e conhecimento em eletrônica e automação, será possível otimizar o monitoramento do gasto de água em residências e prédios, visando coletar dados, para talvez uma diminuição deste desperdício. Esta foi a motivação inicial para a realização deste projeto e documento.
+%
+\section{Metodologia}
+
+Será desenvolvido um projeto utilizando Raspberry Pi 3, ESP8266 e sensor de fluxo de água YF-S201.
+
+O projeto deverá conectar os componentes via wi-fi, o YF-201 conectará com o ESP8266 que comucará com o RasperryPi, que processará os dados recebidos pelo microprocessador, guardando estes em um banco de dados que ficará na nuvem.
+
+Um sistema para acompanhamento remoto dos dados recebidos pelo sensor também será implementado para facilitar a análise futura dos dados.
+
+\section{Objetivos}
+
+Desenvolver um sistema modular para monitoramento e controle de consumo de água através da integração entre microprocessadores, sensores e microcontroladores.
+
+Este sistema será capaz de armazenar dados vindos dos sensores de fluxo de água em bancos de dados instalados em sistemas remotos.
+
+Os dispositivos do projeto irão utilizar redes wi-fi para comunicar entre si, aumentando assim a portabilidade e custo com cabeamento do sistema.

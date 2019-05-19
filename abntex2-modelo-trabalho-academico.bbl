@@ -1,0 +1,67 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v<VERSION> }
+
+\bibitem[Chase e Almeida 2007]{chase2007sistemas}
+\abntrefinfo{Chase e Almeida}{CHASE; ALMEIDA}{2007}
+{CHASE, O.; ALMEIDA, F. Sistemas embarcados.
+\emph{M{\'\i}dia Eletr{\^o}nica. P{\'a}gina na internet:< www. sbajovem.
+  org/chase>, capturado em}, 2007. v.~10, n.~11, p.~13, 2007.}
+
+\bibitem[Crotti et al. 2013]{crotti2013raspberrypi}
+\abntrefinfo{Crotti et al.}{CROTTI et al.}{2013}
+{CROTTI, Y. et al. Raspberrypi e experimenta{\c{c}}{\~a}o remota. In:
+  \emph{ICBL2013. International Conference on Interactive Computer aided
+  Blended Learning}. [S.l.: s.n.], 2013.}
+
+\bibitem[FERREIRA, HEROSO e ZALESKI]{ferreirasistema}
+\abntrefinfo{FERREIRA, HEROSO e ZALESKI}{FERREIRA; HEROSO; ZALESKI}{}
+{FERREIRA, H.~S.; HEROSO, L.~F.; ZALESKI, R.~H. Sistema de monitoramento de
+  consumo de {\'a}gua dom{\'e}stico com a utiliza{\c{c}}{\~a}o de um
+  hidr{\^o}metro digital.}
+
+\bibitem[J{\'u}nior, Ar{\^e}as e Sena 2017]{ms2017automaccao}
+\abntrefinfo{J{\'u}nior, Ar{\^e}as e Sena}{J{\'U}NIOR; AR{\^E}AS; SENA}{2017}
+{J{\'U}NIOR, J.~M. M.~L.; AR{\^E}AS, R. C.; SENA, A.~J. C. Automa{\c{c}}{\~a}o
+  residencial: Monitoramento de consumo de energia el{\'e}trica e {\'a}gua.
+\emph{INOVA TEC}, 2017. v.~1, 2017.}
+
+\bibitem[Martins 2005]{martins2005sistemas}
+\abntrefinfo{Martins}{MARTINS}{2005}
+{MARTINS, N.~A. Sistemas microcontrolados.
+\emph{Uma abordagem com o Microcontrolador PIC 16F84. Editora Novatec Ltda,
+  1{\textordfeminine} edi{\c{c}}{\~a}o}, 2005. 2005.}
+
+\bibitem[Oliveira 2017]{de2017internet}
+\abntrefinfo{Oliveira}{OLIVEIRA}{2017}
+{OLIVEIRA, S. de. \emph{Internet das Coisas com ESP8266, Arduino e Raspberry
+  Pi}. [S.l.]: Novatec Editora, 2017.}
+
+\bibitem[Rebou{\c{c}}as 2003]{rebouccas2003agua}
+\abntrefinfo{Rebou{\c{c}}as}{REBOU{\c{C}}AS}{2003}
+{REBOU{\c{C}}AS, A. d.~C. {\'A}gua no brasil: abund{\^a}ncia, desperd{\'\i}cio
+  e escassez.
+\emph{Bahia an{\'a}lise \& dados}, 2003. v.~13, p. 341--345, 2003.}
+
+\bibitem[ROQUE e SABINO 2018]{roque2018sistema}
+\abntrefinfo{ROQUE e SABINO}{ROQUE; SABINO}{2018}
+{ROQUE, I.~R.; SABINO, J. H.~M. Sistema de dilui{\c{c}}{\~a}o de l{\'i}quidos
+  concentrados e envaze autom{\'a}tico.
+2018. 2018.}
+
+\bibitem[Teza et al. 2002]{teza2002alguns}
+\abntrefinfo{Teza et al.}{TEZA et al.}{2002}
+{TEZA, V.~R. et al. Alguns aspectos sobre a automa{\c{c}}{\~a}o residencial:
+  dom{\'o}tica.
+2002. Florian{\'o}polis, SC, 2002.}
+
+\bibitem[Água e consumo consciente.]{aguaconsumo}
+\abntrefinfo{Água\ldots}{ÁGUA\ldots}{}
+{ÁGUA e consumo consciente.
+  \url{http://www.brasil.gov.br/noticias/educacao-e-ciencia/2010/10/agua-e-consumo-consciente}.
+Accessed: 2018-12-05.}
+
+\end{thebibliography}
