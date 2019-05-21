@@ -31,8 +31,9 @@
 \documentclass[
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
-	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
-	twoside,			% para impressão em verso e anverso. Oposto a oneside
+%	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+%	twoside,			% para impressão em verso e anverso. Oposto a oneside
+	oneside,
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
@@ -143,7 +144,7 @@
 % --- 
 
 % O tamanho do parágrafo é dado por:
-\setlength{\parindent}{1.3cm}
+\setlength{\parindent}{1.25cm}
 
 % Controle do espaçamento entre um parágrafo e outro:
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
@@ -388,7 +389,6 @@
 % ---
 
 
-
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
@@ -406,17 +406,26 @@
 % ---
 % Capitulo com exemplos de comandos inseridos de arquivo externo 
 % ---
-\include{capitulos/capitulo-abntex2-modelo-include-comandos}
+%\include{capitulos/capitulo-abntex2-modelo-include-comandos}
 % ---
 % ----------------------------------------------------------
 % PARTE
 % ----------------------------------------------------------
-%\part{Referenciais teóricos}
+%\part{Materiais e metodos}
 % ----------------------------------------------------------
 % ---
 % Capitulo de revisão de literatura
 % ---
-\include{capitulos/capitulo-revisao-literatura}
+\include{capitulos/capitulo-materiais-metodos}
+% ----------------------------------------------------------
+% PARTE
+% ----------------------------------------------------------
+%\part{Metodologia}
+% ----------------------------------------------------------
+% ---
+% Capitulo de metodologia
+% ---
+\include{capitulos/capitulo-metodologia}
 % ----------------------------------------------------------
 % PARTE
 % ----------------------------------------------------------

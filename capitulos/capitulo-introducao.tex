@@ -29,6 +29,16 @@ Desenvolver um sistema modular, de baixo custo, baseado em microsserviços e no 
 
 O sistema será capaz de armazenar e exibir dados vindos dos sensores de fluxo de água em sistemas remotos, conectados através da rede WiFi, além de comandar um atuador para interromper o fornecimento da água para o chuveiro.
 
+\subsection{Objetivos específicos}
+
+\begin{itemize}
+	\item armazenamento dados para levantamentos estatísticos;
+	\item sistema de identificação e controle de usuários;
+	\item sistema de interface;
+	\item sistema de atuação;
+	\item integrar sistemas;
+	\item monitoramento online dos parâmetros do sistema;
+\end{itemize}
 
 \section{Justificativas e Relev{\^a}ncia}
 %
@@ -41,6 +51,6 @@ Ao passar dos anos, os desperdícios da água utilizada atingem níveis nunca im
 
 Será desenvolvido um projeto utilizando Raspberry Pi 3, ESP8266 e sensor de fluxo de água YF-S201.
 
-O projeto deverá conectar os componentes via wi-fi, o YF-201 conectará com o ESP8266 que comucará com o RasperryPi, que processará os dados recebidos pelo microprocessador, guardando estes em um banco de dados que ficará na nuvem.
+O projeto deverá conectar os componentes via wi-fi, o YF-201 conectará com o ESP8266 que comunicará com o RasperryPi, que processará os dados recebidos pelo microprocessador, guardando estes em um banco de dados que ficará na nuvem.
 
 Um sistema para acompanhamento remoto dos dados recebidos pelo sensor também será implementado para facilitar a análise futura dos dados.

@@ -1,17 +1,30 @@
 \changetocdepth {3}
 \babel@toc {brazil}{}
-\contentsline {chapter}{\chapternumberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{13}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objetivos}{14}{section.1.1}
-\contentsline {section}{\numberline {1.2}Justificativas e Relev{\^a}ncia}{14}{section.1.2}
-\contentsline {section}{\numberline {1.3}Metodologia}{14}{section.1.3}
-\contentsline {chapter}{\chapternumberline {2}Revis\IeC {\~a}o Bibliogr\IeC {\'a}fica}{15}{chapter.2}
-\contentsline {section}{\numberline {2.1}Microcontroladores e Microprocessadores}{15}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}ESP8266}{15}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}RaspberryPi}{15}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Sensor de fluxo YF-S201}{16}{section.2.2}
-\contentsline {chapter}{Refer\^encias}{17}{section*.7}
+\contentsline {chapter}{\chapternumberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{8}{chapter.1}
+\contentsline {section}{\numberline {1.1}Objetivos}{9}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Objetivos espec\IeC {\'\i }ficos}{9}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Justificativas e Relev{\^a}ncia}{9}{section.1.2}
+\contentsline {section}{\numberline {1.3}Metodologia}{10}{section.1.3}
+\contentsline {chapter}{\chapternumberline {2}Materiais e M\IeC {\'e}todos}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Microcontroladores e Microprocessadores}{11}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}ESP8266}{11}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}RaspberryPi}{11}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Sensores e atuadores}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Sensor de fluxo YF-S201}{12}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Teclado num\IeC {\'e}rico}{13}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Rel\IeC {\'e} de atua\IeC {\c c}\IeC {\~a}o}{13}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Softwares}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}MQTT Mosquitto}{13}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}MQTT}{13}{subsubsection.2.3.1.1}
+\contentsline {subsection}{\numberline {2.3.2}Node.JS}{13}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Arquitetura de microsservi\IeC {\c c}os}{13}{subsubsection.2.3.2.1}
+\contentsline {subsection}{\numberline {2.3.3}HomeAssistant}{13}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}InfluxBD}{13}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Algum outro BD}{13}{subsection.2.3.5}
+\contentsline {chapter}{\chapternumberline {3}Metodologia}{14}{chapter.3}
+\contentsline {chapter}{Refer\^encias}{15}{section*.7}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{19}{section*.8}
+\contentsline {part}{Ap\^endices}{17}{section*.8}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
-\contentsline {part}{Anexos}{21}{section*.9}
+\contentsline {part}{Anexos}{18}{section*.9}
