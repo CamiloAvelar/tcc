@@ -1,9 +1,9 @@
 \changetocdepth {3}
 \babel@toc {brazil}{}
 \contentsline {chapter}{\chapternumberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{13}{chapter.1}
-\contentsline {section}{\numberline {1.1}Justificativas e Relev{\^a}ncia}{13}{section.1.1}
-\contentsline {section}{\numberline {1.2}Metodologia}{13}{section.1.2}
-\contentsline {section}{\numberline {1.3}Objetivos}{14}{section.1.3}
+\contentsline {section}{\numberline {1.1}Objetivos}{14}{section.1.1}
+\contentsline {section}{\numberline {1.2}Justificativas e Relev{\^a}ncia}{14}{section.1.2}
+\contentsline {section}{\numberline {1.3}Metodologia}{14}{section.1.3}
 \contentsline {chapter}{\chapternumberline {2}Revis\IeC {\~a}o Bibliogr\IeC {\'a}fica}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}Microcontroladores e Microprocessadores}{15}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}ESP8266}{15}{subsection.2.1.1}

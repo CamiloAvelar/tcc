@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  19 MAY 2019 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  21 MAY 2019 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1290,15 +1290,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 (./capitulos/capitulo-introducao.tex
 
-Package hyperref Warning: Suppressing empty link on input line 11.
+Package hyperref Warning: Suppressing empty link on input line 9.
 
 
 Package hyperref Warning: Suppressing empty link on input line 13.
 
-[13
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13
 
 
-]) [14]
+]
+
+Package hyperref Warning: Suppressing empty link on input line 35.
+
+) [14]
 \openout2 = `capitulos/capitulo-abntex2-modelo-include-comandos.aux'.
 
  (./capitulos/capitulo-abntex2-modelo-include-comandos.tex)
@@ -1306,12 +1313,12 @@ Package hyperref Warning: Suppressing empty link on input line 13.
 
 
 (./capitulos/capitulo-revisao-literatura.tex
-<figuras/esp8266_.jpg, id=139, 523.9575pt x 255.95625pt>
+<figuras/esp8266_.jpg, id=151, 523.9575pt x 255.95625pt>
 File: figuras/esp8266_.jpg Graphic file (type jpg)
 <use figuras/esp8266_.jpg>
 Package pdftex.def Info: figuras/esp8266_.jpg  used on input line 22.
 (pdftex.def)             Requested size: 261.9781pt x 127.9778pt.
-<figuras/raspberrypi.jpg, id=142, 1379.90532pt x 813.0375pt>
+<figuras/raspberrypi.jpg, id=154, 1379.90532pt x 813.0375pt>
 File: figuras/raspberrypi.jpg Graphic file (type jpg)
 <use figuras/raspberrypi.jpg>
 Package pdftex.def Info: figuras/raspberrypi.jpg  used on input line 41.
@@ -1323,7 +1330,7 @@ Package pdftex.def Info: figuras/raspberrypi.jpg  used on input line 41.
 
 
  <./figuras/esp8266_.jpg>]
-<figuras/yf-s201.jpg, id=155, 803.0pt x 497.86pt>
+<figuras/yf-s201.jpg, id=168, 803.0pt x 497.86pt>
 File: figuras/yf-s201.jpg Graphic file (type jpg)
 <use figuras/yf-s201.jpg>
 Package pdftex.def Info: figuras/yf-s201.jpg  used on input line 54.
@@ -1345,7 +1352,7 @@ Package pdftex.def Info: figuras/yf-s201.jpg  used on input line 54.
 
 
 bibitemlist
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 66.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 91.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1360,9 +1367,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 
-] [18
+] [18] [19
 
-] [19
 
 ] [20]
 \openout2 = `capitulos/capitulo-apendice1e2.aux'.
@@ -1399,20 +1405,20 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 499.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 499.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: 07CFB91BB3C11CA47F6DFC986B4380E6;532.
+(rerunfilecheck)             Checksum: C87A08A00520BA177118D58C1632485E;764.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 499.
  ) 
 Here is how much of TeX's memory you used:
- 13470 strings out of 494903
- 201870 string characters out of 6179961
- 460955 words of memory out of 5000000
- 16387 multiletter control sequences out of 15000+600000
- 82664 words of font info for 101 fonts, out of 8000000 for 9000
+ 13510 strings out of 494903
+ 202587 string characters out of 6179961
+ 463750 words of memory out of 5000000
+ 16418 multiletter control sequences out of 15000+600000
+ 82937 words of font info for 104 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 41i,14n,38p,527b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,14n,38p,612b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publi
@@ -1423,11 +1429,11 @@ onts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
 
-Output written on abntex2-modelo-trabalho-academico.pdf (24 pages, 707670 bytes
+Output written on abntex2-modelo-trabalho-academico.pdf (24 pages, 713567 bytes
 ).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
  28842 words of extra memory for PDF output out of 29859 (max. 10000000)
 

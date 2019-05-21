@@ -5,6 +5,15 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v<VERSION> }
 
+\bibitem[{Alves Da Silva} e {Gomes De Santana}]{AlvesDaSilva}
+\abntrefinfo{{Alves Da Silva} e {Gomes De Santana}}{{Alves Da Silva}; {Gomes De
+  Santana}}{}
+{{Alves Da Silva}, M.; {Gomes De Santana}, C. \emph{{REUSO DE {\'{A}}GUA:
+  possibilidades de redu{\c{c}}{\~{a}}o do desperd{\'{i}}cio nas atividades
+  dom{\'{e}}sticas}}.
+[S.l.]. Dispon{\'\i}vel em:
+  $<$https:\-/\-/www\-.tratamentodeagua\-.com\-.br\-/wp-content\-/uploads\-/2016\-/05\-/REUSO-DE-{{\textbackslash}'{A}}GUA-possibilidades-de-redu{{\textbackslash}c{c}}{{\textbackslash}\~{}{a}}o-do-desperd{{\textbackslash}'{i}}cio-nas-a$>$.}
+
 \bibitem[Chase e Almeida 2007]{chase2007sistemas}
 \abntrefinfo{Chase e Almeida}{CHASE; ALMEIDA}{2007}
 {CHASE, O.; ALMEIDA, F. Sistemas embarcados.
@@ -16,6 +25,12 @@
 {CROTTI, Y. et al. Raspberrypi e experimenta{\c{c}}{\~a}o remota. In:
   \emph{ICBL2013. International Conference on Interactive Computer aided
   Blended Learning}. [S.l.: s.n.], 2013.}
+
+\bibitem[Di{\'{a}}rias et al. 2007]{Diarias2007}
+\abntrefinfo{Di{\'{a}}rias et al.}{DI{\'{A}}RIAS et al.}{2007}
+{DI{\'{A}}RIAS, A. et al. {AN{\'{A}}LISE DE CONSUMO E DESPERD{\'{I}}CIO DE
+  {\'{A}}GUA EM}.
+2007. v.~3, p.~0--5, 2007.}
 
 \bibitem[FERREIRA, HEROSO e ZALESKI]{ferreirasistema}
 \abntrefinfo{FERREIRA, HEROSO e ZALESKI}{FERREIRA; HEROSO; ZALESKI}{}
@@ -40,23 +55,33 @@
 {OLIVEIRA, S. de. \emph{Internet das Coisas com ESP8266, Arduino e Raspberry
   Pi}. [S.l.]: Novatec Editora, 2017.}
 
+\bibitem[Perumal, Sulaiman e Leong 2016]{Perumal2016}
+\abntrefinfo{Perumal, Sulaiman e Leong}{PERUMAL; SULAIMAN; LEONG}{2016}
+{PERUMAL, T.; SULAIMAN, M.~N.; LEONG, C.~Y. {Internet of Things (IoT) enabled
+  water monitoring system}.
+\emph{2015 IEEE 4th Global Conference on Consumer Electronics, GCCE 2015},
+  2016. IEEE, p. 86--87, 2016.}
+
 \bibitem[Rebou{\c{c}}as 2003]{rebouccas2003agua}
 \abntrefinfo{Rebou{\c{c}}as}{REBOU{\c{C}}AS}{2003}
 {REBOU{\c{C}}AS, A. d.~C. {\'A}gua no brasil: abund{\^a}ncia, desperd{\'\i}cio
   e escassez.
 \emph{Bahia an{\'a}lise \& dados}, 2003. v.~13, p. 341--345, 2003.}
 
+\bibitem[{Risteska Stojkoska} e Trivodaliev 2017]{RisteskaStojkoska2017}
+\abntrefinfo{{Risteska Stojkoska} e Trivodaliev}{{Risteska Stojkoska};
+  TRIVODALIEV}{2017}
+{{Risteska Stojkoska}, B.~L.; TRIVODALIEV, K.~V. {A review of Internet of
+  Things for smart home: Challenges and solutions}.
+2017. 2017.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/dx\-.doi\-.org\-/10\-.1016\-/j\-.jclepro\-.2016\-.10\-.006$>$}{http://dx.doi.org/10.1016/j.jclepro.2016.10.006}.}
+
 \bibitem[ROQUE e SABINO 2018]{roque2018sistema}
 \abntrefinfo{ROQUE e SABINO}{ROQUE; SABINO}{2018}
 {ROQUE, I.~R.; SABINO, J. H.~M. Sistema de dilui{\c{c}}{\~a}o de l{\'i}quidos
   concentrados e envaze autom{\'a}tico.
 2018. 2018.}
-
-\bibitem[Teza et al. 2002]{teza2002alguns}
-\abntrefinfo{Teza et al.}{TEZA et al.}{2002}
-{TEZA, V.~R. et al. Alguns aspectos sobre a automa{\c{c}}{\~a}o residencial:
-  dom{\'o}tica.
-2002. Florian{\'o}polis, SC, 2002.}
 
 \bibitem[Água e consumo consciente.]{aguaconsumo}
 \abntrefinfo{Água\ldots}{ÁGUA\ldots}{}
