@@ -1,7 +1,12 @@
 \babel@toc {brazil}{}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1}{\ignorespaces ESP8266}}{11}{figure.2.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces RaspberryPi}}{12}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Sensor de fluxo de \IeC {\'a}gua YF-S201}}{12}{figure.2.3}
+\contentsline {figure}{\numberline {1}{\ignorespaces ESP8266}}{13}{figure.2.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces RaspberryPi}}{14}{figure.2.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Sensor de fluxo de \IeC {\'a}gua YF-S201}}{14}{figure.2.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Dashboard gen\IeC {\'e}rico do HomeAssistant}}{15}{figure.2.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Exemplo arquitetura de microsservi\IeC {\c c}os}}{18}{figure.2.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Exemplo da arquitetura do MQTT}}{19}{figure.2.6}
+\addvspace {10pt}
+\addvspace {10pt}
 \addvspace {10pt}

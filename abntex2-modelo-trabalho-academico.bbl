@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v<VERSION> }
 
+\bibitem[{Almeida Costa}]{AlmeidaCosta}
+\abntrefinfo{{Almeida Costa}}{{Almeida Costa}}{}
+{{Almeida Costa}, R. \emph{{Instituto Polit{\'{e}}cnico de Viseu}}.
+[S.l.].}
+
 \bibitem[{Alves Da Silva} e {Gomes De Santana}]{AlvesDaSilva}
 \abntrefinfo{{Alves Da Silva} e {Gomes De Santana}}{{Alves Da Silva}; {Gomes De
   Santana}}{}
@@ -13,6 +18,12 @@
   dom{\'{e}}sticas}}.
 [S.l.]. Dispon{\'\i}vel em:
   $<$https:\-/\-/www\-.tratamentodeagua\-.com\-.br\-/wp-content\-/uploads\-/2016\-/05\-/REUSO-DE-{{\textbackslash}'{A}}GUA-possibilidades-de-redu{{\textbackslash}c{c}}{{\textbackslash}\~{}{a}}o-do-desperd{{\textbackslash}'{i}}cio-nas-a$>$.}
+
+\bibitem[Boscarioli et al.]{bancosrelacionais}
+\abntrefinfo{Boscarioli et al.}{BOSCARIOLI et al.}{}
+{BOSCARIOLI, C. et al. \emph{{Uma reflex{\~{a}}o sobre Banco de Dados
+  Orientados a Objetos}}.
+[S.l.].}
 
 \bibitem[Chase e Almeida 2007]{chase2007sistemas}
 \abntrefinfo{Chase e Almeida}{CHASE; ALMEIDA}{2007}
@@ -38,11 +49,51 @@
   consumo de {\'a}gua dom{\'e}stico com a utiliza{\c{c}}{\~a}o de um
   hidr{\^o}metro digital.}
 
+\bibitem[Gomes, Sousa e Vale 2018]{Gomes2018}
+\abntrefinfo{Gomes, Sousa e Vale}{GOMES; SOUSA; VALE}{2018}
+{GOMES, L.; SOUSA, F.; VALE, Z. {An agent-based IoT system for intelligent
+  energy monitoring in buildings}.
+\emph{IEEE Vehicular Technology Conference}, 2018. IEEE, v. 2018-June, p.~1--5,
+  2018.
+ISSN 15502252.}
+
+\bibitem[Hivemq]{mqtt-ibm}
+\abntrefinfo{Hivemq}{HIVEMQ}{}
+{HIVEMQ. \url{http://www.hivemq.com/blog/
+  mqtt-essentials-part-1-introducing-mqtt}.
+Accessed: 2019-05-26.}
+
+\bibitem[Home Assistant]{githubhomeassistant}
+\abntrefinfo{Home\ldots}{HOME\ldots}{}
+{HOME Assistant. \url{https://github.com/home-assistant/home-assistant}.
+Accessed: 2019-05-26.}
+
 \bibitem[J{\'u}nior, Ar{\^e}as e Sena 2017]{ms2017automaccao}
 \abntrefinfo{J{\'u}nior, Ar{\^e}as e Sena}{J{\'U}NIOR; AR{\^E}AS; SENA}{2017}
 {J{\'U}NIOR, J.~M. M.~L.; AR{\^E}AS, R. C.; SENA, A.~J. C. Automa{\c{c}}{\~a}o
   residencial: Monitoramento de consumo de energia el{\'e}trica e {\'a}gua.
 \emph{INOVA TEC}, 2017. v.~1, 2017.}
+
+\bibitem[Kodali e Soratkal 2017]{Kodali2017}
+\abntrefinfo{Kodali e Soratkal}{KODALI; SORATKAL}{2017}
+{KODALI, R.~K.; SORATKAL, S.~R. {MQTT based home automation system using
+  ESP8266}.
+\emph{IEEE Region 10 Humanitarian Technology Conference 2016, R10-HTC 2016 -
+  Proceedings}, 2017. IEEE, p.~1--5, 2017.}
+
+\bibitem[Light]{Light}
+\abntrefinfo{Light}{LIGHT}{}
+{LIGHT, R.~A. {Mosquitto: server and client implementation of the MQTT
+  protocol}.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/www\-.theoj\-.org\-/joss-papers\-/joss\-.00265\-/10\-.21105\-.joss\-.00265\-.pdf$>$.}
+
+\bibitem[Lundrigan et al. 2017]{Lundrigan2017}
+\abntrefinfo{Lundrigan et al.}{LUNDRIGAN et al.}{2017}
+{LUNDRIGAN, P. et al. \emph{{EpiFi: An In-Home Sensor Network Architecture for
+  Epidemiological Studies}}.
+[S.l.], 2017. Dispon{\'\i}vel em:
+  $<$https:\-/\-/arxiv\-.org\-/pdf\-/1709\-.02233\-.pdf$>$.}
 
 \bibitem[Martins 2005]{martins2005sistemas}
 \abntrefinfo{Martins}{MARTINS}{2005}
@@ -50,10 +101,45 @@
 \emph{Uma abordagem com o Microcontrolador PIC 16F84. Editora Novatec Ltda,
   1{\textordfeminine} edi{\c{c}}{\~a}o}, 2005. 2005.}
 
+\bibitem[{Moskovskii gosudarstvennyi universitet im. M.V. Lomonosova. Open
+  Information Technologies Lab} e Sneps-Sneppe 2014]{ms1}
+\abntrefinfo{{Moskovskii gosudarstvennyi universitet im. M.V. Lomonosova. Open
+  Information Technologies Lab} e Sneps-Sneppe}{{Moskovskii gosudarstvennyi
+  universitet im. M.V. Lomonosova. Open Information Technologies Lab};
+  SNEPS-SNEPPE}{2014}
+{{Moskovskii gosudarstvennyi universitet im. M.V. Lomonosova. Open Information
+  Technologies Lab}, D.; SNEPS-SNEPPE, M. \emph{{International journal of open
+  information technologies.}} [S.l.: s.n.], 2014. 24--27~p.
+ISSN 2307-8162.}
+
+\bibitem[Mqtt v3.1 protocol specification]{mqtt1}
+\abntrefinfo{Mqtt\ldots}{MQTT\ldots}{a}
+{MQTT v3.1 protocol specification. \url{http://public.dhe.
+  ibm.com/software/dw/webservices/ws-mqtt/mqtt-v3r1.html}.
+Accessed: 2019-05-26.}
+
+\bibitem[Mqtt version 3.1.1 becomes an oasis standard]{mqtt-oasis}
+\abntrefinfo{Mqtt\ldots}{MQTT\ldots}{b}
+{MQTT version 3.1.1 becomes an oasis standard.
+  \url{https://www.oasis-open.org/news/announcements/
+  mqtt-version-3-1-1-becomes-an-oasis-standard}.
+Accessed: 2019-05-26.}
+
+\bibitem[Noor et al. 2017]{Noor2017}
+\abntrefinfo{Noor et al.}{NOOR et al.}{2017}
+{NOOR, S. et al. \emph{{Time Series Databases and InfluxDB}}.
+[S.l.], 2017.}
+
 \bibitem[Oliveira 2017]{de2017internet}
 \abntrefinfo{Oliveira}{OLIVEIRA}{2017}
 {OLIVEIRA, S. de. \emph{Internet das Coisas com ESP8266, Arduino e Raspberry
   Pi}. [S.l.]: Novatec Editora, 2017.}
+
+\bibitem[Pahl e Jamshidi]{Pahl}
+\abntrefinfo{Pahl e Jamshidi}{PAHL; JAMSHIDI}{}
+{PAHL, C.; JAMSHIDI, P. \emph{{Microservices: A Systematic Mapping Study}}.
+  [S.l.: s.n.].
+ISBN 9789897581823.}
 
 \bibitem[Perumal, Sulaiman e Leong 2016]{Perumal2016}
 \abntrefinfo{Perumal, Sulaiman e Leong}{PERUMAL; SULAIMAN; LEONG}{2016}
@@ -82,6 +168,20 @@ Dispon{\'\i}vel em:
 {ROQUE, I.~R.; SABINO, J. H.~M. Sistema de dilui{\c{c}}{\~a}o de l{\'i}quidos
   concentrados e envaze autom{\'a}tico.
 2018. 2018.}
+
+\bibitem[Sapes e Solsona 2016]{Sapes2016}
+\abntrefinfo{Sapes e Solsona}{SAPES; SOLSONA}{2016}
+{SAPES, J.; SOLSONA, F. {Fingerscanner: Embedding a fingerprint scanner in a
+  raspberry pi}.
+\emph{Sensors (Switzerland)}, 2016. v.~16, n.~2, p. 1--18, 2016.
+ISSN 14248220.}
+
+\bibitem[Tilkov e Vinoski 2010]{Tilkov2010}
+\abntrefinfo{Tilkov e Vinoski}{TILKOV; VINOSKI}{2010}
+{TILKOV, S.; VINOSKI, S. {Node.js: Using JavaScript to build high-performance
+  network programs}.
+\emph{IEEE Internet Computing}, 2010. v.~14, n.~6, p. 80--83, 2010.
+ISSN 10897801.}
 
 \bibitem[Água e consumo consciente.]{aguaconsumo}
 \abntrefinfo{Água\ldots}{ÁGUA\ldots}{}

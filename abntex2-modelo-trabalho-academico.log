@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  21 MAY 2019 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  26 MAY 2019 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1068,11 +1068,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 138.
 
 Writing index file abntex2-modelo-trabalho-academico.idx 
 (./abntex2-modelo-trabalho-academico.aux (./capitulos/capitulo-introducao.aux)
-(./capitulos/capitulo-materiais-metodos.aux
-
-LaTeX Warning: Label `fig:09' multiply defined.
-
-) (./capitulos/capitulo-metodologia.aux) (./capitulos/capitulo-resultados.aux)
+(./capitulos/capitulo-materiais-metodos.aux)
+(./capitulos/capitulo-metodologia.aux) (./capitulos/capitulo-resultados.aux)
 (./capitulos/capitulo-consideracoes-finais.aux)
 (./capitulos/capitulo-apendice1e2.aux) (./capitulos/capitulo-anexos-1-2-3.aux))
 \openout1 = `abntex2-modelo-trabalho-academico.aux'.
@@ -1265,15 +1262,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [5
 
-] (./abntex2-modelo-trabalho-academico.lof) [6
+] [6
+
+] (./abntex2-modelo-trabalho-academico.lof) [7
 
 ]
 (./abntex2-modelo-trabalho-academico.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 27.
-) [7
+(Font)              <14.4> on input line 32.
+) [8
 
-]
+] [9]
 \openout2 = `capitulos/capitulo-introducao.aux'.
 
 
@@ -1284,50 +1283,97 @@ Package hyperref Warning: Suppressing empty link on input line 9.
 
 Package hyperref Warning: Suppressing empty link on input line 13.
 
-[8
+[10
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 33.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 35.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 33.
 
 
-Package hyperref Warning: Suppressing empty link on input line 45.
+Package hyperref Warning: Suppressing empty link on input line 43.
 
-[9]) [10]
+) [11] [12]
 \openout2 = `capitulos/capitulo-materiais-metodos.aux'.
 
  (./capitulos/capitulo-materiais-metodos.tex
-<figuras/esp8266_.jpg, id=158, 523.9575pt x 255.95625pt>
+<figuras/esp8266_.jpg, id=186, 523.9575pt x 255.95625pt>
 File: figuras/esp8266_.jpg Graphic file (type jpg)
 <use figuras/esp8266_.jpg>
 Package pdftex.def Info: figuras/esp8266_.jpg  used on input line 22.
 (pdftex.def)             Requested size: 261.9781pt x 127.9778pt.
-<figuras/raspberrypi.jpg, id=161, 1379.90532pt x 813.0375pt>
-File: figuras/raspberrypi.jpg Graphic file (type jpg)
-<use figuras/raspberrypi.jpg>
-Package pdftex.def Info: figuras/raspberrypi.jpg  used on input line 41.
-(pdftex.def)             Requested size: 275.97618pt x 162.60461pt.
- [11
+ [13
 
 
 
  <./figuras/esp8266_.jpg>]
-<figuras/yf-s201.jpg, id=175, 803.0pt x 497.86pt>
+<figuras/raspberrypi.jpg, id=196, 1379.90532pt x 813.0375pt>
+File: figuras/raspberrypi.jpg Graphic file (type jpg)
+<use figuras/raspberrypi.jpg>
+Package pdftex.def Info: figuras/raspberrypi.jpg  used on input line 33.
+(pdftex.def)             Requested size: 275.97618pt x 162.60461pt.
+<figuras/yf-s201.jpg, id=201, 803.0pt x 497.86pt>
 File: figuras/yf-s201.jpg Graphic file (type jpg)
 <use figuras/yf-s201.jpg>
-Package pdftex.def Info: figuras/yf-s201.jpg  used on input line 56.
+Package pdftex.def Info: figuras/yf-s201.jpg  used on input line 48.
 (pdftex.def)             Requested size: 240.90186pt x 149.35915pt.
-) [12 <./figuras/raspberrypi.jpg> <./figuras/yf-s201.jpg>] [13]
+ [14 <./figuras/raspberrypi.jpg> <./figuras/yf-s201.jpg>]
+<figuras/homeassistant-dash.png, id=212, 1099.10625pt x 619.31375pt>
+File: figuras/homeassistant-dash.png Graphic file (type png)
+<use figuras/homeassistant-dash.png>
+Package pdftex.def Info: figuras/homeassistant-dash.png  used on input line 65.
+
+(pdftex.def)             Requested size: 455.0pt x 256.37727pt.
+
+
+Package hyperref Warning: Suppressing empty link on input line 73.
+
+[15 <./figuras/homeassistant-dash.png>]
+
+Package hyperref Warning: Suppressing empty link on input line 83.
+
+[16]
+
+Package hyperref Warning: Suppressing empty link on input line 99.
+
+[17]
+<figuras/Microservice_Architecture.png, id=260, 541.02126pt x 371.3875pt>
+File: figuras/Microservice_Architecture.png Graphic file (type png)
+<use figuras/Microservice_Architecture.png>
+Package pdftex.def Info: figuras/Microservice_Architecture.png  used on input l
+ine 118.
+(pdftex.def)             Requested size: 455.0pt x 312.34871pt.
+
+
+Package hyperref Warning: Suppressing empty link on input line 123.
+
+
+Package hyperref Warning: Suppressing empty link on input line 131.
+
+[18 <./figuras/Microservice_Architecture.png>]
+<figuras/mqtt-architecture.png, id=280, 933.4875pt x 498.86375pt>
+File: figuras/mqtt-architecture.png Graphic file (type png)
+<use figuras/mqtt-architecture.png>
+Package pdftex.def Info: figuras/mqtt-architecture.png  used on input line 137.
+
+(pdftex.def)             Requested size: 455.0pt x 243.15894pt.
+
+
+Package hyperref Warning: Suppressing empty link on input line 148.
+
+[19 <./figuras/mqtt-architecture.png>]
+
+Package hyperref Warning: Suppressing empty link on input line 150.
+
+) [20]
 \openout2 = `capitulos/capitulo-metodologia.aux'.
 
-
-(./capitulos/capitulo-metodologia.tex) [14
+ (./capitulos/capitulo-metodologia.tex) [21
 
 
 
@@ -1335,11 +1381,19 @@ Package pdftex.def Info: figuras/yf-s201.jpg  used on input line 56.
 \openout2 = `capitulos/capitulo-resultados.aux'.
 
 
-(./capitulos/capitulo-resultados.tex)
+(./capitulos/capitulo-resultados.tex) [22
+
+
+
+]
 \openout2 = `capitulos/capitulo-consideracoes-finais.aux'.
 
 
-(./capitulos/capitulo-consideracoes-finais.tex)
+(./capitulos/capitulo-consideracoes-finais.tex) [23
+
+
+
+]
 (./abntex2-modelo-trabalho-academico.bbl
 (./abntex2-modelo-trabalho-academico.brf)
 \tf@brf=\write5
@@ -1347,7 +1401,7 @@ Package pdftex.def Info: figuras/yf-s201.jpg  used on input line 56.
 
 
 bibitemlist
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 91.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 65.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1355,21 +1409,22 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [15
+
+Underfull \hbox (badness 6078) in paragraph at lines 65--65
+[]\T1/lmr/m/n/12 (+20) HIVEMQ. [][]$\T1/lmtt/m/n/12 http : / / www . hivemq . c
+om / blog / 
+ []
+
+[24
 
 
-
-
-
-
-] [16] [17
+]) [25] [26] [27
 
 
 ]
 \openout2 = `capitulos/capitulo-apendice1e2.aux'.
 
-
-(./capitulos/capitulo-apendice1e2.tex) [18
+ (./capitulos/capitulo-apendice1e2.tex) [28
 
 
 
@@ -1399,39 +1454,36 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 508.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 508.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: B2C3EA75746AA45C8A8DBD6328FF517D;769.
+(rerunfilecheck)             Checksum: 1571E1208EAF65EF672D91A1994C2934;1976.
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 508.
  ) 
 Here is how much of TeX's memory you used:
- 13556 strings out of 494903
- 202969 string characters out of 6179961
- 463600 words of memory out of 5000000
- 16449 multiletter control sequences out of 15000+600000
- 83028 words of font info for 105 fonts, out of 8000000 for 9000
+ 13795 strings out of 494903
+ 206624 string characters out of 6179961
+ 467823 words of memory out of 5000000
+ 16622 multiletter control sequences out of 15000+600000
+ 84530 words of font info for 119 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 44i,14n,38p,612b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.2.4} has been referenced but does not exi
-st, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/sha
-re/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmtt12.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (19 pages, 720497 bytes
+ 41i,14n,38p,945b,588s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/s
+hare/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmtt12.pfb>
+Output written on abntex2-modelo-trabalho-academico.pdf (29 pages, 906267 bytes
 ).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
- 28946 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 556 PDF objects out of 1000 (max. 8388607)
+ 498 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 29009 words of extra memory for PDF output out of 29859 (max. 10000000)
 
