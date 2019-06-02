@@ -19,6 +19,12 @@
 [S.l.]. Dispon{\'\i}vel em:
   $<$https:\-/\-/www\-.tratamentodeagua\-.com\-.br\-/wp-content\-/uploads\-/2016\-/05\-/REUSO-DE-{{\textbackslash}'{A}}GUA-possibilidades-de-redu{{\textbackslash}c{c}}{{\textbackslash}\~{}{a}}o-do-desperd{{\textbackslash}'{i}}cio-nas-a$>$.}
 
+\bibitem[Blog Masterwalker]{teclado-matricial-1}
+\abntrefinfo{Blog\ldots}{BLOG\ldots}{}
+{BLOG Masterwalker.
+  \url{http://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-teclado-matricial-de-membrana-4x4/}.
+Accessed: 2019-06-02.}
+
 \bibitem[Boscarioli et al.]{bancosrelacionais}
 \abntrefinfo{Boscarioli et al.}{BOSCARIOLI et al.}{}
 {BOSCARIOLI, C. et al. \emph{{Uma reflex{\~{a}}o sobre Banco de Dados
@@ -48,6 +54,10 @@
 {FERREIRA, H.~S.; HEROSO, L.~F.; ZALESKI, R.~H. Sistema de monitoramento de
   consumo de {\'a}gua dom{\'e}stico com a utiliza{\c{c}}{\~a}o de um
   hidr{\^o}metro digital.}
+
+\bibitem[Forty 2007]{forty2007objetos}
+\abntrefinfo{Forty}{FORTY}{2007}
+{FORTY, A. \emph{Objetos de desejo}. [S.l.]: Editora Cosac Naify, 2007.}
 
 \bibitem[Gomes, Sousa e Vale 2018]{Gomes2018}
 \abntrefinfo{Gomes, Sousa e Vale}{GOMES; SOUSA; VALE}{2018}
@@ -148,6 +158,12 @@ ISBN 9789897581823.}
 \emph{2015 IEEE 4th Global Conference on Consumer Electronics, GCCE 2015},
   2016. IEEE, p. 86--87, 2016.}
 
+\bibitem[Portal Vida de Silício]{teclado-matricial}
+\abntrefinfo{Portal\ldots}{PORTAL\ldots}{}
+{PORTAL Vida de Silício.
+  \url{https://portal.vidadesilicio.com.br/teclado-matricial-e-multiplexacao/}.
+Accessed: 2019-06-02.}
+
 \bibitem[Rebou{\c{c}}as 2003]{rebouccas2003agua}
 \abntrefinfo{Rebou{\c{c}}as}{REBOU{\c{C}}AS}{2003}
 {REBOU{\c{C}}AS, A. d.~C. {\'A}gua no brasil: abund{\^a}ncia, desperd{\'\i}cio
@@ -176,12 +192,31 @@ Dispon{\'\i}vel em:
 \emph{Sensors (Switzerland)}, 2016. v.~16, n.~2, p. 1--18, 2016.
 ISSN 14248220.}
 
+\bibitem[Silva e Lago 2002]{da2002modulo}
+\abntrefinfo{Silva e Lago}{SILVA; LAGO}{2002}
+{SILVA, J. A.~F. da; LAGO, C.~L. do. M{\'o}dulo eletr{\^o}nico de controle para
+  v{\'a}lvulas solen{\'o}ides.
+\emph{Qu{\'\i}mica Nova}, 2002. SciELO Brasil, v.~25, n.~5, p. 842--843, 2002.}
+
+\bibitem[Stones e Matthew 2006]{stones2006beginning}
+\abntrefinfo{Stones e Matthew}{STONES; MATTHEW}{2006}
+{STONES, R.; MATTHEW, N. \emph{Beginning databases with PostgreSQL: from novice
+  to professional}. [S.l.]: Apress, 2006.}
+
 \bibitem[Tilkov e Vinoski 2010]{Tilkov2010}
 \abntrefinfo{Tilkov e Vinoski}{TILKOV; VINOSKI}{2010}
 {TILKOV, S.; VINOSKI, S. {Node.js: Using JavaScript to build high-performance
   network programs}.
 \emph{IEEE Internet Computing}, 2010. v.~14, n.~6, p. 80--83, 2010.
 ISSN 10897801.}
+
+\bibitem[{Varela De Souza} et al.]{VarelaDeSouza}
+\abntrefinfo{{Varela De Souza} et al.}{{Varela De Souza} et al.}{}
+{{Varela De Souza}, M. et al. \emph{{UNIVERSIDADE FEDERAL DO RIO GRANDE DO
+  NORTE INSTITUTO METR{\'{O}}POLE DIGITAL P{\'{O}}S-GRADUA{\c{C}}{\~{A}}O EM
+  ENGENHARIA DE SOFTWARE Dom{\'{o}}tica de baixo custo usando princ{\'{i}}pios
+  de IoT}}.
+[S.l.].}
 
 \bibitem[Água e consumo consciente.]{aguaconsumo}
 \abntrefinfo{Água\ldots}{ÁGUA\ldots}{}

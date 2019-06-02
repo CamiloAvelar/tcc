@@ -20,12 +20,18 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: abntex2-modelo-references.bib
+I was expecting a `,' or a `}'---line 329 of file abntex2-modelo-references.bib
+ : 
+ : @article{ferreirasistema,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--campo year vazio ou faltando em AlmeidaCosta
 Warning--campo year vazio ou faltando em AlvesDaSilva
+Warning--campo year vazio ou faltando em teclado-matricial-1
 Warning--campo year vazio ou faltando em bancosrelacionais
 Warning--campo year vazio ou faltando em ferreirasistema
 Warning--campo year vazio ou faltando em mqtt-ibm
@@ -34,51 +40,53 @@ Warning--campo year vazio ou faltando em Light
 Warning--campo year vazio ou faltando em mqtt1
 Warning--campo year vazio ou faltando em mqtt-oasis
 Warning--campo year vazio ou faltando em Pahl
+Warning--campo year vazio ou faltando em teclado-matricial
+Warning--campo year vazio ou faltando em VarelaDeSouza
 Warning--campo year vazio ou faltando em aguaconsumo
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-alf.bst versão v<VERSION>           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 29 entries,
+You've used 35 entries,
             6654 wiz_defined-function locations,
-            1340 strings with 14673 characters,
-and the built_in function-call counts, 32659 in all, are:
-= -- 3886
-> -- 779
-< -- 375
-+ -- 745
-- -- 235
-* -- 1912
-:= -- 3776
-add.period$ -- 105
-call.type$ -- 29
-change.case$ -- 294
-chr.to.int$ -- 49
-cite$ -- 39
-duplicate$ -- 2830
-empty$ -- 1637
-format.name$ -- 1123
-if$ -- 7418
+            1368 strings with 15681 characters,
+and the built_in function-call counts, 37230 in all, are:
+= -- 4323
+> -- 900
+< -- 379
++ -- 814
+- -- 272
+* -- 2196
+:= -- 4356
+add.period$ -- 124
+call.type$ -- 35
+change.case$ -- 348
+chr.to.int$ -- 58
+cite$ -- 48
+duplicate$ -- 3034
+empty$ -- 1995
+format.name$ -- 1301
+if$ -- 8587
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 495
-newline$ -- 149
-num.names$ -- 115
-pop$ -- 735
+missing$ -- 599
+newline$ -- 177
+num.names$ -- 135
+pop$ -- 874
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 136
 quote$ -- 0
-skip$ -- 3236
+skip$ -- 3589
 stack$ -- 1
-substring$ -- 1140
-swap$ -- 766
-text.length$ -- 23
+substring$ -- 1285
+swap$ -- 853
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 29
-warning$ -- 11
-while$ -- 183
+type$ -- 41
+warning$ -- 14
+while$ -- 214
 width$ -- 0
-write$ -- 428
-(There were 11 warnings)
+write$ -- 514
+(There was 1 error message)

@@ -9,7 +9,14 @@ Para uma melhor eficiência no processamento de dados, na década de 70
 começaram a ser utilizados microprocessadores em computadores \cite{martins2005sistemas}. Os microprocessadores são componentes dedicados ao processamento de informações com
 capacidade de cálculos matemáticos e endereçamento de memória externa \cite{chase2007sistemas}.
 
-FALAR MAIS SOBRE MICROPROCESSADORES E EXPLICAR MICROCONTROLADOR
+Já os microcontroladores são pequenos sistemas computacionais bastante poderosos que englobam em um único chip: interfaces de entrada/saída digitais e analógicas, periféricos importantes como a memória RAM, memória FLASH, interfaces de comunicação serial, conversores analógicos/digitais e temporizadores/contadores. Com o advento dos microcontroladores de 16 e 32 bits (atualmente o padrão é de 8bits) a capacidade de gerenciar soluções mais complexas e maior velocidade de processamento se iguala ao do microprocessador. \cite{chase2007sistemas}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.7]{figuras/processa-controla.png}
+	\caption{Diferença entre microprocessador de microcontrolador}
+	\label{microprocessador-microcontrolador}
+\end{figure}
 
 \subsection{ESP8266}
 
@@ -23,6 +30,7 @@ Os módulos baseados no microcontrolador ESP8266 representam um grande avanço n
 		\caption{ESP8266}
 		\label{fig:01}
 \end{figure}
+
 
 \subsection{RaspberryPi}
 
@@ -50,9 +58,57 @@ sensor usa esse efeito para enviar um sinal PWM,e através desse pulso é possí
 		\label{fig:03}
 \end{figure}
 
-\subsection{Teclado numérico}
+\subsection{Teclado matricial de membrana}
 
-\subsection{Relé de atuação}
+Como \cite {teclado-matricial-1} definiu, teclados são geralmente utilizados em aplicações na qual o usuário precisar interagir com um sistema, como computadores, calculadoras, controles remotos entre outros. Segundo \cite{teclado-matricial} O Teclado Matricial de Membrana 4X4 com 16 teclas foi desenvolvido com a finalidade de facilitar a entrada de dados em projetos com plataformas microcontroladas. Este teclado possui 16 teclas, onde 10 teclas são numerais, 4 literais e 2 de caracteres. As 16 teclas estão dispostas em 4 linhas por 4 colunas e o teclado possui um conector de 8 pinos para ligação.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.3]{figuras/teclado-matricial.jpg}
+	\caption{Teclado Matricial de Membrana}
+	\label{teclado}
+\end{figure}
+
+Este teclado como o nome indica é formado de botões organizados em linhas e colunas de modo a formar uma matriz. Quando pressionado, um botão conecta a linha com a coluna na qual está ligado. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.4]{figuras/matrix-1024x558.png}
+	\caption{Circuito do teclado}
+	\label{teclado-conexoes}
+\end{figure}
+
+O teclado matricial possui a seguinte pinagem:
+
+\begin{itemize}
+	\item Pino 1 (Esquerda) – Primeira Linha (L1)
+	\item Pino 2  – Segunda Linha (L2)
+	\item ...
+	\item Pino 5 – Primeira Coluna (C1)
+	\item ...
+	\item Pino 8 – Quarta Coluna (C4)
+\end{itemize}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.3]{figuras/keypad-1024x1024-pins.png}
+	\caption{Pinagem do teclado}
+	\label{teclado-pins}
+\end{figure}
+
+\subsection{Válvula solenoide}
+
+Seguindo a definição de \cite{da2002modulo}, solenóides são dispositivos eletromecânicos baseados no deslocamento causado pela ação de um campo magnético gerado por uma bobina e são muito utilizados na construção de outros dispositivos, como é o caso das válvulas para controle de fluidos. Em particular, as válvulas para baixas vazões (da ordem de mililitros por minutos) e baixas pressões têm sido amplamente aplicadas em equipamentos e montagens para uso em laboratórios clínicos e químicos. Elas são de pequenas dimensões e requerem baixa tensão e corrente de acionamento.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.3\linewidth]{figuras/valvula-solenoide.jpg}
+	\caption{Válvula Solenoide}
+	\label{valvula-solenoide}
+\end{figure}
+
+Ainda segundo \cite{da2002modulo}, a estratégia para fechamento e abertura dos canais fluídicos depende do fabricante, mas o princípio de acionamento elétrico é basicamente o mesmo, isto é, uma tensão de alguns volts é aplicada sobre um solenoide que faz com que um núcleo metálico ferromagnético se desloque, causando a alteração do estado da válvula. O núcleo
+ferromagnético comprime uma mola que é a responsável por deslocar o núcleo para sua posição original quando a corrente elétrica é interrompida.
 
 \section{Softwares}
 
@@ -100,6 +156,11 @@ Segundo \cite{bancosrelacionais}, um Banco de dados relacional possui uma coleç
 dados, podendo estar relacionada a uma ou mais tabelas. Conceitos como integridade referencial de dados – que garantem que um dado referenciado em uma tabela esteja presente na tabela que está sendo referenciada – e chaves primárias estão presentes e garantem que um conjunto de informações possa ser representado de maneira consistente, independente da forma de acesso.
 
 \subsubsection{PostgreSQL}
+
+Segundo \cite{stones2006beginning} PostgreSQL é uma excelente implementação de um banco de dados relacional, cheio de funções, de código aberto e sem custos para o uso.
+PostgreSQL pode ser usado com a maioria das linguagens de programação existentes.
+
+O PostgreSQL ganhou diversos prêmios, incluindo o \textit{Linux Journal Editor's Choice Award for Best Database} três vezes e o \textit{2004 Linux New Media Award for Best Database System}.
 
 \subsection{Node.JS}
 
