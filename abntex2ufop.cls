@@ -461,6 +461,12 @@
 \providecommand{\imprimirinstituicao}{}
 \newcommand{\instituicao}[1]{\renewcommand{\imprimirinstituicao}{#1}}
 
+\providecommand{\imprimirescolademinas}{}
+\newcommand{\escolademinas}[1]{\renewcommand{\imprimirescolademinas}{#1}}
+
+\providecommand{\imprimircolegiado}{}
+\newcommand{\colegiado}[1]{\renewcommand{\imprimircolegiado}{#1}}
+
 % Comandos de dados - local
 \providecommand{\imprimirlocal}{}
 \newcommand{\local}[1]{\renewcommand{\imprimirlocal}{#1}}
@@ -760,7 +766,13 @@
   	\tablelasttail{}
   	\begin{supertabular}{m{1.924cm}m{9.801001cm}m{2.922cm}}
    \includegraphics[width=1.203cm,height=2.835cm]{logo-universidade.jpg}  &
-  {\centering \imprimirinstituicao}
+   \begin{center}
+  		{\centering \imprimirinstituicao}
+
+		{\centering \imprimirescolademinas}
+
+		{\centering \imprimircolegiado}
+   \end{center}
   ~
    &
   \centering  \includegraphics[width=2.669cm,height=2.469cm]{logo-unidade.jpg} \\
@@ -815,7 +827,7 @@
        \vspace*{\fill}
     }%
 
-    %{\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
+    %{\abntex@ifnotempty{\imprimir}{\imprimirinstituicao\vspace*{\fill}}}
 
     {\large\imprimirorientadorRotulo~\imprimirorientador\par}
     \abntex@ifnotempty{\imprimircoorientador}{%
