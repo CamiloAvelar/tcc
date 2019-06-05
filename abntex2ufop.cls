@@ -775,7 +775,7 @@
    \end{center}
   ~
    &
-  \centering  \includegraphics[width=2.669cm,height=2.469cm]{logo-unidade.jpg} \\
+  \centering  \includegraphics[width=2.669cm,height=2.469cm]{logo-unidade.png} \\
   \end{supertabular}
   \end{flushleft}
     \centering
