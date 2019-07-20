@@ -1,1 +1,73 @@
 \chapter{Metodologia}
+
+Este Capítulo apresenta a estrutura geral do sistema, a configuração inicial do RaspberryPi, a construção dos microsserviços, assim como as etapas de realização do projeto. A
+primeira etapa consiste no desenvolvimento do microsserviço de cadastro e controle de usuários. Em seguida, foi desenvolvido o sistema que recebe os dados via MQTT, guardando-os no InfluxDB. Com os dados sendo recebidos e devidamente guardados, foi configurado o HomeAssistant juntamente com o Grafana. Para facilitar os testes, também foi desenvolvido um sistema que simula os dados que seriam recebidos via sensor de fluxo.
+
+\section{Configuração do RaspberryPi}
+
+Os sistemas deste projeto foram desenvolvidos diretamente no RaspberryPi, e, para possibilitar este desenvolvimento, é necessário primeiramente configurar o ambiente do RaspberryPi.
+
+O RaspberryPi foi configurado para ser \textit{headless}, o que faz com que ele não necessite de teclado, mouse ou monitor para poder ser acessado. Para conseguir acessar o Raspberry nesta configuração é necessária a utilização do SSH, ou \textit{Secure Shell}, que é um protocolo de rede criptográfico para operação de serviços de rede de forma segura(COLOCAR LINK NO RODAPÉ). O SSH permite o login remoto no sistema operacional do Raspberry, possibilitando o completo controle do sistema operacional de forma remota.
+
+\section{Microsserviços}
+
+Aqui será apresentado as etapas de desenvolvimento dos microsserviços utilizados no sistema elaborado, assim como o serviço de simulação para facilitar os testes e validação do sistema.
+
+\section{Criação das tabelas no PostgreSQL}
+
+INFORMAÇÕES SOBRE AS TABELAS DO POSTGRESQL
+
+\section{Configuração do InfluxDB}
+
+FALAR SOBRE A CONFIGURAÇÃO DO INFLUXDB
+
+\subsection{Sistema de usuários}
+
+O propósito desta aplicação está em ter o controle e informações sobre o consumo de água em residências, para isso, é necessário ter um meio para conseguir as informações sobre os usuários do sistema. 
+
+O microsserviço de usuários é responsável por cadastrar e editar usuários, cadastrar informações sobre o tempo de banho do usuário e autorizar o usuário à tomar o banho.
+
+As operações são realizadas através dos \textit{endpoints}, que são \textit{links} em que são passados parâmetros contendo a informação específica que o \textit{endpoint} requer.
+
+Este microsserviço salva todos os dados recebidos nas tabelas do PostgreSQL.
+
+O sistema possui os seguintes \textit{endpoints}:
+
+
+\begin{itemize}
+	\item /cadastrar: possibilita cadastrar o usuário com as informações do nome, senha e tempo de banho permitido.
+	\item /autorizar: recebe o id do usuário e a senha, compara a senha enviada com a senha cadastrada e retorna se o usuário está ou não autorizado.
+	\item /editar-tempo: possibilita editar o tempo de banho permitido do usuário.
+	\item /editar-senha: possibilita editar a senha do usuário.
+	\item /banho: salva no banco de dados informações do banho, o tempo e o usuário que tomou o banho.
+	\item /banho/:id: retorna informações sobre todos os banhos do usuário.
+\end{itemize}
+
+\subsection{Sistema de comunicação MQTT}
+
+Este microsserviço é responsável pelo recebimento e manipulação dos dados recebidos dos sensores e do teclado numérico via MQTT. Também é responsável por comunicar com o sistema de usuários para autorizar o usuário, por ligar ou desligar o atuador, além de salvar os dados no InfluxDB.
+
+O sistema de comunicação recebe informações sobre as teclas digitadas e comunica com o sistema de usuários, para autorizar ou não o ligamento do atuador, que significa o início do banho.
+
+O sistema se subscreve nos seguintes tópicos do \textit{broker} MQTT para receber as informações:
+
+\begin{itemize}
+	\item \textit{keys}: é o tópico em que contém a tecla digitada no teclado numérico
+	\item \textit{actuator}: é o tópico para enviar informações do atuador, para liga-lo ou desliga-lo
+	\item \textit{user}: é o tópico para enviar informações do usuário, como o nome e se ele está autorizado ou não.
+	\item \textit{sensor}: é o tópico para enviar informações do sensor de fluxo.
+\end{itemize}
+
+\section{Configuração do HomeAssistant}
+
+FALAR SOBRE A CONFIGURAÇÃO DO HOMEASSISTANT
+
+\section{Configuração do Grafana}
+
+FALAR SOBRE A CONFIGURAÇÃO DO GRAFANA
+
+\section{Configuração do Docker}
+
+FALAR SOBRE A CONFIGURAÇÃO DO DOCKER
+
+

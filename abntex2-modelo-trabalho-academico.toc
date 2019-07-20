@@ -24,12 +24,23 @@
 \contentsline {subsection}{\numberline {2.3.5}Protocolo de comunica\IeC {\c c}\IeC {\~a}o}{20}{subsection.2.3.5}
 \contentsline {subsubsection}{\numberline {2.3.5.1}MQTT}{20}{subsubsection.2.3.5.1}
 \contentsline {subsection}{\numberline {2.3.6}MQTT Mosquitto}{22}{subsection.2.3.6}
-\contentsline {chapter}{\chapternumberline {3}Metodologia}{23}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}Experimentos e Resultados}{24}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Considera\IeC {\c c}\IeC {\~o}es Finais}{25}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{26}{section*.8}
+\contentsline {subsection}{\numberline {2.3.7}Docker}{22}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.8}Grafana}{23}{subsection.2.3.8}
+\contentsline {chapter}{\chapternumberline {3}Metodologia}{24}{chapter.3}
+\contentsline {section}{\numberline {3.1}Configura\IeC {\c c}\IeC {\~a}o do RaspberryPi}{24}{section.3.1}
+\contentsline {section}{\numberline {3.2}Microsservi\IeC {\c c}os}{24}{section.3.2}
+\contentsline {section}{\numberline {3.3}Cria\IeC {\c c}\IeC {\~a}o das tabelas no PostgreSQL}{24}{section.3.3}
+\contentsline {section}{\numberline {3.4}Configura\IeC {\c c}\IeC {\~a}o do InfluxDB}{24}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Sistema de usu\IeC {\'a}rios}{25}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Sistema de comunica\IeC {\c c}\IeC {\~a}o MQTT}{25}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Configura\IeC {\c c}\IeC {\~a}o do HomeAssistant}{26}{section.3.5}
+\contentsline {section}{\numberline {3.6}Configura\IeC {\c c}\IeC {\~a}o do Grafana}{26}{section.3.6}
+\contentsline {section}{\numberline {3.7}Configura\IeC {\c c}\IeC {\~a}o do Docker}{26}{section.3.7}
+\contentsline {chapter}{\chapternumberline {4}Experimentos e Resultados}{27}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Considera\IeC {\c c}\IeC {\~o}es Finais}{28}{chapter.5}
+\contentsline {chapter}{Refer\^encias}{29}{section*.8}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{29}{section*.9}
+\contentsline {part}{Ap\^endices}{32}{section*.9}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
-\contentsline {part}{Anexos}{30}{section*.10}
+\contentsline {part}{Anexos}{33}{section*.10}

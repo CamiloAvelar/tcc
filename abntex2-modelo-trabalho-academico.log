@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  4 JUN 2019 23:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  20 JUL 2019 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1267,12 +1267,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] (./abntex2-modelo-trabalho-academico.lof) [7
 
 ]
-(./abntex2-modelo-trabalho-academico.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 32.
-) [8
+(./abntex2-modelo-trabalho-academico.toc [8
 
-] [9]
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 43.
+) [9]
 \openout2 = `capitulos/capitulo-introducao.aux'.
 
 
@@ -1308,7 +1308,7 @@ Package hyperref Warning: Suppressing empty link on input line 49.
 \openout2 = `capitulos/capitulo-materiais-metodos.aux'.
 
  (./capitulos/capitulo-materiais-metodos.tex
-<figuras/processa-controla.png, id=205, 658.46pt x 196.735pt>
+<figuras/processa-controla.png, id=227, 658.46pt x 196.735pt>
 File: figuras/processa-controla.png Graphic file (type png)
 <use figuras/processa-controla.png>
 Package pdftex.def Info: figuras/processa-controla.png  used on input line 16.
@@ -1318,7 +1318,7 @@ Overfull \hbox (5.91887pt too wide) in paragraph at lines 16--17
  [][] 
  []
 
-<figuras/esp8266_.jpg, id=208, 523.9575pt x 255.95625pt>
+<figuras/esp8266_.jpg, id=230, 523.9575pt x 255.95625pt>
 File: figuras/esp8266_.jpg Graphic file (type jpg)
 <use figuras/esp8266_.jpg>
 Package pdftex.def Info: figuras/esp8266_.jpg  used on input line 29.
@@ -1328,12 +1328,12 @@ Package pdftex.def Info: figuras/esp8266_.jpg  used on input line 29.
 
 
  <./figuras/processa-controla.png (PNG copy)>]
-<figuras/raspberrypi.jpg, id=218, 1379.90532pt x 813.0375pt>
+<figuras/raspberrypi.jpg, id=240, 1379.90532pt x 813.0375pt>
 File: figuras/raspberrypi.jpg Graphic file (type jpg)
 <use figuras/raspberrypi.jpg>
 Package pdftex.def Info: figuras/raspberrypi.jpg  used on input line 41.
 (pdftex.def)             Requested size: 275.97618pt x 162.60461pt.
-<figuras/yf-s201.jpg, id=223, 803.0pt x 497.86pt>
+<figuras/yf-s201.jpg, id=245, 803.0pt x 497.86pt>
 File: figuras/yf-s201.jpg Graphic file (type jpg)
 <use figuras/yf-s201.jpg>
 Package pdftex.def Info: figuras/yf-s201.jpg  used on input line 56.
@@ -1346,31 +1346,31 @@ Package hyperref Warning: Suppressing empty link on input line 63.
 Package hyperref Warning: Suppressing empty link on input line 63.
 
 [14 <./figuras/esp8266_.jpg> <./figuras/raspberrypi.jpg>]
-<figuras/teclado-matricial.jpg, id=234, 459.7175pt x 459.7175pt>
+<figuras/teclado-matricial.jpg, id=256, 459.7175pt x 459.7175pt>
 File: figuras/teclado-matricial.jpg Graphic file (type jpg)
 <use figuras/teclado-matricial.jpg>
 Package pdftex.def Info: figuras/teclado-matricial.jpg  used on input line 67.
 (pdftex.def)             Requested size: 137.9163pt x 137.9163pt.
-<figuras/matrix-1024x558.png, id=235, 770.88pt x 420.57124pt>
+<figuras/matrix-1024x558.png, id=257, 770.88pt x 420.57124pt>
 File: figuras/matrix-1024x558.png Graphic file (type png)
 <use figuras/matrix-1024x558.png>
 Package pdftex.def Info: figuras/matrix-1024x558.png  used on input line 76.
 (pdftex.def)             Requested size: 308.34654pt x 168.22551pt.
  [15 <./figuras/yf-s201.jpg> <./figuras/teclado-matricial.jpg>]
-<figuras/keypad-1024x1024-pins.png, id=242, 770.88pt x 770.88pt>
+<figuras/keypad-1024x1024-pins.png, id=264, 770.88pt x 770.88pt>
 File: figuras/keypad-1024x1024-pins.png Graphic file (type png)
 <use figuras/keypad-1024x1024-pins.png>
 Package pdftex.def Info: figuras/keypad-1024x1024-pins.png  used on input line 
 94.
 (pdftex.def)             Requested size: 231.26578pt x 231.26578pt.
  [16 <./figuras/matrix-1024x558.png> <./figuras/keypad-1024x1024-pins.png>]
-<figuras/valvula-solenoide.jpg, id=252, 1003.75pt x 1003.75pt>
+<figuras/valvula-solenoide.jpg, id=274, 1003.75pt x 1003.75pt>
 File: figuras/valvula-solenoide.jpg Graphic file (type jpg)
 <use figuras/valvula-solenoide.jpg>
 Package pdftex.def Info: figuras/valvula-solenoide.jpg  used on input line 105.
 
 (pdftex.def)             Requested size: 136.50139pt x 136.49594pt.
-<figuras/homeassistant-dash.png, id=257, 1099.10625pt x 619.31375pt>
+<figuras/homeassistant-dash.png, id=279, 1099.10625pt x 619.31375pt>
 File: figuras/homeassistant-dash.png Graphic file (type png)
 <use figuras/homeassistant-dash.png>
 Package pdftex.def Info: figuras/homeassistant-dash.png  used on input line 121
@@ -1389,7 +1389,7 @@ Package hyperref Warning: Suppressing empty link on input line 139.
 Package hyperref Warning: Suppressing empty link on input line 155.
 
 [19]
-<figuras/Microservice_Architecture.png, id=306, 541.02126pt x 371.3875pt>
+<figuras/Microservice_Architecture.png, id=328, 541.02126pt x 371.3875pt>
 File: figuras/Microservice_Architecture.png Graphic file (type png)
 <use figuras/Microservice_Architecture.png>
 Package pdftex.def Info: figuras/Microservice_Architecture.png  used on input l
@@ -1403,7 +1403,7 @@ Package hyperref Warning: Suppressing empty link on input line 184.
 Package hyperref Warning: Suppressing empty link on input line 192.
 
 [20]
-<figuras/mqtt-architecture.png, id=325, 933.4875pt x 498.86375pt>
+<figuras/mqtt-architecture.png, id=347, 933.4875pt x 498.86375pt>
 File: figuras/mqtt-architecture.png Graphic file (type png)
 <use figuras/mqtt-architecture.png>
 Package pdftex.def Info: figuras/mqtt-architecture.png  used on input line 198.
@@ -1416,17 +1416,19 @@ Package hyperref Warning: Suppressing empty link on input line 209.
 
 Package hyperref Warning: Suppressing empty link on input line 211.
 
-) [22 <./figuras/mqtt-architecture.png>]
+) [22 <./figuras/mqtt-architecture.png>] [23]
 \openout2 = `capitulos/capitulo-metodologia.aux'.
 
- (./capitulos/capitulo-metodologia.tex) [23
+
+(./capitulos/capitulo-metodologia.tex [24
 
 
 
-]
+] [25]) [26]
 \openout2 = `capitulos/capitulo-resultados.aux'.
 
- (./capitulos/capitulo-resultados.tex) [24
+
+(./capitulos/capitulo-resultados.tex) [27
 
 
 
@@ -1434,7 +1436,7 @@ Package hyperref Warning: Suppressing empty link on input line 211.
 \openout2 = `capitulos/capitulo-consideracoes-finais.aux'.
 
 
-(./capitulos/capitulo-consideracoes-finais.tex) [25
+(./capitulos/capitulo-consideracoes-finais.tex) [28
 
 
 
@@ -1460,16 +1462,16 @@ Underfull \hbox (badness 6078) in paragraph at lines 75--75
 om / blog / 
  []
 
-[26
+[29
 
 
-] [27]) [28] [29
+] [30]) [31] [32
 
 
 ]
 \openout2 = `capitulos/capitulo-apendice1e2.aux'.
 
- (./capitulos/capitulo-apendice1e2.tex) [30
+ (./capitulos/capitulo-apendice1e2.tex) [33
 
 
 
@@ -1506,11 +1508,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 510.
  ) 
 Here is how much of TeX's memory you used:
- 13927 strings out of 494903
- 209365 string characters out of 6179961
- 470427 words of memory out of 5000000
- 16718 multiletter control sequences out of 15000+600000
- 85539 words of font info for 128 fonts, out of 8000000 for 9000
+ 13958 strings out of 494903
+ 209655 string characters out of 6179961
+ 470451 words of memory out of 5000000
+ 16729 multiletter control sequences out of 15000+600000
+ 85796 words of font info for 131 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  42i,14n,38p,892b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -1524,11 +1526,11 @@ fb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmtt12.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (31 pages, 1154126 byte
+Output written on abntex2-modelo-trabalho-academico.pdf (34 pages, 1164507 byte
 s).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 551 compressed objects within 6 object streams
- 120 named destinations out of 1000 (max. 500000)
- 29034 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 691 PDF objects out of 1000 (max. 8388607)
+ 618 compressed objects within 7 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 29122 words of extra memory for PDF output out of 29859 (max. 10000000)
 
