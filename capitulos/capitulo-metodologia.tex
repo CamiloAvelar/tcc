@@ -100,7 +100,7 @@ Nesta seção será apresentado as etapas de desenvolvimento dos microsserviços
 
 Os microsserviços desenvolvidos foram projetados para seguir a \textit{Clean Architecture}. Esta arquitetura consiste em dividir as responsabilidades dentro de uma aplicação, encapsulando e abstraindo o código para facilitar a leitura e entendimento das devidas funções de cada arquivo.
 
-É possível ver a divisão dos arquivos do Sistema de Usuários na Figura \ref{fig:clean}.
+É possível ver a divisão dos arquivos utilizando a \textit{Clean Architecture} do Sistema de Usuários na Figura \ref{fig:clean}. Explicando esta divisão, na pasta routes encontram-se as configuração das rotas que são utilizadas no sistema, nos \textit{controllers}, são feitas o tratamento dos \textit{inputs} e respostas das rotas, redirecionando para os interactors, que é onde está a lógica principal da aplicação. Nos \textit{repositories} é onde acontece a interação com o banco de dados, neste caso, com o PostgreSQL.
 
 \begin{figure}[htbp]
 	\centering
