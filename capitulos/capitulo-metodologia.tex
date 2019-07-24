@@ -1,25 +1,113 @@
 \chapter{Metodologia}
 
 Este Capítulo apresenta a estrutura geral do sistema, a configuração inicial do RaspberryPi, a construção dos microsserviços, assim como as etapas de realização do projeto. A
-primeira etapa consiste no desenvolvimento do microsserviço de cadastro e controle de usuários. Em seguida, foi desenvolvido o sistema que recebe os dados via MQTT, guardando-os no InfluxDB. Com os dados sendo recebidos e devidamente guardados, foi configurado o HomeAssistant juntamente com o Grafana. Para facilitar os testes, também foi desenvolvido um sistema que simula os dados que seriam recebidos via sensor de fluxo.
+primeira etapa consiste no desenvolvimento do microsserviço de cadastro e controle de usuários. Em seguida, foi desenvolvido o sistema que recebe os dados via MQTT, guardando-os no InfluxDB. Com os dados sendo recebidos e devidamente guardados, foi configurado o HomeAssistant juntamente com o Grafana. Para facilitar os testes, também foi desenvolvido um sistema que simula os dados que são recebidos via sensor de fluxo.
 
 \section{Configuração do RaspberryPi}
 
+Para a configuração inicial do RaspberryPi é preciso fazer o \textit{download} de um sistema operacional compatível com o microcontrolador. Para o sistema deste projeto utilizamos o Hassbian\footnote{\url{https://www.home-assistant.io/docs/installation/hassbian/installation/}}, que foi instalado no cartão SD que será inserido no RaspberryPi.
+
+
 Os sistemas deste projeto foram desenvolvidos diretamente no RaspberryPi, e, para possibilitar este desenvolvimento, é necessário primeiramente configurar o ambiente do RaspberryPi.
 
-O RaspberryPi foi configurado para ser \textit{headless}, o que faz com que ele não necessite de teclado, mouse ou monitor para poder ser acessado. Para conseguir acessar o Raspberry nesta configuração é necessária a utilização do SSH, ou \textit{Secure Shell}, que é um protocolo de rede criptográfico para operação de serviços de rede de forma segura(COLOCAR LINK NO RODAPÉ). O SSH permite o login remoto no sistema operacional do Raspberry, possibilitando o completo controle do sistema operacional de forma remota.
+O RaspberryPi foi configurado para ser \textit{headless}\footnote{\url{https://www.raspberrypi.org/documentation/configuration/wireless/headless.md}}, o que faz com que ele não necessite de teclado, mouse ou monitor para poder ser acessado. Para conseguir acessar o RaspberryPi nesta configuração é necessária a utilização do SSH, ou \textit{Secure Shell}, que é um protocolo de rede criptográfico para operação de serviços de rede de forma segura\footnote{\url{https://www.ssh.com/ssh/}}. O SSH permite o login remoto no sistema operacional do Raspberry, possibilitando o completo controle do sistema operacional de forma remota.
 
-\section{Microsserviços}
+A configuração de rede do RaspberryPi foi realizada para conter um IP estático, para facilitar o acesso SSH ao sistema, pois, para realizar o acesso é necessário saber o IP do RaspberryPi na rede, no sistema desenvolvido o IP do RaspberryPi foi configurado para ser sempre \textit{192.168.2.60}.
 
-Aqui será apresentado as etapas de desenvolvimento dos microsserviços utilizados no sistema elaborado, assim como o serviço de simulação para facilitar os testes e validação do sistema.
+A Figura \ref{fig:headless} mostra um exemplo do arquivo \textit{wpa\_supplicant.conf}, que faz parte da configuração \textit{headless}, serve para conectar à rede automaticamente ao iniciar os RaspberryPi. Já na Figura \ref{fig:rpiip}, podemos observar a configuração do ip estático.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figuras/headless.png}
+	\caption{Exemplo configuração \textit{headless}}
+	\label{fig:headless}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figuras/rpiip.png}
+	\caption{Exemplo configuração do IP estático}
+	\label{fig:rpiip}
+\end{figure}
 
 \section{Criação das tabelas no PostgreSQL}
 
-INFORMAÇÕES SOBRE AS TABELAS DO POSTGRESQL
+Em bancos de dados relacionais, para salvar os dados é necessário criar um banco de dados com o nome desejado,  dentro do banco, são criadas tabelas que se relacionam entre si, e, dentro das tabelas, existem colunas, referente ao dado que deseja guardar. Nesta seção estão as descrições do banco de dados criado, suas tabelas e colunas.
+
+Para o sistema desenvolvido foi criado um banco de dados com o nome \textit{users} com três tabelas: \textit{user\_baths}, \textit{user\_settings} e \textit{users}.
+
+A tabela \textit{users} contém 5 colunas, que guardam informações dos usuários cadastrados, que são:
+\begin{itemize}
+	\item id: gera um id que se auto incrementa e é único para cada usuário
+	\item \textit{name}: referente ao nome do usuário
+	\item \textit{password}: informação da senha do usuário, que é criptografada
+	\item \textit{created\_at}: data e hora da criação do usuário
+	\item \textit{updated\_at}: data e hora da ultima atualização do usuário
+\end{itemize}
+
+A tabela \textit{user\_settings}, guarda informações de configuração dos usuários, e contém 5 colunas:
+
+\begin{itemize}
+	\item id: identificador único
+	\item \textit{user\_id}: referente ao id do usuário
+	\item \textit{allowedBathTime}: tempo de banho permitido do usuário
+	\item \textit{created\_at}: data e hora da criação do usuário
+	\item \textit{updated\_at}: data e hora da ultima atualização do usuário
+\end{itemize}
+
+A tabela \textit{userBaths} guarda informações de tempo de todos os banhos tomados, possui 5 colunas:
+
+\begin{itemize}
+	\item id: identificador único
+	\item \textit{user\_id}: referente ao id do usuário
+	\item \textit{time}: tempo total do banho, em milissegundos
+	\item \textit{created\_at}: data e hora da criação do usuário
+	\item \textit{updated\_at}: data e hora da ultima atualização do usuário
+\end{itemize}
+
+A Figura \ref{fig:erpostgre} nos mostra o diagrama Entidade Relacionamento do banco de dados \textit{users} criado para a aplicação.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figuras/ERPostgre.png}
+	\caption{Modelo Entidade Relacionamento do PostgreSQL}
+	\label{fig:erpostgre}
+\end{figure}
+
 
 \section{Configuração do InfluxDB}
 
-FALAR SOBRE A CONFIGURAÇÃO DO INFLUXDB
+Na configuração do InfluxDB, foi utilizada a biblioteca \textit{influx}\footnote{\url{https://www.npmjs.com/package/influx}}. Esta biblioteca permite a criação do banco de dados diretamente do código fonte do sistema, assim como as tabelas para guardar os dados temporais.
+
+Foi criado o banco de dados \textit{water\_flow\_data}, que guardará os dados temporais dos banhos dos usuários. Neste banco os dados são guardados com a \textit{tag} referente ao id do usuário cadastrado no banco relacional PostgreSQL, os \textit{fields} são guardados os dados que chegam diretamente do sensor, que significa o fluxo de água naquele determinado instante.
+
+O InfluxDB salva automaticamente os \textit{timestamps} de cada dado incluido nele, o que facilita a manipulação dos dados, pois não é necessário informar o \textit{timestamp} toda vez que for incluir algum dado no banco.
+
+A Figura \ref{fig:influxconf} está a parte do código de configuração e implementação das funções do InfluxDB no sistema.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\linewidth]{figuras/influxconf.png}
+	\caption{Código de configuração do InfluxDB}
+	\label{fig:influxconf}
+\end{figure}
+
+\section{Microsserviços}
+
+Nesta seção será apresentado as etapas de desenvolvimento dos microsserviços utilizados no sistema elaborado, assim como o serviço de simulação para facilitar os testes e validação do sistema.
+
+\subsection{\textit{Clean Architecture}}
+
+Os microsserviços desenvolvidos foram projetados para seguir a \textit{Clean Architecture}. Esta arquitetura consiste em dividir as responsabilidades dentro de uma aplicação, encapsulando e abstraindo o código para facilitar a leitura e entendimento das devidas funções de cada arquivo.
+
+É possível ver a divisão dos arquivos do Sistema de Usuários na Figura \ref{fig:clean}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.25\linewidth]{figuras/cleanarch.png}
+	\caption{Divisão dos arquivos do Sistema de Usuários}
+	\label{fig:clean}
+\end{figure}
 
 \subsection{Sistema de usuários}
 
@@ -43,6 +131,8 @@ O sistema possui os seguintes \textit{endpoints}:
 	\item /banho/:id: retorna informações sobre todos os banhos do usuário.
 \end{itemize}
 
+Os códigos de implementação deste sistema podem ser observados no Apêndice A.
+
 \subsection{Sistema de comunicação MQTT}
 
 Este microsserviço é responsável pelo recebimento e manipulação dos dados recebidos dos sensores e do teclado numérico via MQTT. Também é responsável por comunicar com o sistema de usuários para autorizar o usuário, por ligar ou desligar o atuador, além de salvar os dados no InfluxDB.
@@ -58,16 +148,103 @@ O sistema se subscreve nos seguintes tópicos do \textit{broker} MQTT para receb
 	\item \textit{sensor}: é o tópico para enviar informações do sensor de fluxo.
 \end{itemize}
 
+Os códigos de implementação deste sistema podem ser observados no Apêndice B.
+
+\subsection{Sistema de simulação dos dados}
+
+
+
 \section{Configuração do HomeAssistant}
 
-FALAR SOBRE A CONFIGURAÇÃO DO HOMEASSISTANT
+O HomeAssistant pode ser instalado a partir de diversos métodos (colocar link no rodapé), neste sistema, a instalação foi feita utilizando o Hassbian, que é um sistema operacional linux para o RaspberryPi com o HomeAssistant pré-instalado.
+
+Para configurar o HomeAssistant no RaspberryPi é necessário realizar o \textit{download} da imagem do Hassbian, com o \textit{download} concluído, o próximo passo é copiar esta imagem para o cartão SD que será inserido no RaspberryPi, para este passo, utilizamos o \textit{balenaEtcher}, observado na Figura \ref{fig:etcher}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figuras/etcher.png}
+	\caption{Página inicial do \textit{balenaEtcher}}
+	\label{fig:etcher}
+\end{figure}
+
+Com a imagem devidamente escrita no cartão SD, basta inseri-lo no RaspberryPi, configurar a rede como descrito no processo de configuração do RaspberryPi, e, ao iniciar o sistema, o HomeAssistant será carregado automaticamente.
+
+O HomeAssistant utiliza a porta 8123, e, para conseguir visualizar sua interface, bastar acessar o ip do RaspberryPi na porta 8123. No caso deste sistema, o IP do RaspberryPi foi colocado como estático \textit{192.168.2.60}, então, para acessar a interface basta estar conectado na mesma rede do RaspberryPi e acessar o link \textit{http://192.168.2.60:8123}, como podemos ver na Figura \ref{fig:homeassistanthome}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\linewidth]{figuras/homeassistanthome.png}
+	\caption{Página inicial do HomeAssistant}
+	\label{fig:homeassistanthome}
+\end{figure}
+
+\subsection{Sensores}
+
+A interface do HomeAssistant nos permite diversas configurações e inclusão de diferentes sensores, como mostra a Figura \ref{fig:homeassistant-dash}. No sistema desenvolvido neste trabalho, foi utilizado o sensor binário, que nos mostrará se o chuveiro está ligado ou desligado. Cada usuário terá um sensor próprio, que mostrará \textit{ON} caso o usuário esteja com o chuveiro ligado, ou \textit{OFF} caso o usuário não esteja tomando banho, como na imagem (COLOCAR IMAGEM).
+
 
 \section{Configuração do Grafana}
 
-FALAR SOBRE A CONFIGURAÇÃO DO GRAFANA
+A instalação do Grafana foi realizada através do \textit{download} e extração do pacote para o sistema operacional Debian, que é o sistema utilizado pelo Hassbian instalado no RaspberryPi.
+
+Com o pacote devidamente instalado no sistema, o Grafana utiliza a porta 3003 como interface, então, para acessar a sua interface, bastar acessar a porta 3003 do RaspberryPi, ou seja, acessar o link \textit{http://192.168.2.60:3003}, como na Figura \ref{fig:grafanahome}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\linewidth]{figuras/grafanahome.png}
+	\caption{Página inicial do Grafana}
+	\label{fig:grafanahome}
+\end{figure}
+
+Ao acessar a interface do Grafana, é necessário criar um \textit{dashboard} para a visualização dos dados do InfluxDB. Neste sistema criamos o \textit{dashboard AllBaths}, que se conecta no ip e porta do InfluxDB e realiza as consultas no banco \textit{water\_flow\_data} criado para guardar os dados temporais do fluxo de água.
+
+A configuração do gráfico no Grafana pode ser observada na Figura \ref{fig:grafanaconf}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\linewidth]{figuras/grafanaconf.png}
+	\caption{Configuração do gráfico no Grafana}
+	\label{fig:grafanaconf}
+\end{figure}
+
+Após a configuração do \textit{dashboard}, um atalho será criado na página inicial do Grafana, e para visualizar os dados, basta clicar neste atalho e será aberto um gráfico com os fluxos medidos no sensor.
 
 \section{Configuração do Docker}
 
-FALAR SOBRE A CONFIGURAÇÃO DO DOCKER
+Toda a configuração do Docker é realizada a partir do arquivo \textit{Dockerfile}, que deve ser criado no diretório do projeto em que se deseja configurar.
+
+No \textit{Dockerfile} alguns parâmetros devem ser passados para conseguir o resultado esperado, um deles é definir qual imagem do Docker será usada como base, no caso dos projetos desenvolvidos, todos utilizam o Node como imagem base, esta imagem é definida com o comando \textit{FROM node}.
+
+Outro parâmetro que precisa ser configurado é o \textit{WORKDIR}, que define o diretório que será usado como base dentro da imagem do Docker, no caso, dentro da imagem do Node.
+
+Um comando importante é o \textit{COPY}, que serve para copiar os arquivos do diretório raiz do Docker, para o \textit{WORKDIR} dentro da imagem do Node.
+
+Após copiar os arquivos, é necessário executar os comandos para instalar os pacotes dos projetos, com o comando \textit{RUN npm install}.
+
+Finalmente, deve-se definir um comando de entrada, que irá executar o projeto dentro da imagem no Docker, que é o comando \textit{CMD npm start}. Caso o projeto utilize alguma porta para configuração, deve-se também expor a porta para garantir o funcionamento com o comando \textit {EXPOSE numeroDaPorta}.
+
+O exemplo do \textit{Dockerfile} do Sistema de Usuários pode ser verificado na Figura \ref{fig:dockerfile}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figuras/dockerfile.png}
+	\caption{Exemplo de \textit{Dockerfile} do Sistema de Usuários}
+	\label{fig:dockerfile}
+\end{figure}
+
+\subsection{Docker-compose}
+
+O \textit{Dockerfile} permite a execução única do projeto em que ele está presente, para iniciar os projetos utilizando apenas o \textit{Dockerfile} é necessário iniciar um por um.
+
+Para contornar este problema, o \textit{docker-compose} permite a execução de todos os projetos com apenas um comando, desde que um arquivo \textit{docker-compose.yml} esteja devidamente configurado. Este arquivo permite também a instalação e configuração automática de todos os programas utilizados neste trabalho, como o PostgreSQL, o InfluxDB, o Grafana e o Mosquitto.
+
+A configuração do \textit{docker-compose.yml} é simples como a do \textit{Dockerfile}, nele, deve-se especificar a versão que deseja utilizar, neste projeto foi utilizada a 3.5, com o comando \textit{version}:"3.5".
+
+Após a definição da versão, deve-se especificar os \textit{services}, que são as imagens que devem iniciar com o Docker. Neste projeto foram utilizados os \textit{builds} dos projetos já implementados com os devidos \textit{Dockerfiles} configurados. 
+
+Além dos projetos já implementados, foram especificados também os programas que foram utilizados no sistema, com o comando \textit{image:}postgres, \textit{image:}homeassistant, \textit{image:}eclipse-mosquitto, \textit{image:}grafana, \textit{image:}influxdb.
+
+O código implementado do \textit{docker-compose.yml} do projeto pode ser verificado no Apêndice C.
+
 
 

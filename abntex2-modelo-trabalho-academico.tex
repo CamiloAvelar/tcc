@@ -57,6 +57,7 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 \usepackage{supertabular}       % tabela na capa do dosudo apt-get install texlive texlive-latex3cumento
+\usepackage{listings}
 % ---
 		
 % ---
@@ -132,10 +133,10 @@
 	    pdfcreator={LaTeX with abnTeX2},
 		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
 		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=blue,          	% color of internal links
-    	citecolor=blue,        		% color of links to bibliography
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
     	filecolor=magenta,      		% color of file links
-		urlcolor=blue,
+		urlcolor=black,
 		bookmarksdepth=4
 }
 \makeatother
@@ -286,10 +287,10 @@
 % ---
 % Agradecimentos
 % ---
-\begin{agradecimentos}
-\noindent Os agradecimentos depois de pronto.
-
-\end{agradecimentos}
+%\begin{agradecimentos}
+%\noindent Os agradecimentos depois de pronto.
+%
+%\end{agradecimentos}
 % ---
 % ---
 % Epígrafe
@@ -311,7 +312,7 @@
 \begin{resumo}
  \noindent 
 
- \textbf{Palavras-chaves}: iot, sistema, monitoramento, esp8266
+ \textbf{Palavras-chaves}: 
 \end{resumo}
 
 % resumo em inglês
@@ -323,7 +324,7 @@
    \vspace{\onelineskip}
  
    \noindent 
-   \textbf{Key-words}: latex. abntex. text editoration.
+   \textbf{Key-words}:
   \end{otherlanguage*}
 \end{resumo}
 
@@ -365,10 +366,25 @@
 % ---
 % inserir lista de abreviaturas e siglas
 % ---
-%\begin{siglas}
- % \item[ABNT] Associação Brasileira de Normas Técnicas
- % \item[abnTeX] ABsurdas Normas para TeX
-%\end{siglas}
+\begin{siglas}
+  \item[IP] \textit{Internet Protocol}
+  \item[TSDB] Banco de Dados de Séries Temporais
+  \item[MQTT] \textit{Message Queueing Telemetry Transport}
+  \item[IoT] \textit{Internet of Things}
+  \item[TCP] \textit{Transmission Control Protocol}
+  \item[SSH] \textit{Secure Shell}
+  \item[RAM] \textit{Random Access Memory}
+  \item[I/O] \textit{Input / Output}
+  \item[MHz] \textit{mega hertz}
+  \item[WiFi] \textit{Wireless Fidelity}
+  \item[PWM] \textit{Pulse with modulation}
+  \item[mm] milimetro
+  \item[HTTP] \textit{Hypertext Transfer Protocol}
+  \item[RESTful] \textit{Representational State Transfer}
+  \item[API] \textit{Application Programming Interface}
+  \item[BLE] \textit{Bluetooth Low Energy}
+  \item[SD] \textit{Secure Digital}
+\end{siglas}
 % ---
 
 % ---
@@ -489,16 +505,16 @@
 % ---
 % Inicia os anexos
 % ---
-\begin{anexosenv}
-
-% Imprime uma página indicando o início dos anexos
-\partanexos
-
-% ---
-% Insere arquivo com os anexos 1, 2 e 3
-\include{capitulos/capitulo-anexos-1-2-3}
-% ---
-\end{anexosenv}
+%\begin{anexosenv}
+%
+%% Imprime uma página indicando o início dos anexos
+%\partanexos
+%
+%% ---
+%% Insere arquivo com os anexos 1, 2 e 3
+%\include{capitulos/capitulo-anexos-1-2-3}
+%% ---
+%\end{anexosenv}
 
 %---------------------------------------------------------------------
 % INDICE REMISSIVO

@@ -7,7 +7,6 @@ A level-1 auxiliary file: capitulos/capitulo-metodologia.aux
 A level-1 auxiliary file: capitulos/capitulo-resultados.aux
 A level-1 auxiliary file: capitulos/capitulo-consideracoes-finais.aux
 A level-1 auxiliary file: capitulos/capitulo-apendice1e2.aux
-A level-1 auxiliary file: capitulos/capitulo-anexos-1-2-3.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -20,29 +19,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: abntex2-modelo-references.bib
-I was expecting a `,' or a `}'---line 329 of file abntex2-modelo-references.bib
- : 
- : @article{ferreirasistema,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--campo year vazio ou faltando em AlmeidaCosta
-Warning--campo year vazio ou faltando em AlvesDaSilva
-Warning--campo year vazio ou faltando em teclado-matricial-1
-Warning--campo year vazio ou faltando em bancosrelacionais
-Warning--campo year vazio ou faltando em ferreirasistema
-Warning--campo year vazio ou faltando em mqtt-ibm
-Warning--campo year vazio ou faltando em githubhomeassistant
-Warning--campo year vazio ou faltando em Light
-Warning--campo year vazio ou faltando em mqtt1
-Warning--campo year vazio ou faltando em mqtt-oasis
-Warning--campo year vazio ou faltando em Pahl
-Warning--campo year vazio ou faltando em teclado-matricial
-Warning--campo year vazio ou faltando em VarelaDeSouza
-Warning--campo year vazio ou faltando em aguaconsumo
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-alf.bst versão v<VERSION>           |
 | Em caso de dúvidas ou problemas com este estilo procure |
@@ -50,43 +30,42 @@ Warning--campo year vazio ou faltando em aguaconsumo
 +---------------------------------------------------------+
 You've used 35 entries,
             6654 wiz_defined-function locations,
-            1368 strings with 15681 characters,
-and the built_in function-call counts, 37230 in all, are:
-= -- 4323
-> -- 900
-< -- 379
-+ -- 814
-- -- 272
-* -- 2196
-:= -- 4356
-add.period$ -- 124
+            1373 strings with 15858 characters,
+and the built_in function-call counts, 39144 in all, are:
+= -- 4408
+> -- 1017
+< -- 435
++ -- 838
+- -- 309
+* -- 2400
+:= -- 4634
+add.period$ -- 139
 call.type$ -- 35
-change.case$ -- 348
-chr.to.int$ -- 58
-cite$ -- 48
-duplicate$ -- 3034
-empty$ -- 1995
-format.name$ -- 1301
-if$ -- 8587
-int.to.chr$ -- 1
+change.case$ -- 359
+chr.to.int$ -- 62
+cite$ -- 34
+duplicate$ -- 3400
+empty$ -- 2056
+format.name$ -- 1477
+if$ -- 8735
+int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 599
+missing$ -- 615
 newline$ -- 177
-num.names$ -- 135
-pop$ -- 874
+num.names$ -- 165
+pop$ -- 864
 preamble$ -- 1
-purify$ -- 136
+purify$ -- 138
 quote$ -- 0
-skip$ -- 3589
+skip$ -- 3544
 stack$ -- 1
-substring$ -- 1285
-swap$ -- 853
-text.length$ -- 26
+substring$ -- 1512
+swap$ -- 956
+text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 41
-warning$ -- 14
-while$ -- 214
+type$ -- 7
+warning$ -- 0
+while$ -- 257
 width$ -- 0
-write$ -- 514
-(There was 1 error message)
+write$ -- 538

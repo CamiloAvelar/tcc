@@ -5,31 +5,31 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v<VERSION> }
 
-\bibitem[{Almeida Costa}]{AlmeidaCosta}
-\abntrefinfo{{Almeida Costa}}{{Almeida Costa}}{}
+\bibitem[{Almeida Costa} 2018]{AlmeidaCosta}
+\abntrefinfo{{Almeida Costa}}{{Almeida Costa}}{2018}
 {{Almeida Costa}, R. \emph{{Instituto Polit{\'{e}}cnico de Viseu}}.
-[S.l.].}
+[S.l.], 2018.}
 
-\bibitem[{Alves Da Silva} e {Gomes De Santana}]{AlvesDaSilva}
-\abntrefinfo{{Alves Da Silva} e {Gomes De Santana}}{{Alves Da Silva}; {Gomes De
-  Santana}}{}
-{{Alves Da Silva}, M.; {Gomes De Santana}, C. \emph{{REUSO DE {\'{A}}GUA:
+\bibitem[{Alves da Silva} e {Gomes de Santana} 2014]{AlvesDaSilva}
+\abntrefinfo{{Alves da Silva} e {Gomes de Santana}}{{Alves da Silva}; {Gomes de
+  Santana}}{2014}
+{{Alves da Silva}, M.; {Gomes de Santana}, C. \emph{{REUSO DE {\'{A}}GUA:
   possibilidades de redu{\c{c}}{\~{a}}o do desperd{\'{i}}cio nas atividades
   dom{\'{e}}sticas}}.
-[S.l.]. Dispon{\'\i}vel em:
+[S.l.], 2014. Dispon{\'\i}vel em:
   $<$https:\-/\-/www\-.tratamentodeagua\-.com\-.br\-/wp-content\-/uploads\-/2016\-/05\-/REUSO-DE-{{\textbackslash}'{A}}GUA-possibilidades-de-redu{{\textbackslash}c{c}}{{\textbackslash}\~{}{a}}o-do-desperd{{\textbackslash}'{i}}cio-nas-a$>$.}
 
-\bibitem[Blog Masterwalker]{teclado-matricial-1}
-\abntrefinfo{Blog\ldots}{BLOG\ldots}{}
-{BLOG Masterwalker.
-  \url{http://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-teclado-matricial-de-membrana-4x4/}.
-Accessed: 2019-06-02.}
-
-\bibitem[Boscarioli et al.]{bancosrelacionais}
-\abntrefinfo{Boscarioli et al.}{BOSCARIOLI et al.}{}
+\bibitem[Boscarioli et al. 2006]{bancosrelacionais}
+\abntrefinfo{Boscarioli et al.}{BOSCARIOLI et al.}{2006}
 {BOSCARIOLI, C. et al. \emph{{Uma reflex{\~{a}}o sobre Banco de Dados
   Orientados a Objetos}}.
-[S.l.].}
+[S.l.], 2006.}
+
+\bibitem[Chang et al. 2017]{chang2017kubernetes}
+\abntrefinfo{Chang et al.}{CHANG et al.}{2017}
+{CHANG, C.-C. et al. A kubernetes-based monitoring platform for dynamic cloud
+  resource provisioning. In:  IEEE. \emph{GLOBECOM 2017-2017 IEEE Global
+  Communications Conference}. [S.l.], 2017. p.~1--6.}
 
 \bibitem[Chase e Almeida 2007]{chase2007sistemas}
 \abntrefinfo{Chase e Almeida}{CHASE; ALMEIDA}{2007}
@@ -49,11 +49,12 @@ Accessed: 2019-06-02.}
   {\'{A}}GUA EM}.
 2007. v.~3, p.~0--5, 2007.}
 
-\bibitem[FERREIRA, HEROSO e ZALESKI]{ferreirasistema}
-\abntrefinfo{FERREIRA, HEROSO e ZALESKI}{FERREIRA; HEROSO; ZALESKI}{}
+\bibitem[Ferreira, Heroso e Zaleski 2014]{ferreirasistema}
+\abntrefinfo{Ferreira, Heroso e Zaleski}{FERREIRA; HEROSO; ZALESKI}{2014}
 {FERREIRA, H.~S.; HEROSO, L.~F.; ZALESKI, R.~H. Sistema de monitoramento de
   consumo de {\'a}gua dom{\'e}stico com a utiliza{\c{c}}{\~a}o de um
-  hidr{\^o}metro digital.}
+  hidr{\^o}metro digital.
+2014. 2014.}
 
 \bibitem[Forty 2007]{forty2007objetos}
 \abntrefinfo{Forty}{FORTY}{2007}
@@ -66,17 +67,6 @@ Accessed: 2019-06-02.}
 \emph{IEEE Vehicular Technology Conference}, 2018. IEEE, v. 2018-June, p.~1--5,
   2018.
 ISSN 15502252.}
-
-\bibitem[Hivemq]{mqtt-ibm}
-\abntrefinfo{Hivemq}{HIVEMQ}{}
-{HIVEMQ. \url{http://www.hivemq.com/blog/
-  mqtt-essentials-part-1-introducing-mqtt}.
-Accessed: 2019-05-26.}
-
-\bibitem[Home Assistant]{githubhomeassistant}
-\abntrefinfo{Home\ldots}{HOME\ldots}{}
-{HOME Assistant. \url{https://github.com/home-assistant/home-assistant}.
-Accessed: 2019-05-26.}
 
 \bibitem[J{\'u}nior, Ar{\^e}as e Sena 2017]{ms2017automaccao}
 \abntrefinfo{J{\'u}nior, Ar{\^e}as e Sena}{J{\'U}NIOR; AR{\^E}AS; SENA}{2017}
@@ -91,10 +81,16 @@ Accessed: 2019-05-26.}
 \emph{IEEE Region 10 Humanitarian Technology Conference 2016, R10-HTC 2016 -
   Proceedings}, 2017. IEEE, p.~1--5, 2017.}
 
-\bibitem[Light]{Light}
-\abntrefinfo{Light}{LIGHT}{}
+\bibitem[Laboratory 2018]{embeddedmqtt}
+\abntrefinfo{Laboratory}{LABORATORY}{2018}
+{LABORATORY, E. \emph{Getting Started with MQTT using Mosquitto}. 2018.
+  \url{http://embeddedlaboratory.blogspot.com/2018/01/getting-started-with-mqtt-using.html}.}
+
+\bibitem[Light 2017]{Light}
+\abntrefinfo{Light}{LIGHT}{2017}
 {LIGHT, R.~A. {Mosquitto: server and client implementation of the MQTT
   protocol}.
+2017. 2017.
 Dispon{\'\i}vel em:
   $<$https:\-/\-/www\-.theoj\-.org\-/joss-papers\-/joss\-.00265\-/10\-.21105\-.joss\-.00265\-.pdf$>$.}
 
@@ -111,44 +107,32 @@ Dispon{\'\i}vel em:
 \emph{Uma abordagem com o Microcontrolador PIC 16F84. Editora Novatec Ltda,
   1{\textordfeminine} edi{\c{c}}{\~a}o}, 2005. 2005.}
 
-\bibitem[{Moskovskii gosudarstvennyi universitet im. M.V. Lomonosova. Open
-  Information Technologies Lab} e Sneps-Sneppe 2014]{ms1}
-\abntrefinfo{{Moskovskii gosudarstvennyi universitet im. M.V. Lomonosova. Open
-  Information Technologies Lab} e Sneps-Sneppe}{{Moskovskii gosudarstvennyi
-  universitet im. M.V. Lomonosova. Open Information Technologies Lab};
-  SNEPS-SNEPPE}{2014}
-{{Moskovskii gosudarstvennyi universitet im. M.V. Lomonosova. Open Information
-  Technologies Lab}, D.; SNEPS-SNEPPE, M. \emph{{International journal of open
-  information technologies.}} [S.l.: s.n.], 2014. 24--27~p.
-ISSN 2307-8162.}
-
-\bibitem[Mqtt v3.1 protocol specification]{mqtt1}
-\abntrefinfo{Mqtt\ldots}{MQTT\ldots}{a}
-{MQTT v3.1 protocol specification. \url{http://public.dhe.
-  ibm.com/software/dw/webservices/ws-mqtt/mqtt-v3r1.html}.
-Accessed: 2019-05-26.}
-
-\bibitem[Mqtt version 3.1.1 becomes an oasis standard]{mqtt-oasis}
-\abntrefinfo{Mqtt\ldots}{MQTT\ldots}{b}
-{MQTT version 3.1.1 becomes an oasis standard.
-  \url{https://www.oasis-open.org/news/announcements/
-  mqtt-version-3-1-1-becomes-an-oasis-standard}.
-Accessed: 2019-05-26.}
+\bibitem[Namiot e Sneps-Sneppe 2014]{ms1}
+\abntrefinfo{Namiot e Sneps-Sneppe}{NAMIOT; SNEPS-SNEPPE}{2014}
+{NAMIOT, D.; SNEPS-SNEPPE, M. On micro-services architecture.
+\emph{International Journal of Open Information Technologies}, 2014. v.~2,
+  n.~9, p. 24--27, 2014.}
 
 \bibitem[Noor et al. 2017]{Noor2017}
 \abntrefinfo{Noor et al.}{NOOR et al.}{2017}
 {NOOR, S. et al. \emph{{Time Series Databases and InfluxDB}}.
 [S.l.], 2017.}
 
+\bibitem[Oliveira 2018]{teclado-matricial-1}
+\abntrefinfo{Oliveira}{OLIVEIRA}{2018}
+{OLIVEIRA, E. \emph{Blog Masterwalker}. 2018.
+  \url{http://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-teclado-matricial-de-membrana-4x4/}.
+Accessed: 2019-06-02.}
+
 \bibitem[Oliveira 2017]{de2017internet}
 \abntrefinfo{Oliveira}{OLIVEIRA}{2017}
 {OLIVEIRA, S. de. \emph{Internet das Coisas com ESP8266, Arduino e Raspberry
   Pi}. [S.l.]: Novatec Editora, 2017.}
 
-\bibitem[Pahl e Jamshidi]{Pahl}
-\abntrefinfo{Pahl e Jamshidi}{PAHL; JAMSHIDI}{}
+\bibitem[Pahl e Jamshidi 2016]{Pahl}
+\abntrefinfo{Pahl e Jamshidi}{PAHL; JAMSHIDI}{2016}
 {PAHL, C.; JAMSHIDI, P. \emph{{Microservices: A Systematic Mapping Study}}.
-  [S.l.: s.n.].
+  [S.l.: s.n.], 2016.
 ISBN 9789897581823.}
 
 \bibitem[Perumal, Sulaiman e Leong 2016]{Perumal2016}
@@ -158,11 +142,20 @@ ISBN 9789897581823.}
 \emph{2015 IEEE 4th Global Conference on Consumer Electronics, GCCE 2015},
   2016. IEEE, p. 86--87, 2016.}
 
-\bibitem[Portal Vida de Silício]{teclado-matricial}
-\abntrefinfo{Portal\ldots}{PORTAL\ldots}{}
-{PORTAL Vida de Silício.
+\bibitem[Picoreti 2017]{teclado-matricial}
+\abntrefinfo{Picoreti}{PICORETI}{2017}
+{PICORETI, R. \emph{Portal Vida de Silício}. 2017.
   \url{https://portal.vidadesilicio.com.br/teclado-matricial-e-multiplexacao/}.
 Accessed: 2019-06-02.}
+
+\bibitem[Pietro Antony~Martin 2016]{DiPietro}
+\abntrefinfo{Pietro Antony~Martin}{PIETRO ANTONY~MARTIN}{2016}
+{PIETRO ANTONY~MARTIN, T.~C. R.~D. {To Docker or Not to Docker: A Security
+  Perspective Blockchain View project Virtualization Security View project To
+  Docker or not to Docker: a security perspective}.
+2016. 2016.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/www\-.researchgate\-.net\-/publication\-/309965523$>$.}
 
 \bibitem[Rebou{\c{c}}as 2003]{rebouccas2003agua}
 \abntrefinfo{Rebou{\c{c}}as}{REBOU{\c{C}}AS}{2003}
@@ -210,17 +203,22 @@ ISSN 14248220.}
 \emph{IEEE Internet Computing}, 2010. v.~14, n.~6, p. 80--83, 2010.
 ISSN 10897801.}
 
-\bibitem[{Varela De Souza} et al.]{VarelaDeSouza}
-\abntrefinfo{{Varela De Souza} et al.}{{Varela De Souza} et al.}{}
+\bibitem[{Varela De Souza} et al. 2016]{VarelaDeSouza}
+\abntrefinfo{{Varela De Souza} et al.}{{Varela De Souza} et al.}{2016}
 {{Varela De Souza}, M. et al. \emph{{UNIVERSIDADE FEDERAL DO RIO GRANDE DO
   NORTE INSTITUTO METR{\'{O}}POLE DIGITAL P{\'{O}}S-GRADUA{\c{C}}{\~{A}}O EM
   ENGENHARIA DE SOFTWARE Dom{\'{o}}tica de baixo custo usando princ{\'{i}}pios
   de IoT}}.
-[S.l.].}
+[S.l.], 2016.}
 
-\bibitem[Água e consumo consciente.]{aguaconsumo}
-\abntrefinfo{Água\ldots}{ÁGUA\ldots}{}
-{ÁGUA e consumo consciente.
+\bibitem[Vertigo 2018]{msmisc}
+\abntrefinfo{Vertigo}{VERTIGO}{2018}
+{VERTIGO. \emph{O que são microsserviços}. 2018.
+  \url{https://vertigo.com.br/o-que-sao-microsservicos/}.}
+
+\bibitem[Água e consumo consciente. 2018]{aguaconsumo}
+\abntrefinfo{Água\ldots}{ÁGUA\ldots}{2018}
+{ÁGUA e consumo consciente. 2018.
   \url{http://www.brasil.gov.br/noticias/educacao-e-ciencia/2010/10/agua-e-consumo-consciente}.
 Accessed: 2018-12-05.}
 
