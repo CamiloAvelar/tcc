@@ -1,7 +1,7 @@
 \babel@toc {brazil}{}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1}{\ignorespaces Diferen\IeC {\c c}a entre microprocessador de microcontrolador}}{14}{figure.2.1}
+\contentsline {figure}{\numberline {1}{\ignorespaces Arquitetura b\IeC {\'a}sica de microprocessadores e microcontroladores}}{14}{figure.2.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces ESP8266}}{15}{figure.2.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces RaspberryPi}}{15}{figure.2.3}
 \contentsline {figure}{\numberline {4}{\ignorespaces Sensor de fluxo de \IeC {\'a}gua YF-S201}}{16}{figure.2.4}
@@ -13,40 +13,27 @@
 \contentsline {figure}{\numberline {10}{\ignorespaces Exemplo arquitetura de microsservi\IeC {\c c}os}}{22}{figure.2.10}
 \contentsline {figure}{\numberline {11}{\ignorespaces Exemplo da arquitetura do MQTT}}{24}{figure.2.11}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo configura\IeC {\c c}\IeC {\~a}o \textit {headless}}}{27}{figure.3.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Exemplo configura\IeC {\c c}\IeC {\~a}o do IP est\IeC {\'a}tico}}{27}{figure.3.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Modelo Entidade Relacionamento do PostgreSQL}}{28}{figure.3.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces C\IeC {\'o}digo de configura\IeC {\c c}\IeC {\~a}o do InfluxDB}}{30}{figure.3.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Divis\IeC {\~a}o dos arquivos do Sistema de Usu\IeC {\'a}rios}}{31}{figure.3.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces P\IeC {\'a}gina inicial do \textit {balenaEtcher}}}{33}{figure.3.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces P\IeC {\'a}gina inicial do HomeAssistant}}{33}{figure.3.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces P\IeC {\'a}gina inicial do Grafana}}{35}{figure.3.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Configura\IeC {\c c}\IeC {\~a}o do gr\IeC {\'a}fico no Grafana}}{36}{figure.3.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Exemplo de \textit {Dockerfile} do Sistema de Usu\IeC {\'a}rios}}{36}{figure.3.21}
+\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de configura\IeC {\c c}\IeC {\~a}o \textit {headless}}}{27}{figure.3.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Exemplo de configura\IeC {\c c}\IeC {\~a}o do IP est\IeC {\'a}tico}}{27}{figure.3.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Modelo Entidade Relacionamento do PostgreSQL}}{29}{figure.3.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Divis\IeC {\~a}o dos arquivos do Sistema de Usu\IeC {\'a}rios}}{31}{figure.3.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Exemplo do sistema de simula\IeC {\c c}\IeC {\~a}o}}{33}{figure.3.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces P\IeC {\'a}gina inicial do HomeAssistant acessado por um cliente conectado na mesma rede local do servidor Hassbian}}{34}{figure.3.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces P\IeC {\'a}gina inicial do Grafana}}{35}{figure.3.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Configura\IeC {\c c}\IeC {\~a}o do gr\IeC {\'a}fico no Grafana}}{36}{figure.3.19}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {22}{\ignorespaces Cadastro de usu\IeC {\'a}rios}}{38}{figure.4.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Edi\IeC {\c c}\IeC {\~a}o de tempo permitido do usu\IeC {\'a}rio}}{39}{figure.4.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Edi\IeC {\c c}\IeC {\~a}o de senha do usu\IeC {\'a}rio}}{39}{figure.4.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Adicionando banhos ao usu\IeC {\'a}rio}}{40}{figure.4.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Recuperar dados do usu\IeC {\'a}rio}}{40}{figure.4.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces Recuperar dados de banhos do usu\IeC {\'a}rio}}{41}{figure.4.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Exemplo de usu\IeC {\'a}rio n\IeC {\~a}o autorizado}}{41}{figure.4.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Exemplo de usu\IeC {\'a}rio autorizado}}{42}{figure.4.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces Exemplo do gr\IeC {\'a}fico no Grafana para usu\IeC {\'a}rios diferentes}}{42}{figure.4.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces Exemplo do sensor no HomeAssistant quando ligado}}{43}{figure.4.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces Exemplo do sensor no HomeAssistant quando desligado}}{43}{figure.4.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces Exemplo de um novo sensor quando novo usu\IeC {\'a}rio cadastrado}}{44}{figure.4.33}
+\contentsline {figure}{\numberline {20}{\ignorespaces Cadastro de usu\IeC {\'a}rios}}{38}{figure.4.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Edi\IeC {\c c}\IeC {\~a}o de tempo permitido do usu\IeC {\'a}rio}}{39}{figure.4.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Edi\IeC {\c c}\IeC {\~a}o de senha do usu\IeC {\'a}rio}}{40}{figure.4.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Adicionando banhos ao usu\IeC {\'a}rio}}{40}{figure.4.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Recuperar dados do usu\IeC {\'a}rio}}{41}{figure.4.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Recuperar dados de banhos do usu\IeC {\'a}rio}}{41}{figure.4.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Exemplo de usu\IeC {\'a}rio n\IeC {\~a}o autorizado}}{42}{figure.4.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces Exemplo de usu\IeC {\'a}rio autorizado}}{42}{figure.4.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Exemplo do gr\IeC {\'a}fico no Grafana para usu\IeC {\'a}rios diferentes}}{43}{figure.4.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Exemplo do sensor no HomeAssistant quando ligado}}{43}{figure.4.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Exemplo do sensor no HomeAssistant quando desligado}}{44}{figure.4.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Exemplo de um novo sensor quando um novo usu\IeC {\'a}rio \IeC {\'e} cadastrado}}{44}{figure.4.31}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {34}{\ignorespaces C\IeC {\'o}digo para criar usu\IeC {\'a}rio}}{50}{figure.A.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces C\IeC {\'o}digo para editar senha do usu\IeC {\'a}rio}}{51}{figure.A.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces C\IeC {\'o}digo para editar tempo do usu\IeC {\'a}rio}}{52}{figure.A.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces C\IeC {\'o}digo para autorizar usu\IeC {\'a}rio}}{53}{figure.A.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces C\IeC {\'o}digo para cadastrar banho do usu\IeC {\'a}rio}}{54}{figure.A.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces C\IeC {\'o}digo para recuperar usu\IeC {\'a}rios}}{55}{figure.A.39}
-\addvspace {10pt}
-\contentsline {figure}{\numberline {40}{\ignorespaces C\IeC {\'o}digo para comunica\IeC {\c c}\IeC {\~a}o mqtt}}{56}{figure.B.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces C\IeC {\'o}digo que lida com o tempo do banho}}{57}{figure.B.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces C\IeC {\'o}digo que lida com as teclas apertadas no teclado num\IeC {\'e}rico}}{58}{figure.B.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces C\IeC {\'o}digo que lida com a comunica\IeC {\c c}\IeC {\~a}o com o InfluxDB}}{59}{figure.B.43}
 \addvspace {10pt}

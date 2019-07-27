@@ -1,14 +1,14 @@
 \chapter{Experimentos e Resultados}
 
-Neste Capítulo encontram-se os experimentos realizados com os sistemas devidamente implementados e configurados. Discutiremos os resultados obtidos, testando os sistemas com todas as suas funcionalidades, como criar e editar usuários, mudar a senha, autenticar, adicionar banhos, visualizar o gráfico dos dados do sensor em tempo real via Grafana e o estado do atuador via HomeAssistant.
+Neste Capítulo encontram-se os experimentos realizados com os sistemas devidamente implementados e configurados. Discutiremos os resultados obtidos, testando os sistemas com todas as suas funcionalidades.
 
 \section{Manipulação de usuários}
 
-O projeto de usuários utiliza a porta 3001, para utiliza-lo e testa-lo, devemos utilizar esta porta juntamente com os \textit{endpoints} disponíveis. Aqui realizaremos as consultas em todos estes \textit{endpoints} e discutiremos os resultados obtidos.
+O projeto de usuários utiliza a porta 3001. Para utiliza-lo e testa-lo, devemos utilizar esta porta juntamente com os \textit{endpoints} disponíveis. Aqui realizaremos as consultas em todos estes \textit{endpoints} e discutiremos os resultados obtidos.
 
-Para criar um usuário devemos consumir o \textit{endpoint} http://localhost:3001/usuario/cadastrar passando os parâmetros via \textit{POST} no formato \textit{JSON}, como na Figura \ref{fig:cadastro}.
+Para criar um usuário devemos consumir\footnote{O termo "consumir um \textit{endpoint}"\  significa enviar informações para o \textit{endpoint}, esperando algum retorno, de sucesso ou falha.} o \textit{endpoint} http://localhost:3001/usuario/cadastrar passando os parâmetros via \textit{POST} no formato \textit{JSON}, como na Figura \ref{fig:cadastro}.
 
-A resposta deste \textit{endpoint} pode ser conferida na Figura \ref{fig:cadastro}, e, para garantir que o usuário foi incluído no banco de dados, podemos observar a Figura \ref{fig:cadastro}.
+A resposta deste \textit{endpoint} pode ser conferida na Figura \ref{fig:cadastro}, e para garantir que o usuário foi incluído no banco de dados, podemos observar a Figura \ref{fig:cadastro}.
 
 \begin{figure}[htbp]
 	\centering
@@ -16,6 +16,8 @@ A resposta deste \textit{endpoint} pode ser conferida na Figura \ref{fig:cadastr
 	\caption{Cadastro de usuários}
 	\label{fig:cadastro}
 \end{figure}
+
+\clearpage
 
 Para editar um usuário, o \textit{endpoint} http://localhost:3001/usuario/editar-tempo, para editar tempo, e o http://localhost:3001/usuario/editar-senha para editar a senha, deve ser consumido passando os parâmetros via \textit{POST} como na Figura \ref{fig:tempo}, para editar o tempo, e a imagem, para editar a senha.
 
@@ -44,7 +46,7 @@ Conseguimos cadastrar um banho ao consumir o \textit{endpoint} http://localhost:
 	\label{fig:banho}
 \end{figure}
 
-Para recuperar as informações de um usuário, basta consumir o \textit{endpoint} http://localhost:3001/usuario/idDoUsuario, com o método \textit{GET}, obtendo o resultado da Figura \ref{fig:usuario}.
+Para recuperar as informações de um usuário, basta consumir o \textit{endpoint} \break http://localhost:3001/usuario/idDoUsuario, com o método \textit{GET}, obtendo o resultado da Figura \ref{fig:usuario}.
 
 \begin{figure}[htbp]
 	\centering
@@ -62,7 +64,7 @@ Conseguimos as informações de todos os banhos dos usuários consumindo o \text
 	\label{fig:banhos}
 \end{figure}
 
-Finalmente, podemos autenticar os usuários enviando via \textit{POST} os parâmetros para o \textit{endpoint} http://localhost:3001/usuario/autorizar, como a imagem x, obtendo como resposta a Figura \ref{fig:allowedtrue}, para usuário autenticado, e Figura \ref{fig:allowedfalse}, para usuário não autenticado, caso a senha esteja errada.
+Finalmente, podemos autenticar os usuários enviando via \textit{POST} os parâmetros para o \textit{endpoint} http://localhost:3001/usuario/autorizar, obtendo como resposta a Figura \ref{fig:allowedtrue}, para usuário autenticado, e Figura \ref{fig:allowedfalse}, para usuário não autenticado, caso a senha esteja errada.
 
 \begin{figure}[htbp]
 	\centering
@@ -80,7 +82,7 @@ Finalmente, podemos autenticar os usuários enviando via \textit{POST} os parâm
 
 \section{Visualização via Grafana}
 
-Ao autenticar um usuário, o atuador é ativado e o sensor de fluxo inicia a medição do fluxo, que é automaticamente enviado para o InfluxDB, e pode ser visualizado via Grafana, os gráficos do grafana podem ser acessados via http://localhost:3003, como na Figura \ref{fig:grafanahome}.
+Ao autenticar um usuário, o atuador é ativado e o sensor YF-S201 inicia a medição do fluxo, que é automaticamente enviado para o InfluxDB, podendo ser visualizado via Grafana. Os gráficos do grafana podem ser acessados via http://localhost:3003, como na Figura \ref{fig:grafanahome}.
 
 Pode ser observado na Figura \ref{fig:grafana-graph} um gráfico do fluxo medido pelo sensor no horário de 09h30m até 09h35m, por dois usuários diferentes.
 
@@ -93,7 +95,7 @@ Pode ser observado na Figura \ref{fig:grafana-graph} um gráfico do fluxo medido
 
 \section{Estado do atuador via HomeAssistant}
 
-O HomeAssistant é acessado via http://localhost:8123, ao acessar o link, observamos os estado dos sensores dos usuários cadastrado na Figura \ref{fig:homeassistant-off}, que encontram-se em estado \textit{OFF}. Ao digitar corretamente a senha, o estado do sensor muda para \textit{ON}, como observado na Figura \ref{fig:homeassistant-on}.
+O HomeAssistant é acessado via http://localhost:8123. Ao acessar o link, observamos os estado dos sensores dos usuários cadastrado na Figura \ref{fig:homeassistant-off}, que encontram-se em estado desligado. Ao digitar corretamente a senha, o estado do sensor muda para ligado, como observado na Figura \ref{fig:homeassistant-on}.
 
 \begin{figure}[htbp]
 	\centering
@@ -114,7 +116,7 @@ Ao cadastrar um usuário, o seu sensor é inserido no HomeAssistant automaticame
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\linewidth]{figuras/homeassistantnewuser.png}
-	\caption{Exemplo de um novo sensor quando novo usuário cadastrado}
+	\caption{Exemplo de um novo sensor quando um novo usuário é cadastrado}
 	\label{fig:homeassistant-new}
 \end{figure}
 

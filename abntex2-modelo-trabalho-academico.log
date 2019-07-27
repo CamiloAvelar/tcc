@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  24 JUL 2019 13:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  27 JUL 2019 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1085,8 +1085,8 @@ LaTeX Info: Redefining \newblock on input line 643.
 LaTeX Info: Redefining \cite on input line 670.
 \ABCItoken=\toks28
 )
-Package color Info: Redefining color blue on input line 124.
-Package hyperref Info: Option `colorlinks' set `true' on input line 141.
+Package color Info: Redefining color blue on input line 163.
+Package hyperref Info: Option `colorlinks' set `true' on input line 180.
 \abntex2-modelo-trabalho-academico@idxfile=\write4
 \openout4 = `abntex2-modelo-trabalho-academico.idx'.
 
@@ -1099,26 +1099,26 @@ Writing index file abntex2-modelo-trabalho-academico.idx
 (./capitulos/capitulo-apendice1e2.aux))
 \openout1 = `abntex2-modelo-trabalho-academico.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 164.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 203.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring ON on input line 164.
+Package hyperref Info: Link coloring ON on input line 203.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1129,13 +1129,13 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 164.
-LaTeX Info: Redefining \ref on input line 164.
-LaTeX Info: Redefining \pageref on input line 164.
-LaTeX Info: Redefining \nameref on input line 164.
+LaTeX Info: Redefining \nameref on input line 203.
+LaTeX Info: Redefining \ref on input line 203.
+LaTeX Info: Redefining \pageref on input line 203.
+LaTeX Info: Redefining \nameref on input line 203.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 164.
+(lastpage)             ! on input line 203.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count189
@@ -1166,7 +1166,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 164.
+LaTeX Info: Redefining \microtypecontext on input line 203.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1182,47 +1182,47 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \c@lstlisting=\count266
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 177.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 216.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 177.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 216.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 177
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 216
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 177
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 216
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 177.
+(Font)              <12> on input line 216.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 177.
+(Font)              <8> on input line 216.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 177.
-<logo-universidade.jpg, id=4, 197.98969pt x 463.7325pt>
+(Font)              <6> on input line 216.
+<logo-universidade.jpg, id=4, 127.22531pt x 301.125pt>
 File: logo-universidade.jpg Graphic file (type jpg)
 <use logo-universidade.jpg>
-Package pdftex.def Info: logo-universidade.jpg  used on input line 177.
-(pdftex.def)             Requested size: 34.22878pt x 80.65907pt.
+Package pdftex.def Info: logo-universidade.jpg  used on input line 216.
+(pdftex.def)             Requested size: 34.22899pt x 80.66156pt.
 <logo-unidade.png, id=5, 194.7275pt x 182.6825pt>
 File: logo-unidade.png Graphic file (type png)
 <use logo-unidade.png>
-Package pdftex.def Info: logo-unidade.png  used on input line 177.
+Package pdftex.def Info: logo-unidade.png  used on input line 216.
 (pdftex.def)             Requested size: 75.94043pt x 70.24796pt.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 177.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 216.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
@@ -1239,64 +1239,69 @@ Package microtype Info: Loading generic protrusion settings for font family
  (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.186 
+l.225 
        [1
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 
-Overfull \hbox (16.44858pt too wide) in paragraph at lines 222--225
+Overfull \hbox (16.44858pt too wide) in paragraph at lines 261--264
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--233
+Underfull \hbox (badness 10000) in paragraph at lines 265--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 236.
+(Font)              <10> on input line 275.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 236.
+(Font)              <7> on input line 275.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 236.
+(Font)              <5> on input line 275.
 [2] [3
 
 ] [4
 
 ] [5
 
-] (./abntex2-modelo-trabalho-academico.lof [6
+] (./abntex2-modelo-trabalho-academico.lof) [6
 
-]) [7] [8
+]
+(./abntex2-modelo-trabalho-academico.lol
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 2.
+) [7
 
+] [8
 
 ]
 (./abntex2-modelo-trabalho-academico.toc [9
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 50.
+(Font)              <14.4> on input line 52.
 ) [10]
 \openout2 = `capitulos/capitulo-introducao.aux'.
 
@@ -1306,13 +1311,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 39.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 40.
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 39.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 40.
  [12]) [13]
 \openout2 = `capitulos/capitulo-materiais-metodos.aux'.
 
@@ -1333,166 +1338,158 @@ Overfull \hbox (5.91887pt too wide) in paragraph at lines 18--19
 
 
  <./figuras/processa-controla.png (PNG copy)>]
-<figuras/esp8266_.jpg, id=334, 523.9575pt x 255.95625pt>
+<figuras/esp8266_.jpg, id=335, 523.9575pt x 255.95625pt>
 File: figuras/esp8266_.jpg Graphic file (type jpg)
 <use figuras/esp8266_.jpg>
 Package pdftex.def Info: figuras/esp8266_.jpg  used on input line 32.
 (pdftex.def)             Requested size: 261.9781pt x 127.9778pt.
-<figuras/raspberrypi.jpg, id=342, 1379.90532pt x 813.0375pt>
+<figuras/raspberrypi.jpg, id=343, 1379.90532pt x 813.0375pt>
 File: figuras/raspberrypi.jpg Graphic file (type jpg)
 <use figuras/raspberrypi.jpg>
 Package pdftex.def Info: figuras/raspberrypi.jpg  used on input line 45.
 (pdftex.def)             Requested size: 275.97618pt x 162.60461pt.
  [15 <./figuras/esp8266_.jpg> <./figuras/raspberrypi.jpg>]
-<figuras/yf-s201.jpg, id=356, 803.0pt x 497.86pt>
+<figuras/yf-s201.jpg, id=357, 803.0pt x 497.86pt>
 File: figuras/yf-s201.jpg Graphic file (type jpg)
 <use figuras/yf-s201.jpg>
-Package pdftex.def Info: figuras/yf-s201.jpg  used on input line 60.
+Package pdftex.def Info: figuras/yf-s201.jpg  used on input line 62.
 (pdftex.def)             Requested size: 240.90186pt x 149.35915pt.
-<figuras/teclado-matricial.jpg, id=362, 459.7175pt x 459.7175pt>
+<figuras/teclado-matricial.jpg, id=363, 459.7175pt x 459.7175pt>
 File: figuras/teclado-matricial.jpg Graphic file (type jpg)
 <use figuras/teclado-matricial.jpg>
-Package pdftex.def Info: figuras/teclado-matricial.jpg  used on input line 71.
+Package pdftex.def Info: figuras/teclado-matricial.jpg  used on input line 73.
 (pdftex.def)             Requested size: 137.9163pt x 137.9163pt.
-<figuras/matrix-1024x558.png, id=368, 770.88pt x 420.57124pt>
+<figuras/matrix-1024x558.png, id=369, 770.88pt x 420.57124pt>
 File: figuras/matrix-1024x558.png Graphic file (type png)
 <use figuras/matrix-1024x558.png>
-Package pdftex.def Info: figuras/matrix-1024x558.png  used on input line 81.
+Package pdftex.def Info: figuras/matrix-1024x558.png  used on input line 83.
 (pdftex.def)             Requested size: 308.34654pt x 168.22551pt.
  [16 <./figuras/yf-s201.jpg>]
-<figuras/keypad-1024x1024-pins.png, id=383, 770.88pt x 770.88pt>
+<figuras/keypad-1024x1024-pins.png, id=384, 770.88pt x 770.88pt>
 File: figuras/keypad-1024x1024-pins.png Graphic file (type png)
 <use figuras/keypad-1024x1024-pins.png>
 Package pdftex.def Info: figuras/keypad-1024x1024-pins.png  used on input line 
-104.
+106.
 (pdftex.def)             Requested size: 231.26578pt x 231.26578pt.
  [17 <./figuras/teclado-matricial.jpg> <./figuras/matrix-1024x558.png>]
-<figuras/valvula-solenoide.jpg, id=396, 1003.75pt x 1003.75pt>
+<figuras/valvula-solenoide.jpg, id=397, 1003.75pt x 1003.75pt>
 File: figuras/valvula-solenoide.jpg Graphic file (type jpg)
 <use figuras/valvula-solenoide.jpg>
-Package pdftex.def Info: figuras/valvula-solenoide.jpg  used on input line 118.
+Package pdftex.def Info: figuras/valvula-solenoide.jpg  used on input line 120.
 
 (pdftex.def)             Requested size: 136.50139pt x 136.49594pt.
  [18 <./figuras/keypad-1024x1024-pins.png> <./figuras/valvula-solenoide.jpg>]
-<figuras/homeassistant-dash.png, id=409, 1099.10625pt x 619.31375pt>
+<figuras/homeassistant-dash.png, id=410, 1099.10625pt x 619.31375pt>
 File: figuras/homeassistant-dash.png Graphic file (type png)
 <use figuras/homeassistant-dash.png>
-Package pdftex.def Info: figuras/homeassistant-dash.png  used on input line 136
+Package pdftex.def Info: figuras/homeassistant-dash.png  used on input line 140
 .
 (pdftex.def)             Requested size: 455.0pt x 256.37727pt.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 145.
+ [19 <./figuras/homeassistant-dash.png>] [20] [21]
+<figuras/Microservice_Architecture.png, id=471, 541.02126pt x 371.3875pt>
+File: figuras/Microservice_Architecture.png Graphic file (type png)
+<use figuras/Microservice_Architecture.png>
+Package pdftex.def Info: figuras/Microservice_Architecture.png  used on input l
+ine 205.
+(pdftex.def)             Requested size: 455.0pt x 312.34871pt.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 217.
 
-
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [19 <./figuras/homeassistant-dash.png>] [20] [21]
-<figuras/Microservice_Architecture.png, id=472, 541.02126pt x 371.3875pt>
-File: figuras/Microservice_Architecture.png Graphic file (type png)
-<use figuras/Microservice_Architecture.png>
-Package pdftex.def Info: figuras/Microservice_Architecture.png  used on input l
-ine 201.
-(pdftex.def)             Requested size: 455.0pt x 312.34871pt.
  [22 <./figuras/Microservice_Architecture.png>]
-Overfull \hbox (38.48459pt too wide) in paragraph at lines 215--215
+Overfull \hbox (38.48459pt too wide) in paragraph at lines 219--219
  [] [] [][][][]$\T1/lmtt/m/n/10 https : / / www . oasis-[]open . org / news / a
 nnouncements / mqtt-[]version-[]3-[]1-[]1-[]becomes-[]an-[]oasis-[]standard$[][
 ]| 
  []
 
-<figuras/mqtt-architecture.png, id=496, 933.4875pt x 498.86375pt>
+<figuras/mqtt-architecture.png, id=494, 933.4875pt x 498.86375pt>
 File: figuras/mqtt-architecture.png Graphic file (type png)
 <use figuras/mqtt-architecture.png>
-Package pdftex.def Info: figuras/mqtt-architecture.png  used on input line 221.
+Package pdftex.def Info: figuras/mqtt-architecture.png  used on input line 225.
 
 (pdftex.def)             Requested size: 455.0pt x 243.15894pt.
-[23] [24 <./figuras/mqtt-architecture.png>]) [25]
+[23]) [24 <./figuras/mqtt-architecture.png>]
 \openout2 = `capitulos/capitulo-metodologia.aux'.
 
 
-(./capitulos/capitulo-metodologia.tex
-<figuras/headless.png, id=540, 365.365pt x 152.57pt>
+(./capitulos/capitulo-metodologia.tex [25
+
+
+
+] [26]
+<figuras/headless.png, id=542, 365.365pt x 152.57pt>
 File: figuras/headless.png Graphic file (type png)
 <use figuras/headless.png>
-Package pdftex.def Info: figuras/headless.png  used on input line 21.
+Package pdftex.def Info: figuras/headless.png  used on input line 55.
 (pdftex.def)             Requested size: 273.00278pt x 114.00584pt.
-<figuras/rpiip.png, id=541, 313.17pt x 120.45pt>
+<figuras/rpiip.png, id=543, 313.17pt x 120.45pt>
 File: figuras/rpiip.png Graphic file (type png)
 <use figuras/rpiip.png>
-Package pdftex.def Info: figuras/rpiip.png  used on input line 28.
+Package pdftex.def Info: figuras/rpiip.png  used on input line 62.
 (pdftex.def)             Requested size: 273.00278pt x 105.00383pt.
- [26
-
-
-
-] [27 <./figuras/headless.png (PNG copy)> <./figuras/rpiip.png (PNG copy)>]
-<figuras/ERPostgre.png, id=554, 372.39125pt x 261.97874pt>
+ [27 <./figuras/headless.png (PNG copy)> <./figuras/rpiip.png (PNG copy)>]
+<figuras/ERPostgre.png, id=550, 372.39125pt x 261.97874pt>
 File: figuras/ERPostgre.png Graphic file (type png)
 <use figuras/ERPostgre.png>
-Package pdftex.def Info: figuras/ERPostgre.png  used on input line 72.
+Package pdftex.def Info: figuras/ERPostgre.png  used on input line 106.
 (pdftex.def)             Requested size: 273.00278pt x 192.06636pt.
- [28 <./figuras/ERPostgre.png>]
-<figuras/influxconf.png, id=564, 773.89125pt x 923.45pt>
-File: figuras/influxconf.png Graphic file (type png)
-<use figuras/influxconf.png>
-Package pdftex.def Info: figuras/influxconf.png  used on input line 90.
-(pdftex.def)             Requested size: 455.0pt x 542.92853pt.
+ [28]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 129.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 130.
+ [29 <./figuras/ERPostgre.png>]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 99.
-<figuras/cleanarch.png, id=566, 166.6225pt x 549.05125pt>
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 167.
+<figuras/cleanarch.png, id=579, 166.6225pt x 549.05125pt>
 File: figuras/cleanarch.png Graphic file (type png)
 <use figuras/cleanarch.png>
-Package pdftex.def Info: figuras/cleanarch.png  used on input line 107.
+Package pdftex.def Info: figuras/cleanarch.png  used on input line 175.
 (pdftex.def)             Requested size: 113.75pt x 374.8328pt.
- [29]
-[30 <./figuras/influxconf.png (PNG copy)>] [31 <./figuras/cleanarch.png (PNG co
-py)>]
-<figuras/etcher.png, id=583, 803.0pt x 505.89pt>
-File: figuras/etcher.png Graphic file (type png)
-<use figuras/etcher.png>
-Package pdftex.def Info: figuras/etcher.png  used on input line 165.
-(pdftex.def)             Requested size: 227.5pt x 143.3233pt.
-<figuras/homeassistanthome.png, id=585, 950.55125pt x 650.43pt>
+
+[30] [31 <./figuras/cleanarch.png (PNG copy)>] [32]
+<figuras/mockservice.png, id=615, 654.445pt x 458.71375pt>
+File: figuras/mockservice.png Graphic file (type png)
+<use figuras/mockservice.png>
+Package pdftex.def Info: figuras/mockservice.png  used on input line 239.
+(pdftex.def)             Requested size: 273.00278pt x 191.34956pt.
+ [33 <./figuras/mockservice.png (PNG copy)>]
+<figuras/homeassistanthome.png, id=624, 950.55125pt x 650.43pt>
 File: figuras/homeassistanthome.png Graphic file (type png)
 <use figuras/homeassistanthome.png>
-Package pdftex.def Info: figuras/homeassistanthome.png  used on input line 176.
+Package pdftex.def Info: figuras/homeassistanthome.png  used on input line 256.
 
 (pdftex.def)             Requested size: 455.0pt x 311.3394pt.
- [32] [33 <./figuras/etcher.png (PNG copy)> <./figuras/homeassistanthome.png (P
-NG copy)>]
-<figuras/grafanahome.png, id=596, 944.52875pt x 963.6pt>
+ [34 <./figuras/homeassistanthome.png (PNG copy)>]
+<figuras/grafanahome.png, id=631, 944.52875pt x 963.6pt>
 File: figuras/grafanahome.png Graphic file (type png)
 <use figuras/grafanahome.png>
-Package pdftex.def Info: figuras/grafanahome.png  used on input line 194.
+Package pdftex.def Info: figuras/grafanahome.png  used on input line 274.
 (pdftex.def)             Requested size: 455.0pt x 464.19893pt.
-<figuras/grafanaconf.png, id=598, 944.52875pt x 437.635pt>
+ [35 <./figuras/grafanahome.png (PNG copy)>]
+<figuras/grafanaconf.png, id=639, 944.52875pt x 437.635pt>
 File: figuras/grafanaconf.png Graphic file (type png)
 <use figuras/grafanaconf.png>
-Package pdftex.def Info: figuras/grafanaconf.png  used on input line 205.
+Package pdftex.def Info: figuras/grafanaconf.png  used on input line 285.
 (pdftex.def)             Requested size: 455.0pt x 210.82367pt.
- [34]
-<figuras/dockerfile.png, id=604, 437.635pt x 244.915pt>
-File: figuras/dockerfile.png Graphic file (type png)
-<use figuras/dockerfile.png>
-Package pdftex.def Info: figuras/dockerfile.png  used on input line 230.
-(pdftex.def)             Requested size: 318.49861pt x 178.24457pt.
- [35 <./figuras/grafanahome.png (PNG copy)>] [36 <./figuras/grafanaconf.png (PN
-G copy)> <./figuras/dockerfile.png (PNG copy)>]) [37]
+ [36 <./figuras/grafanaconf.png (PNG copy)>])
+[37]
 \openout2 = `capitulos/capitulo-resultados.aux'.
 
-
-(./capitulos/capitulo-resultados.tex
-Overfull \hbox (38.94748pt too wide) in paragraph at lines 9--10
-[]\T1/lmr/m/n/12 (-20) Para criar um usuá-rio de-ve-mos con-su-mir o \T1/lmr/m/
-it/12 (-20) end-point \T1/lmr/m/n/12 (-20) http://localhost:3001/usuario/cadast
-rar
+ (./capitulos/capitulo-resultados.tex
+Overfull \hbox (43.69748pt too wide) in paragraph at lines 9--10
+[]\T1/lmr/m/n/12 (-20) Para criar um usuá-rio de-ve-mos con-su-mir[][][][][] o 
+\T1/lmr/m/it/12 (-20) end-point \T1/lmr/m/n/12 (-20) http://localhost:3001/usua
+rio/cadastrar
  []
 
-<figuras/postman/cadastro.png, id=621, 631.35875pt x 497.86pt>
+<figuras/postman/cadastro.png, id=653, 631.35875pt x 497.86pt>
 File: figuras/postman/cadastro.png Graphic file (type png)
 <use figuras/postman/cadastro.png>
 Package pdftex.def Info: figuras/postman/cadastro.png  used on input line 15.
@@ -1502,96 +1499,89 @@ Package pdftex.def Info: figuras/postman/cadastro.png  used on input line 15.
 
 
  <./figuras/postman/cadastro.png (PNG copy)>]
-<figuras/postman/time.png, id=629, 628.3475pt x 497.86pt>
+<figuras/postman/time.png, id=662, 628.3475pt x 497.86pt>
 File: figuras/postman/time.png Graphic file (type png)
 <use figuras/postman/time.png>
-Package pdftex.def Info: figuras/postman/time.png  used on input line 26.
+Package pdftex.def Info: figuras/postman/time.png  used on input line 28.
 (pdftex.def)             Requested size: 318.49861pt x 252.3555pt.
-<figuras/postman/password.png, id=630, 619.31375pt x 513.92pt>
+<figuras/postman/password.png, id=663, 619.31375pt x 513.92pt>
 File: figuras/postman/password.png Graphic file (type png)
 <use figuras/postman/password.png>
-Package pdftex.def Info: figuras/postman/password.png  used on input line 33.
+Package pdftex.def Info: figuras/postman/password.png  used on input line 35.
 (pdftex.def)             Requested size: 318.49861pt x 264.3071pt.
 
-Overfull \hbox (9.85574pt too wide) in paragraph at lines 38--39
+Overfull \hbox (9.85574pt too wide) in paragraph at lines 40--41
 []\T1/lmr/m/n/12 (-20) Conseguimos ca-das-trar um ba-nho ao con-su-mir o \T1/lm
 r/m/it/12 (-20) end-point \T1/lmr/m/n/12 (-20) http://localhost:3001/banho
  []
 
-[39 <./figuras/postman/time.png (PNG copy)> <./figuras/postman/password.png (PN
-G copy)>]
-<figuras/postman/bathsinclude.png, id=636, 629.35126pt x 557.08125pt>
+<figuras/postman/bathsinclude.png, id=665, 629.35126pt x 557.08125pt>
 File: figuras/postman/bathsinclude.png Graphic file (type png)
 <use figuras/postman/bathsinclude.png>
 Package pdftex.def Info: figuras/postman/bathsinclude.png  used on input line 4
-2.
+4.
 (pdftex.def)             Requested size: 318.49861pt x 281.92308pt.
-
-Overfull \hbox (158.58365pt too wide) in paragraph at lines 47--48
-[]\T1/lmr/m/n/12 (-20) Para re-cu-pe-rar as in-for-ma-ções de um usuá-rio, bast
-a con-su-mir o \T1/lmr/m/it/12 (-20) end-point \T1/lmr/m/n/12 (-20) http://loca
-lhost:3001/usuario/idDoUsuario,
- []
-
-<figuras/postman/getuser.png, id=638, 630.355pt x 363.3575pt>
+<figuras/postman/getuser.png, id=667, 630.355pt x 363.3575pt>
 File: figuras/postman/getuser.png Graphic file (type png)
 <use figuras/postman/getuser.png>
-Package pdftex.def Info: figuras/postman/getuser.png  used on input line 51.
+Package pdftex.def Info: figuras/postman/getuser.png  used on input line 53.
 (pdftex.def)             Requested size: 318.49861pt x 183.59111pt.
-<figuras/postman/getbanhos.png, id=640, 630.355pt x 520.94624pt>
+<figuras/postman/getbanhos.png, id=669, 630.355pt x 520.94624pt>
 File: figuras/postman/getbanhos.png Graphic file (type png)
 <use figuras/postman/getbanhos.png>
-Package pdftex.def Info: figuras/postman/getbanhos.png  used on input line 60.
+Package pdftex.def Info: figuras/postman/getbanhos.png  used on input line 62.
 (pdftex.def)             Requested size: 318.49861pt x 263.21489pt.
-[40 <./figuras/postman/bathsinclude.png (PNG copy)> <./figuras/postman/getuser.
-png (PNG copy)>]
-<figuras/postman/allowedfalse.png, id=647, 630.355pt x 485.815pt>
+<figuras/postman/allowedfalse.png, id=672, 630.355pt x 485.815pt>
 File: figuras/postman/allowedfalse.png Graphic file (type png)
 <use figuras/postman/allowedfalse.png>
-Package pdftex.def Info: figuras/postman/allowedfalse.png  used on input line 6
-9.
+Package pdftex.def Info: figuras/postman/allowedfalse.png  used on input line 7
+1.
 (pdftex.def)             Requested size: 318.49861pt x 245.46436pt.
-<figuras/postman/allowedtrue.png, id=648, 628.3475pt x 502.87875pt>
+<figuras/postman/allowedtrue.png, id=673, 628.3475pt x 502.87875pt>
 File: figuras/postman/allowedtrue.png Graphic file (type png)
 <use figuras/postman/allowedtrue.png>
-Package pdftex.def Info: figuras/postman/allowedtrue.png  used on input line 76
+Package pdftex.def Info: figuras/postman/allowedtrue.png  used on input line 78
 .
 (pdftex.def)             Requested size: 318.49861pt x 254.89941pt.
- [41 <./figuras/postman/getbanhos.png (PNG copy)> <./figuras/postman/allowedfal
-se.png (PNG copy)>]
-<figuras/grafanagraph.png, id=655, 1896.08376pt x 595.22375pt>
+[39
+
+ <./figuras/postman/time.png (PNG copy)>] [40 <./figuras/postman/password.png (
+PNG copy)> <./figuras/postman/bathsinclude.png (PNG copy)>] [41 <./figuras/post
+man/getuser.png (PNG copy)> <./figuras/postman/getbanhos.png (PNG copy)>]
+[42 <./figuras/postman/allowedfalse.png (PNG copy)> <./figuras/postman/allowedt
+rue.png (PNG copy)>]
+<figuras/grafanagraph.png, id=694, 1896.08376pt x 595.22375pt>
 File: figuras/grafanagraph.png Graphic file (type png)
 <use figuras/grafanagraph.png>
-Package pdftex.def Info: figuras/grafanagraph.png  used on input line 89.
+Package pdftex.def Info: figuras/grafanagraph.png  used on input line 91.
 (pdftex.def)             Requested size: 455.0pt x 142.82936pt.
- [42 <./figuras/postman/allowedtrue.png (PNG copy)> <./figuras/grafanagraph.png
- (PNG copy)>]
-<figuras/homeassistanton.png, id=663, 667.49374pt x 477.785pt>
+<figuras/homeassistanton.png, id=697, 667.49374pt x 477.785pt>
 File: figuras/homeassistanton.png Graphic file (type png)
 <use figuras/homeassistanton.png>
-Package pdftex.def Info: figuras/homeassistanton.png  used on input line 100.
+Package pdftex.def Info: figuras/homeassistanton.png  used on input line 102.
 (pdftex.def)             Requested size: 273.00278pt x 195.41924pt.
-<figuras/homeassistantoff.png, id=664, 667.49374pt x 477.785pt>
+<figuras/homeassistantoff.png, id=698, 667.49374pt x 477.785pt>
 File: figuras/homeassistantoff.png Graphic file (type png)
 <use figuras/homeassistantoff.png>
-Package pdftex.def Info: figuras/homeassistantoff.png  used on input line 107.
+Package pdftex.def Info: figuras/homeassistantoff.png  used on input line 109.
 (pdftex.def)             Requested size: 273.00278pt x 195.41924pt.
-<figuras/homeassistantnewuser.png, id=666, 667.49374pt x 477.785pt>
+ [43 <./figuras/grafanagraph.png (PNG copy)> <./figuras/homeassistanton.png>]
+<figuras/homeassistantnewuser.png, id=705, 667.49374pt x 477.785pt>
 File: figuras/homeassistantnewuser.png Graphic file (type png)
 <use figuras/homeassistantnewuser.png>
 Package pdftex.def Info: figuras/homeassistantnewuser.png  used on input line 1
-16.
+18.
 (pdftex.def)             Requested size: 455.0pt x 325.69144pt.
-) [43 <./figuras/homeassistanton.png> <./figuras/homeassistantoff.png (PNG copy
-)>] [44 <./figuras/homeassistantnewuser.png>]
+) [44 <./figuras/homeassistantoff.png (PNG copy)> <./figuras/homeassistantnewus
+er.png>]
 \openout2 = `capitulos/capitulo-consideracoes-finais.aux'.
 
- (./capitulos/capitulo-consideracoes-finais.tex) [45
+ (./capitulos/capitulo-consideracoes-finais.tex)
+[45
 
 
 
-]
-(./abntex2-modelo-trabalho-academico.bbl
+] (./abntex2-modelo-trabalho-academico.bbl
 (./abntex2-modelo-trabalho-academico.brf)
 \tf@brf=\write5
 \openout5 = `abntex2-modelo-trabalho-academico.brf'.
@@ -1607,147 +1597,58 @@ bibitemlist
 ]
 \openout2 = `capitulos/capitulo-apendice1e2.aux'.
 
- (./capitulos/capitulo-apendice1e2.tex
-<figuras/userservice/createuser.png, id=762, 760.8425pt x 659.46375pt>
-File: figuras/userservice/createuser.png Graphic file (type png)
-<use figuras/userservice/createuser.png>
-Package pdftex.def Info: figuras/userservice/createuser.png  used on input line
- 7.
-(pdftex.def)             Requested size: 455.0pt x 394.38322pt.
-<figuras/userservice/editpassword.png, id=763, 790.955pt x 556.0775pt>
-File: figuras/userservice/editpassword.png Graphic file (type png)
-<use figuras/userservice/editpassword.png>
-Package pdftex.def Info: figuras/userservice/editpassword.png  used on input li
-ne 14.
-(pdftex.def)             Requested size: 455.0pt x 319.88632pt.
-<figuras/userservice/edittime.png, id=764, 543.02875pt x 502.87875pt>
-File: figuras/userservice/edittime.png Graphic file (type png)
-<use figuras/userservice/edittime.png>
-Package pdftex.def Info: figuras/userservice/edittime.png  used on input line 2
-1.
-(pdftex.def)             Requested size: 455.0pt x 421.37936pt.
-<figuras/userservice/authorizeuser.png, id=765, 649.42625pt x 467.7475pt>
-File: figuras/userservice/authorizeuser.png Graphic file (type png)
-<use figuras/userservice/authorizeuser.png>
-Package pdftex.def Info: figuras/userservice/authorizeuser.png  used on input l
-ine 28.
-(pdftex.def)             Requested size: 455.0pt x 327.72076pt.
-<figuras/userservice/baths.png, id=766, 406.51875pt x 638.385pt>
-File: figuras/userservice/baths.png Graphic file (type png)
-<use figuras/userservice/baths.png>
-Package pdftex.def Info: figuras/userservice/baths.png  used on input line 35.
-(pdftex.def)             Requested size: 455.0pt x 714.54796pt.
+ (./capitulos/capitulo-apendice1e2.tex [50
 
 
-LaTeX Warning: Float too large for page by 34.99239pt on input line 38.
-
-<figuras/userservice/getuser.png, id=767, 484.81125pt x 496.85625pt>
-File: figuras/userservice/getuser.png Graphic file (type png)
-<use figuras/userservice/getuser.png>
-Package pdftex.def Info: figuras/userservice/getuser.png  used on input line 42
-.
-(pdftex.def)             Requested size: 455.0pt x 466.32469pt.
-[50
-
-
- <./figuras/userservice/createuser.png (PNG copy)>] [51 <./figuras/userservice/
-editpassword.png (PNG copy)>] [52 <./figuras/userservice/edittime.png (PNG copy
-)>] [53 <./figuras/userservice/authorizeuser.png (PNG copy)>] [54 <./figuras/us
-erservice/baths.png (PNG copy)>] [55 <./figuras/userservice/getuser.png (PNG co
-py)>]
-Overfull \hbox (6.65497pt too wide) in paragraph at lines 49--50
+] [51] [52]
+[53] [54] [55]
+Overfull \hbox (6.65497pt too wide) in paragraph at lines 243--244
 \T1/lmr/m/n/12 (-20) mu-ni-ca-ção. O có-digo in-teiro pode ser bai-xado no \T1/
 lmr/m/it/12 (-20) link\T1/lmr/m/n/12 (-20) : [][]$\T1/lmtt/m/n/12 https : / / g
 ithub . com / CamiloAvelar /
  []
 
-<figuras/mqttlogger/mqtt.png, id=795, 942.52126pt x 916.42375pt>
-File: figuras/mqttlogger/mqtt.png Graphic file (type png)
-<use figuras/mqttlogger/mqtt.png>
-Package pdftex.def Info: figuras/mqttlogger/mqtt.png  used on input line 53.
-(pdftex.def)             Requested size: 455.0pt x 442.40942pt.
-<figuras/mqttlogger/time.png, id=796, 653.44125pt x 909.3975pt>
-File: figuras/mqttlogger/time.png Graphic file (type png)
-<use figuras/mqttlogger/time.png>
-Package pdftex.def Info: figuras/mqttlogger/time.png  used on input line 60.
-(pdftex.def)             Requested size: 455.0pt x 633.21587pt.
-<figuras/mqttlogger/keystopic.png, id=797, 1061.9675pt x 793.96625pt>
-File: figuras/mqttlogger/keystopic.png Graphic file (type png)
-<use figuras/mqttlogger/keystopic.png>
-Package pdftex.def Info: figuras/mqttlogger/keystopic.png  used on input line 6
-7.
-(pdftex.def)             Requested size: 455.0pt x 340.17522pt.
-<figuras/mqttlogger/influx.png, id=798, 785.93625pt x 854.19125pt>
-File: figuras/mqttlogger/influx.png Graphic file (type png)
-<use figuras/mqttlogger/influx.png>
-Package pdftex.def Info: figuras/mqttlogger/influx.png  used on input line 74.
-(pdftex.def)             Requested size: 455.0pt x 494.53194pt.
 [56
 
- <./figuras/mqttlogger/mqtt.png (PNG copy)>] [57 <./figuras/mqttlogger/time.png
- (PNG copy)>] [58 <./figuras/mqttlogger/keystopic.png (PNG copy)>] [59 <./figur
-as/mqttlogger/influx.png (PNG copy)>]
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [60
-
-]
-Overfull \hbox (10.29718pt too wide) in paragraph at lines 116--117
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (285.24551pt too wide) in paragraph at lines 126--127
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][] 
- []
-
-[61]
-Overfull \hbox (3.24722pt too wide) in paragraph at lines 157--158
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (278.19556pt too wide) in paragraph at lines 170--171
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[62]) [63]
+] [57] [58] [59]) [60]
 No file abntex2-modelo-trabalho-academico.ind.
 
 AED: lastpage setting LastPage
 \tf@lof=\write6
 \openout6 = `abntex2-modelo-trabalho-academico.lof'.
 
-\tf@toc=\write7
-\openout7 = `abntex2-modelo-trabalho-academico.toc'.
+\tf@lol=\write7
+\openout7 = `abntex2-modelo-trabalho-academico.lol'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 526.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 526.
+\tf@toc=\write8
+\openout8 = `abntex2-modelo-trabalho-academico.toc'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 574.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 574.
 (./abntex2-modelo-trabalho-academico.aux (./capitulos/capitulo-introducao.aux)
 (./capitulos/capitulo-materiais-metodos.aux)
 (./capitulos/capitulo-metodologia.aux) (./capitulos/capitulo-resultados.aux)
 (./capitulos/capitulo-consideracoes-finais.aux)
 (./capitulos/capitulo-apendice1e2.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 526.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 526.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 574.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 574.
 Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has n
 ot changed.
-(rerunfilecheck)             Checksum: 1EF71464DD112F6C0346C6402DC67C8F;3761.
+(rerunfilecheck)             Checksum: DDCBAF7A7F6DB903D66542001CAD8130;3596.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 526.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 574.
  ) 
 Here is how much of TeX's memory you used:
- 16225 strings out of 494903
- 241303 string characters out of 6179961
- 535065 words of memory out of 5000000
- 18720 multiletter control sequences out of 15000+600000
- 97231 words of font info for 153 fonts, out of 8000000 for 9000
+ 16341 strings out of 494903
+ 242891 string characters out of 6179961
+ 586193 words of memory out of 5000000
+ 18603 multiletter control sequences out of 15000+600000
+ 100075 words of font info for 155 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 42i,14n,44p,960b,2084s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,983b,1976s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/s
 hare/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publi
@@ -1760,12 +1661,13 @@ ts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb>
 share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on abntex2-modelo-trabalho-academico.pdf (64 pages, 32455495 byt
+/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on abntex2-modelo-trabalho-academico.pdf (61 pages, 17142342 byt
 es).
 PDF statistics:
- 1252 PDF objects out of 1440 (max. 8388607)
- 1090 compressed objects within 11 object streams
- 329 named destinations out of 1000 (max. 500000)
- 32938 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1530 PDF objects out of 1728 (max. 8388607)
+ 1379 compressed objects within 14 object streams
+ 574 named destinations out of 1000 (max. 500000)
+ 35446 words of extra memory for PDF output out of 35830 (max. 10000000)
 

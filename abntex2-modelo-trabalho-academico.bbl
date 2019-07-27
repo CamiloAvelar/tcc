@@ -49,6 +49,12 @@
   {\'{A}}GUA EM}.
 2007. v.~3, p.~0--5, 2007.}
 
+\bibitem[Ferreira et al. 2007]{aguaconsumo}
+\abntrefinfo{Ferreira et al.}{FERREIRA et al.}{2007}
+{FERREIRA, A.~N. et al. Água subterrâneas - um recurso a ser conhecido e
+  protegido.
+2007. 2007.}
+
 \bibitem[Ferreira, Heroso e Zaleski 2014]{ferreirasistema}
 \abntrefinfo{Ferreira, Heroso e Zaleski}{FERREIRA; HEROSO; ZALESKI}{2014}
 {FERREIRA, H.~S.; HEROSO, L.~F.; ZALESKI, R.~H. Sistema de monitoramento de
@@ -148,15 +154,6 @@ ISBN 9789897581823.}
   \url{https://portal.vidadesilicio.com.br/teclado-matricial-e-multiplexacao/}.
 Accessed: 2019-06-02.}
 
-\bibitem[Pietro Antony~Martin 2016]{DiPietro}
-\abntrefinfo{Pietro Antony~Martin}{PIETRO ANTONY~MARTIN}{2016}
-{PIETRO ANTONY~MARTIN, T.~C. R.~D. {To Docker or Not to Docker: A Security
-  Perspective Blockchain View project Virtualization Security View project To
-  Docker or not to Docker: a security perspective}.
-2016. 2016.
-Dispon{\'\i}vel em:
-  $<$https:\-/\-/www\-.researchgate\-.net\-/publication\-/309965523$>$.}
-
 \bibitem[Rebou{\c{c}}as 2003]{rebouccas2003agua}
 \abntrefinfo{Rebou{\c{c}}as}{REBOU{\c{C}}AS}{2003}
 {REBOU{\c{C}}AS, A. d.~C. {\'A}gua no brasil: abund{\^a}ncia, desperd{\'\i}cio
@@ -215,11 +212,5 @@ ISSN 10897801.}
 \abntrefinfo{Vertigo}{VERTIGO}{2018}
 {VERTIGO. \emph{O que são microsserviços}. 2018.
   \url{https://vertigo.com.br/o-que-sao-microsservicos/}.}
-
-\bibitem[Água e consumo consciente. 2018]{aguaconsumo}
-\abntrefinfo{Água\ldots}{ÁGUA\ldots}{2018}
-{ÁGUA e consumo consciente. 2018.
-  \url{http://www.brasil.gov.br/noticias/educacao-e-ciencia/2010/10/agua-e-consumo-consciente}.
-Accessed: 2018-12-05.}
 
 \end{thebibliography}

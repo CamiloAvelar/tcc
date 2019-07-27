@@ -77,6 +77,45 @@
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibliografia
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT 6023
 
+% ---
+% CONFIGURACOES LISTAGEM DE CODIGOS
+% ---
+
+\definecolor{lightgray}{rgb}{.97,.97,.97}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{Javascript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, async},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this, const},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
+}
+
+\lstset{
+	language=Javascript,
+	backgroundcolor=\color{lightgray},
+	extendedchars=true,
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numbers=left,
+	numberstyle=\footnotesize,
+	numbersep=9pt,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b
+}
+
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
@@ -101,10 +140,10 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Domótica aplicada no controle de água utilizando comunicação MQTT, arquitetura de microsserviços e Docker: uma solução IoT.}
+\titulo{Domótica aplicada no controle de água utilizando comunicação MQTT e arquitetura de microsserviços: uma solução IoT.}
 \autor{Camilo Esteves Mendes de Avelar}
 \local{Ouro Preto}
-\data{2019}
+\data{agosto 2019}
 \orientador{Filipe Augusto Santos Rocha}
 \coorientador{}
 \instituicao{Universidade Federal de Ouro Preto - UFOP}
@@ -355,6 +394,14 @@
 \listoffigures*
 \cleardoublepage
 % ---
+
+% ---
+% lista de listagens
+% ---
+\renewcommand{\lstlistingname}{Código}
+\renewcommand{\lstlistlistingname}{Lista de códigos}
+\lstlistoflistings
+
 
 % ---
 % inserir lista de tabelas
