@@ -7,7 +7,14 @@ A validação do projeto será feita através de um sistema criado para emular o
 
 \section{Funcionamento do sistema} \label{sec:funcionamento}
 
-Nesta seção estão descritos os parâmetros utilizados pelo sistema, os dados que são gerados, assim como as respostas esperadas.
+Nesta seção estão descritos os parâmetros utilizados pelo sistema, os dados que são gerados, assim como as respostas esperadas. A arquitetura geral do sistema pode ser visualizada na Figura \ref{fig:arqgeral}, mostrando os sistemas desenvolvidos, os tópicos do servidor MQTT e os sistemas que implementam os bancos de dados.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figuras/arquiteturaprojeto.png}
+	\caption{Arquitetura geral do projeto}
+	\label{fig:arqgeral}
+\end{figure}
 
 \subsection{Parâmetros de operação}
 
@@ -43,8 +50,6 @@ Para a configuração inicial do RaspberryPi é preciso fazer o download de um s
 
 
 Os sistemas deste projeto foram desenvolvidos diretamente no RaspberryPi, e, para possibilitar este desenvolvimento, é necessário primeiramente configurar o ambiente do RaspberryPi.
-
-\newpage
 
 O RaspberryPi foi configurado para ser \textit{headless}\footnote{\url{https://www.raspberrypi.org/documentation/configuration/wireless/headless.md}}, o que faz com que ele não necessite de teclado, mouse ou monitor para poder ser acessado. Para conseguir acessar o RaspberryPi nesta configuração é necessária a utilização do SSH, ou \textit{Secure Shell}, que é um protocolo de rede criptográfico para operação de serviços de rede de forma segura\footnote{\url{https://www.ssh.com/ssh/}}. O SSH permite o login remoto no sistema operacional do Raspberry, possibilitando o completo controle do sistema operacional de forma remota.
 
@@ -90,8 +95,6 @@ Todos os dados de um banco de dados relacional são armazenados em tabelas. Uma 
 
 As tabelas associam-se entre si por meio de regras de relacionamentos, que consistem em associar um ou vários atributos de uma tabela com um ou vários atributos de outra tabela.
 
-\newpage
-
 A Figura \ref{fig:erpostgre} mostra o diagrama Entidade Relacionamento do banco de dados \textit{users} criado para a aplicação. Um diagrama Entidade Relacionamento é capaz de descrever um modelo de tabelas (entidades) que são ligadas umas as outras por relacionamentos que expressam as dependências e exigências entre si. No caso do sistema planejado, existem três entidades: Usuário, Configuração e Banho. O usuário se relaciona com as outras duas entidades: ele possui uma configuração e pode tomar um banho.
 
 \begin{figure}[htbp]
@@ -131,6 +134,17 @@ A tabela \textit{user\_baths} guarda informações de tempo de todos os banhos t
 	\item \textit{created\_at}: data e hora da criação do usuário;
 	\item \textit{updated\_at}: data e hora da ultima atualização do usuário;
 \end{itemize}
+
+A Figura \ref{fig:modeltables} ilustra o banco de dados criado juntamente com as tabelas contidas nele.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figuras/postgrediagram.png}
+	\caption{Modelo das tabelas criadas no banco de dados}
+	\label{fig:modeltables}
+\end{figure}
+
+\newpage
 
 \section{Configuração do InfluxDB}
 
@@ -203,6 +217,8 @@ Os microsserviços desenvolvidos foram projetados para seguir a \textit{Clean Ar
 	\caption{Divisão dos arquivos do Sistema de Usuários}
 	\label{fig:clean}
 \end{figure}
+
+
 
 \subsection{Sistema de usuários} \label{sec:usuarios}
 
