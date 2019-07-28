@@ -3,15 +3,15 @@
 Este Capítulo apresenta a estrutura geral do sistema, a configuração inicial do RaspberryPi, a construção dos microsserviços, assim como as etapas de realização do projeto. A
 primeira etapa consiste no desenvolvimento do microsserviço de cadastro e controle de usuários. Em seguida, foi desenvolvido o sistema que recebe os dados via MQTT, guardando-os no InfluxDB. Com os dados sendo recebidos e devidamente guardados, foi configurado o HomeAssistant juntamente com o Grafana.
 
-A validação do projeto será feita através de um sistema criado para emular os dados vindos dos sensores, atuadores e teclado. Este sistema é capaz de criar dados que simulam os sinais recebidos pelo sensor YF-S201, pelo teclado numérico e atuador.
+A validação do projeto será feita através de um sistema criado para emular os dados vindos dos sensores, atuadores e teclado. %Este sistema é capaz de criar dados que simulam os sinais recebidos pelo sensor YF-S201, pelo teclado numérico e atuador.
 
-\section{Funcionamento do sistema}
+\section{Funcionamento do sistema} \label{sec:funcionamento}
 
-Nesta seção estão descritos o funcionamento do sistema, os parâmetros utilizados nele assim como as respostas esperadas.
+Nesta seção estão descritos os parâmetros utilizados pelo sistema, os dados que são gerados, assim como as respostas esperadas.
 
 \subsection{Parâmetros de operação}
 
-Aqui são apresentados e explicados os parâmetros de operação e como eles ditam o funcionamento do sistema. Estes parâmetros são:
+Os parâmetros de operação ditam o funcionamento do sistema. São os parâmetros utilizados pelo sistema para garantir o funcionamento esperado. Estes parâmetros são:
 
 \begin{itemize}
 	\item Tempo de banho permitido: é o tempo máximo de banho permitido para cada usuário;
@@ -31,15 +31,15 @@ Os dados do sensor são gravados no InfluxDB e poderão ser vistos no Grafana em
 
 \subsection{Ligar/desligar atuador}
 
-Para ligar o atuador, o sistema precisa identificar o usuário e autentica-lo. A identificação e autenticação do usuário é realizada via teclado numérico. O usuário é identificado pelo seu id, que é fornecido no momento do seu cadastro. Para realizar a identificação o usuário deve pressionar no teclado a tecla \textit{\*} seguido pelo seu id e em seguida \textit{\#}. Ao realizar a consulta, o sistema retorna o nome do usuário e requisita a senha.
+Para ligar o atuador, o sistema necessita identificar o usuário e autentica-lo. Esta identificação e autenticação é realizada via teclado numérico. O usuário é identificado pelo seu id, que é fornecido no momento do seu cadastro. Para realizar a identificação, o usuário deve pressionar a tecla \textit{\*} seguido pelo seu id e \textit{\#}. Ao realizar a consulta, o sistema retorna o nome do usuário e requisita a senha.
 
-Após digitar a senha, a tecla \textit{\#} deve ser pressionada para o sistema comparar a senha digitada com a cadastrada no banco de dados. Caso as senhas forem iguais, o atuador é ligado, caso forem diferentes, o sistema retorna que o usuário não está autenticado e não liga o atuador. 
+Após digitar a senha, a tecla \textit{\#} deve ser pressionada e o sistema irá comparar a senha digitada com a cadastrada no banco de dados. Caso as senhas forem iguais, o atuador é ligado, caso forem diferentes, o sistema retorna que o usuário não está autenticado e não liga o atuador. 
 
 A Figura \ref{fig:mockservice} mostra este fluxo de digitação, assim como a identificação do usuário pelo id.
 
 \section{Configuração do RaspberryPi} \label{sec:confrasp}
 
-Para a configuração inicial do RaspberryPi é preciso fazer o download de um sistema operacional compatível com o microcontrolador. Para o sistema deste projeto, utilizamos o Raspbian\footnote{\url{https://www.home-assistant.io/docs/installation/hassbian/installation/}}, que foi instalado no cartão SD a ser inserido no RaspberryPi.
+Para a configuração inicial do RaspberryPi é preciso fazer o download de um sistema operacional compatível com o microcontrolador. Para o sistema deste projeto, utilizamos o Hassbian\footnote{\url{https://www.home-assistant.io/docs/installation/hassbian/installation/}}, que foi instalado no cartão SD a ser inserido no RaspberryPi.
 
 
 Os sistemas deste projeto foram desenvolvidos diretamente no RaspberryPi, e, para possibilitar este desenvolvimento, é necessário primeiramente configurar o ambiente do RaspberryPi.
@@ -48,21 +48,39 @@ O RaspberryPi foi configurado para ser \textit{headless}\footnote{\url{https://w
 
 A configuração de rede do RaspberryPi foi realizada para conter um IP estático (\textit{192.168.2.60}), que facilita o acesso SSH ao sistema.
 
-A Figura \ref{fig:headless} mostra um exemplo do arquivo \textit{wpa\_supplicant.conf}, que faz parte da configuração \textit{headless}, servindo para conectar à rede automaticamente ao iniciar os RaspberryPi. Já na Figura \ref{fig:rpiip}, podemos observar a configuração do ip estático.
+O Código \ref{cod:headless} mostra um exemplo do arquivo \textit{wpa\_supplicant.conf}, que faz parte da configuração \textit{headless}, servindo para conectar à rede automaticamente ao iniciar os RaspberryPi. Já no Código \ref{cod:static}, podemos observar a configuração do ip estático.
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.6\linewidth]{figuras/headless.png}
-	\caption{Exemplo de configuração \textit{headless}}
-	\label{fig:headless}
-\end{figure}
+\begin{lstlisting}[caption=Exemplo de configuração \textit{headless}, label=cod:headless]
+update_config=1
+ctrl_interface=\var\run\wpa_supplicant
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.6\linewidth]{figuras/rpiip.png}
-	\caption{Exemplo de configuração do IP estático}
-	\label{fig:rpiip}
-\end{figure}
+network={
+    ssid="<Nome da sua rede Wi-Fi>"
+    psk="<Senha da sua rede Wi-Fi>"
+}
+\end{lstlisting}
+
+\begin{lstlisting}[caption=Exemplo de configuração do IP estático, label=cod:static]
+update_config=1
+interface <Sua interface de rede>
+static ip_adress=192.168.2.60
+static routers=192.168.2.1
+static domain_name_servers=192.168.2.1
+\end{lstlisting}
+
+%\begin{figure}[htbp]
+%	\centering
+%	\includegraphics[width=0.6\linewidth]{figuras/headless.png}
+%	\caption{Exemplo de configuração \textit{headless}}
+%	\label{fig:headless}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%	\centering
+%	\includegraphics[width=0.6\linewidth]{figuras/rpiip.png}
+%	\caption{Exemplo de configuração do IP estático}
+%	\label{fig:rpiip}
+%\end{figure}
 
 \section{Criação das tabelas no PostgreSQL}
 
@@ -89,7 +107,7 @@ A tabela \textit{user\_settings} guarda informações de configuração dos usu�
 	\item \textit{updated\_at}: data e hora da ultima atualização do usuário;
 \end{itemize}
 
-A tabela \textit{userBaths} guarda informações de tempo de todos os banhos tomados, possuindo 5 colunas:
+A tabela \textit{user\_baths} guarda informações de tempo de todos os banhos tomados, possuindo 5 colunas:
 
 \begin{itemize}
 	\item id: identificador único;
@@ -99,7 +117,7 @@ A tabela \textit{userBaths} guarda informações de tempo de todos os banhos tom
 	\item \textit{updated\_at}: data e hora da ultima atualização do usuário;
 \end{itemize}
 
-A Figura \ref{fig:erpostgre} mostra o diagrama Entidade Relacionamento do banco de dados \textit{users} criado para a aplicação. Um diagrama Entidade Relacionamento é capaz de descrever um modelo de dados como componentes (entidades) que são ligadas umas as outras por relacionamentos que expressam as dependências e exigências entre si. No caso do sistema planejado, existem três entidades: Usuário, Configuração e Banho. O usuário se relaciona com as outras duas entidades, ele possui uma configuração e pode tomar um banho.
+A Figura \ref{fig:erpostgre} mostra o diagrama Entidade Relacionamento do banco de dados \textit{users} criado para a aplicação. Um diagrama Entidade Relacionamento é capaz de descrever um modelo de dados como componentes (entidades) que são ligadas umas as outras por relacionamentos que expressam as dependências e exigências entre si. No caso do sistema planejado, existem três entidades: Usuário, Configuração e Banho. O usuário se relaciona com as outras duas entidades: ele possui uma configuração e pode tomar um banho.
 
 \begin{figure}[htbp]
 	\centering
@@ -113,11 +131,13 @@ A Figura \ref{fig:erpostgre} mostra o diagrama Entidade Relacionamento do banco 
 
 Na configuração do InfluxDB, foi utilizada a biblioteca \textit{influx}\footnote{\url{https://www.npmjs.com/package/influx}}. Esta biblioteca permite a criação do banco de dados diretamente do código fonte do sistema, assim como as tabelas para guardar os dados temporais.
 
-Foi criado o banco de dados \textit{water\_flow\_data}, que guarda os dados temporais dos banhos dos usuários. Neste banco, os dados são guardados com a \textit{tag} referente ao id do usuário cadastrado no banco relacional PostgreSQL. Os \textit{fields} são guardados os dados que chegam diretamente do sensor, que significa o fluxo de água naquele determinado instante.
+Foi criado o banco de dados \textit{water\_flow\_data}, que guarda os dados temporais dos banhos dos usuários. Neste banco, os dados são guardados com a \textit{tag} referente ao id do usuário cadastrado no banco relacional PostgreSQL. Nos \textit{fields} são guardados os dados que chegam diretamente do sensor, que significa o fluxo de água naquele determinado instante.
 
-O InfluxDB salva automaticamente os \textit{timestamps} de cada dado incluido nele, o que facilita a manipulação dos dados, pois não é necessário informar o \textit{timestamp} toda vez que for incluir algum dado no banco.
+O InfluxDB salva automaticamente os \textit{timestamps}\footnote{\textit{Timestamps} são marcas temporais, informa a data e a hora que um certo evento ocorreu.} de cada dado incluido nele, o que facilita a manipulação dos dados, pois não é necessário informar a data e a hora toda vez que for incluir algum dado no banco.
 
-No \lstlistingname\ \ref{list:codigoinflux} está um exemplo do código de configuração e implementação das funções do InfluxDB no sistema.
+No \lstlistingname\ \ref{list:codigoinflux} está um exemplo de configuração e implementação das funções do InfluxDB no sistema.
+
+\newpage
 
 %\begin{figure}[htbp]
 %	\centering
@@ -177,7 +197,7 @@ Os microsserviços desenvolvidos foram projetados para seguir a \textit{Clean Ar
 	\label{fig:clean}
 \end{figure}
 
-\subsection{Sistema de usuários}
+\subsection{Sistema de usuários} \label{sec:usuarios}
 
 O propósito desta aplicação está em ter o controle e informações sobre o consumo de água em residências, para isso, é necessário ter um meio para conseguir as informações sobre os usuários do sistema. 
 
@@ -190,7 +210,7 @@ Este microsserviço salva todos os dados recebidos nas tabelas do PostgreSQL.
 O sistema possui os seguintes \textit{endpoints}:
 
 
-\begin{itemize}
+\begin{itemize} \label{item:endpoints}
 	\item /cadastrar: possibilita cadastrar o usuário com as informações do nome, senha e tempo de banho permitido.
 	\item /autorizar: recebe o id do usuário e a senha, compara a senha enviada com a senha cadastrada e retorna se o usuário está ou não autorizado.
 	\item /editar-tempo: possibilita editar o tempo de banho permitido do usuário.
@@ -199,7 +219,7 @@ O sistema possui os seguintes \textit{endpoints}:
 	\item /banho/:id: retorna informações sobre todos os banhos do usuário.
 \end{itemize}
 
-Os códigos de implementação deste sistema podem ser observados no Apêndice A.
+Os códigos de implementação deste sistema podem ser observados no Apêndice \ref{ap:users}.
 
 \subsection{Sistema de comunicação MQTT}
 
@@ -216,21 +236,21 @@ O sistema se subscreve nos seguintes tópicos do \textit{broker} MQTT para receb
 	\item \textit{sensor}: é o tópico para enviar informações do sensor de fluxo.
 \end{itemize}
 
-Os códigos de implementação deste sistema podem ser observados no Apêndice B.
+Os códigos de implementação deste sistema podem ser observados no Apêndice \ref{ap:mqtt}.
 
-\subsection{Sistema de simulação dos dados}
+\subsection{Sistema de simulação de dados}
 
 O sistema de simulação de dados emula todos os dados que podem ser capturados e enviados ao sistema físico, que são:
 
 \begin{itemize}
 	\item Dados do fluxo de água: informação recebida pelo sensor YF-S201;
-	\item Dados do teclado numérico: informação de qual tecla foi pressionada no teclado;
+	\item Dados do teclado numérico: informação de qual tecla foi pressionada;
 	\item Informações para o atuador: informação para ligar/desligar o atuador;
 \end{itemize}
 
-Este sistema se inscreve nos tópicos do servidor MQTT e envia os dados simulados como se fosse o próprio sistema físico. Ao se iniciar o sistema, ele fica em estado de espera até alguma tecla for pressionada. Ao se pressionar uma tecla, ele a reconhece e toma as devidas ações, como requisitar a senha ou ligar/desligar o atuador.
+Este sistema se inscreve nos tópicos do servidor MQTT e envia os dados simulados como se fosse o próprio sistema físico. Ao se iniciar o sistema, ele fica em estado de espera até alguma tecla for pressionada. Ao se pressionar uma tecla, ele a envia para o tópico \textit{keys}. O Sistema de Comunicação, que se inscreve nesse tópico, reconhece a tecla e toma as devidas ações, como requisitar a senha ou ligar/desligar o atuador.
 
-Os dados do fluxo de água são número inteiros que são passados para o tópico do servidor MQTT, para simular estes dados envia-se um valor inteiro ao tópico em um intervalo pre-determinado de tempo (50 ms).
+Os dados do fluxo de água são número inteiros que são passados para o tópico \textit{sensor} do servidor MQTT, para simular estes dados envia-se um valor inteiro ao tópico em um intervalo pre-determinado de tempo (50 ms).
 
 A Figura \ref{fig:mockservice} mostra o sistema de simulação funcionando, com o usuário com o id 3 sendo autorizado e o sinal de ligar/desligar o atuador enviado.
 
@@ -245,11 +265,11 @@ A Figura \ref{fig:mockservice} mostra o sistema de simulação funcionando, com 
 
 O HomeAssistant pode ser instalado a partir de diversos métodos\footnote{\url{https://www.home-assistant.io/docs/installation}}, neste sistema, a instalação foi feita utilizando o Hassbian, que é um sistema operacional linux para o RaspberryPi com o HomeAssistant pré-instalado.
 
-Para configurar o HomeAssistant no RaspberryPi é necessário realizar o \textit{download} da imagem do Hassbian. Com o \textit{download} concluído, deve-se copiar a imagem para o cartão SD que será inserido no RaspberryPi. Para isto, utilizamos o \textit{balenaEtcher}.
+Para configurar o HomeAssistant no RaspberryPi é necessário realizar o download da imagem do Hassbian. Com o download concluído, deve-se copiar a imagem para o cartão SD a ser inserido no RaspberryPi. Para isto, utilizamos o \textit{balenaEtcher}.
 
 Com a imagem devidamente escrita no cartão SD, basta inseri-lo no RaspberryPi, configurar a rede como descrito na Seção \ref{sec:confrasp}, e, ao iniciar o sistema, o HomeAssistant será carregado automaticamente.
 
-O HomeAssistant utiliza a porta 8123 e, para conseguir visualizar sua interface, o IP deve ser acessado esta porta. No caso deste sistema, o IP do RaspberryPi foi colocado como estático \textit{192.168.2.60}, então, para acessar a interface deve-se estar conectado na mesma rede do RaspberryPi e acessar o link \textit{http://192.168.2.60:8123}, como podemos ver na Figura \ref{fig:homeassistanthome}.
+O HomeAssistant utiliza a porta 8123 e, para conseguir visualizar sua interface, o IP do servidor deve ser acessado esta porta. No caso deste sistema, o IP do RaspberryPi foi colocado como estático \textit{192.168.2.60}, então, para acessar a interface deve-se estar conectado na mesma rede do RaspberryPi e acessar o link \textit{http://192.168.2.60:8123}, como podemos ver na Figura \ref{fig:homeassistanthome}.
 
 \begin{figure}[htbp]
 	\centering
@@ -265,9 +285,9 @@ A interface do HomeAssistant permite diversas configurações e inclusão de dif
 
 \section{Configuração do Grafana}
 
-A instalação do Grafana foi realizada através do \textit{download} e extração do pacote para o sistema operacional Debian.
+A instalação do Grafana foi realizada através do download\footnote{\url{https://grafana.com/get}} e extração do pacote para o sistema operacional Debian.
 
-Com o pacote devidamente instalado no sistema, o Grafana utiliza a porta 3003 como interface. Para acessar a sua interface, bastar acessar a porta 3003 do RaspberryPi, ou seja, acessar o link \textit{http://192.168.2.60:3003}, como na Figura \ref{fig:grafanahome}.
+Com o pacote devidamente instalado no sistema, o Grafana utiliza a porta 3003 como interface. Para acessa-la, deve-se conectar à porta 3003 do RaspberryPi, ou seja, acessar o link \textit{http://192.168.2.60:3003}, como na Figura \ref{fig:grafanahome}.
 
 \begin{figure}[htbp]
 	\centering

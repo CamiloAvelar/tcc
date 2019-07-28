@@ -9,9 +9,9 @@ Buscando aumentar a eficiência no processamento de dados, na década de 70
 começaram a ser utilizados microprocessadores em computadores \cite{martins2005sistemas}. Os microprocessadores são componentes dedicados ao processamento de informações com
 capacidade de cálculos matemáticos e endereçamento de memória externa \cite{chase2007sistemas}.
 
-Por sua vez, os microcontroladores são pequenos sistemas computacionais poderosos que englobam em um único chip: interfaces de entrada/saída digitais e analógicas, memória RAM, memória FLASH, interfaces de comunicação serial, conversores analógicos/digitais, temporizadores/contadores e um microprocessador. Com o advento dos microcontroladores de 16 e 32 bits - o padrão mais difundido atualmente é o de 8bits - a capacidade de prover soluções mais complexas e maior velocidade de processamento se iguala ao do microprocessador. \cite{chase2007sistemas}.
+Por sua vez, os microcontroladores são pequenos sistemas computacionais poderosos que englobam em um único chip: interfaces de entrada/saída digitais e analógicas, memória RAM, memória FLASH, interfaces de comunicação serial, conversores analógicos/digitais, temporizadores/contadores e um microprocessador. Com o advento dos microcontroladores de 16 e 32 bits - o padrão mais difundido atualmente é o de 8bits - a capacidade de prover soluções mais complexas e maior velocidade de processamento se iguala ao do microprocessador \cite{chase2007sistemas}.
 
-Na Figura \ref{fig:microprocessador-microcontrolador}, pode-se observar algumas das diferenças entre Microprocessadores e Microcontroladores.
+Na Figura \ref{fig:microprocessador-microcontrolador}, pode-se observar algumas das diferenças entre Microprocessadores e Microcontroladores. O microcontrolador embarca todos os componentes necessários ao seu funcionamento, enquanto o microprocessador precisa de comunicar externamente com os periféricos similares.
 
 \begin{figure}[htbp]
 	\centering
@@ -21,11 +21,11 @@ Na Figura \ref{fig:microprocessador-microcontrolador}, pode-se observar algumas 
 	\label{fig:microprocessador-microcontrolador}
 \end{figure}
 
-\subsection{ESP8266}
+\newpage
 
-O ESP8266, mostrado na Figura \ref{fig:esp}, é um circuito integrado, com interfaces de I/O digitais e analógicas e, interface Wi-Fi, com um processador de 32 bits, capaz de executar tarefas a 160 MHz.
+O microcontrolador a ser utilizado no projeto é o ESP8266 (Figura \ref{fig:esp}), que é um circuito integrado, com interfaces de I/O digitais e analógicas. Possui interface Wi-Fi, com um processador de 32 bits, capaz de executar tarefas a 160 MHz.
 
-Os módulos baseados no microcontrolador ESP8266 representam um grande avanço na relação de preço-recursos e pode ser um componente muito interessante para soluções IoT.\cite {de2017internet}
+Os circuitos baseados no microcontrolador ESP8266 representam um grande avanço na relação de preço-recursos e pode ser um componente muito interessante para soluções IoT \cite {de2017internet}.
 
 \begin{figure}[htbp]
 		\centering
@@ -38,7 +38,7 @@ Os módulos baseados no microcontrolador ESP8266 representam um grande avanço n
 
 \subsection{RaspberryPi}
 
-RaspberryPi (Figura \ref{fig:rpi}) é um minicomputador criado pela Raspberry Pi Foundation. Seu objetivo é estimular o ensino da ciência da computação nas escolas e universidades. Apesar do Raspberry Pi possuir o hardware em uma única placa eletrônica de tamanho reduzido, seu potencial de processamento é significativo. O Raspberry Pi pode ser usado em diversos projetos tecnológicos, como experimentos remotos nos quais sua função é ser um micro servidor web.\cite{crotti2013raspberrypi}
+O RaspberryPi (Figura \ref{fig:rpi}) é um minicomputador criado pela Raspberry Pi Foundation. Seu objetivo é estimular o ensino da ciência da computação nas escolas e universidades. Apesar do Raspberry Pi possuir o hardware em uma única placa eletrônica de tamanho reduzido, seu potencial de processamento é significativo. O Raspberry Pi pode ser usado em diversos projetos tecnológicos, como experimentos remotos nos quais sua função é ser um micro servidor web \cite{crotti2013raspberrypi}.
 
 \begin{figure}[htbp]
 		\centering
@@ -55,7 +55,7 @@ Nesta seção serão apresentados os sensores e atuadores a serem utilizados no 
 
 O sensor YF-S201 (Figura \ref{fig:sensor}) é um sensor do tipo turbina que mede a quantidade de líquido que passa pela tubulação, girando uma turbina que
 gera pulsos de onda quadrada através de um sensor de efeito Hall \cite{roque2018sistema}. O
-sensor usa esse efeito para enviar um sinal PWM e, através da contagem deste pulso é possível mensurar a quantidade de água que passa pelo cata-vento no interior do sensor, cada pulso mede aproximadamente 2,25 mm.\cite{ms2017automaccao}
+sensor usa esse efeito para enviar um sinal PWM e, através da contagem deste pulso é possível mensurar a quantidade de água que passa pelo cata-vento no interior do sensor. \cite{ms2017automaccao}
 
 \begin{figure}[htbp]
 		\centering
@@ -66,9 +66,9 @@ sensor usa esse efeito para enviar um sinal PWM e, através da contagem deste pu
 
 \subsection{Teclado matricial de membrana}
 
-Teclados permitem que usuários insiram informações em diversos tipos de sistemas, como computadores, calculadoras, controles remotos entre outros.\cite{teclado-matricial-1}. O Teclado Matricial de Membrana 4X4 (Figura \ref{fig:teclado}), com 16 teclas foi desenvolvido com a finalidade de facilitar a entrada de dados em projetos com plataformas microcontrolada \cite{teclado-matricial}. Este teclado possui 16 teclas, sendo 10 teclas são numéricas, 4 literais e 2 caracteres. 
+Teclados permitem que usuários insiram informações em diversos tipos de sistemas, como computadores, calculadoras, controles remotos entre outros \cite{teclado-matricial-1}. O Teclado Matricial de Membrana 4X4 (Figura \ref{fig:teclado}) foi desenvolvido com a finalidade de facilitar a entrada de dados em projetos com plataformas microcontrolada \cite{teclado-matricial}. Este teclado possui 16 teclas, sendo 10 teclas são numéricas, 4 literais e 2 caracteres. 
 	
-As 16 teclas estão dispostas em 4 linhas por 4 colunas e o teclado possui um conector de 8 pinos para ligação. Quando um botão do teclado é pressionado, ele conecta a linha com a coluna na qual está ligado. O circuito do teclado está exemplificado na Figura \ref{fig:teclado-conexoes}.
+As teclas estão dispostas em 4 linhas por 4 colunas e o teclado possui um conector de 8 pinos para ligação. Quando um botão do teclado é pressionado, ele conecta a linha com a coluna na qual está ligado. O circuito do teclado está exemplificado na Figura \ref{fig:teclado-conexoes}.
 
 \begin{figure}[htbp]
 	\centering
@@ -137,7 +137,7 @@ A válvula utilizada neste trabalho pode ser vista na Figura \ref{fig:valvula-so
 	\label{fig:valvula-solenoide}
 \end{figure}
 
-Ainda segundo \citeauthor{da2002modulo} (\citeyear{da2002modulo}), a estratégia para fechamento e abertura dos canais fluídicos depende do fabricante, mas o princípio de acionamento elétrico é comumente o mesmo. Uma tensão é aplicada sobre um solenoide, criando um campo magnético que desloca um núcleo ferromagnético móvel, causando a alteração do estado da válvula. O núcleo
+Segundo \citeauthor{da2002modulo} (\citeyear{da2002modulo}), a estratégia para fechamento e abertura dos canais fluídicos depende do fabricante, mas o princípio de acionamento elétrico é comumente o mesmo. Uma tensão é aplicada sobre um solenoide, criando um campo magnético que desloca um núcleo ferromagnético móvel, causando a alteração do estado da válvula. O núcleo
 ferromagnético comprime uma mola que é a responsável por retornar o núcleo a sua posição original quando a corrente elétrica é interrompida.
 
 \section{Softwares}
@@ -146,9 +146,9 @@ Os softwares que foram utilizados para a implementação do sistema estão prese
 
 \subsection{HomeAssistant}
 
-O HomeAssistant é um plataforma de automação escrita em Python. Inclui componentes contribuídos por usuários que permite a interface com Web Services e dispositivos como sensores, microcontroladores e assistentes virtuais \cite{Lundrigan2017}. Em seu núcleo, HomeAssistant é um protocolo de troca de mensagens que facilita a comunicação entre dispositivo e componentes funcionais na rede. Provendo simples abstrações de componentes de automação residencial como sensores, câmeras, players de música, etc.
+O HomeAssistant é um plataforma de automação escrita em Python. Inclui componentes contribuídos por usuários que permite a interface com Web Services e dispositivos como sensores, microcontroladores e assistentes virtuais \cite{Lundrigan2017}. Em seu núcleo, o HomeAssistant é um protocolo de troca de mensagens que facilita a comunicação entre dispositivos e componentes funcionais na rede. Provendo simples abstrações de componentes de automação residencial como sensores, câmeras, players de música, etc.
 
-A Figura \ref{fig:homeassistant-dash} apresenta um exemplo de tela inicial do HomeAssistant. Com vários sensores configurados na parte superior, na parte esquerda, encontra-se o menu do HomeAssistant, e na parte central inferior pode-se observar informações sobre o clima, \textit{switches} para acionamento de interruptores e iluminação.
+A Figura \ref{fig:homeassistant-dash} apresenta um exemplo de tela inicial do HomeAssistant. Com vários sensores configurados na parte superior, na parte esquerda, encontra-se o menu do HomeAssistant, e na parte central inferior pode-se observar informações sobre o clima e \textit{switches} para acionamento de interruptores e iluminação.
 
 \begin{figure}[htbp]
 	\centering
@@ -158,7 +158,7 @@ A Figura \ref{fig:homeassistant-dash} apresenta um exemplo de tela inicial do Ho
 	\label{fig:homeassistant-dash}
 \end{figure}
 
-O HomeAssistant tem suporte para diversos tipos de protocolos \textit{wireless}, como BLE, ZigBee, Z-Wave e Wi-Fi. Conta também com um RESTful API e suporta HTTP, MQTT, TCP sockets e componentes customizados. Estes componentes customizados permitem aos usuários adicionar funções próprias no HomeAssistant sem a necessidade de mudar o seu código fonte. Isto torna a integração de novos dispositivos e sensores muito mais fácil com o Home Assistant. \cite{Gomes2018}
+O HomeAssistant tem suporte para diversos tipos de protocolos \textit{wireless}, como BLE, ZigBee, Z-Wave e Wi-Fi. Conta também com um RESTful API e suporta HTTP, MQTT, TCP sockets e componentes customizados. Estes componentes customizados permitem aos usuários adicionar funções próprias no HomeAssistant sem a necessidade de mudar o seu código fonte. Isto torna a integração de novos dispositivos e sensores muito mais fácil com o Home Assistant \cite{Gomes2018}.
 
 
 %O HomeAssistant conta com uma grande comunidade de desenvolvedores com mais de 1.450 contribuidores e 23.700 estrelas no GitHub\footnote{\url{https://github.com/home-assistant/home-assistant}}, o que significa uma abundância em sua documentação sobre os seus componentes, fóruns e chats para conseguir ajuda de outros usuários, e diversos posts em blogs e vídeos sobre como começar a utilizar o programa.
@@ -167,45 +167,45 @@ Tendo em vista a gama de protocolos sem fio disponíveis no HomeAssistant, escol
 
 \begin{itemize}
 	\item O custo dos equipamentos com padrão Wi-Fi é reduzido.
-	\item Wi-Fi é o mais difuso do que outros protocolos wireless.
+	\item Wi-Fi é o mais difuso dos protocolos wireless.
 	\item Sensores Wi-Fi tem integração com demais equipamentos residenciais.
 \end{itemize}
 
-O HomeAssistant pode ser instalado em qualquer sistema operacional, é muito pequeno e leve. Fato que o faz ser compatível para o uso no Rasberry Pi como um hub de automação pequeno e barato. É importante lembrar que o Home Assistant age apenas como uma central de controle que pode informar outros serviços, como o Philips Hue ou o Nest, para realizar alguma função \cite{AlmeidaCosta}. O Home Assistant é gratuito e de fácil configuração.
+O HomeAssistant pode ser instalado em qualquer sistema operacional, devido ao fato de ser muito pequeno e leve. O que o faz ser compatível para o uso no Rasberry Pi como um hub de automação pequeno e barato. É importante lembrar que o Home Assistant age apenas como uma central de controle que pode informar outros serviços, como o Philips Hue ou o Nest, para realizar alguma função \cite{AlmeidaCosta}. O Home Assistant é gratuito e de fácil configuração.
 
 \subsection{Banco de dados de séries temporais}
 
-Um Banco de Dados de Séries Temporais, do inglês \textit{Temporal Series Database} (TSDB), é um tipo de banco otimizado para dados que contém traços de tempo ou séries temporais. É construído especificamente para lidar com métricas, eventos ou medidas que variam no tempo. Um TSDB permite o usuário criar, enumerar, alterar, destruir e organizar várias séries temporais de um método mais eficiente. Atualmente, a maioria das empresas estão gerando uma quantidade gigante de dados sobre métricas e eventos que são mapeados no tempo, aumentando a relevância de tal arquitetura.\cite{Noor2017}
+Um Banco de Dados de Séries Temporais, do inglês \textit{Temporal Series Database} (TSDB), é um tipo de banco otimizado para dados coletados no tempo. É implementado especificamente para lidar com métricas, eventos ou medidas que variam no tempo. Um TSDB permite o usuário criar, enumerar, alterar, destruir e organizar várias séries temporais de um método mais eficiente. Atualmente, a maioria das empresas estão gerando uma quantidade gigante de dados sobre métricas e eventos que são mapeados no tempo, aumentando a relevância de tal arquitetura \cite{Noor2017}.
 
-Ainda segundo \citeauthor{Noor2017} (\citeyear{Noor2017}), aplicações comuns para os TSDBs são IoT, DevOps, Analise de Dados, etc. Alguns casos de uso incluem monitoramento de sistemas de software como máquinas virtuais, monitoramento de sistemas físicos como dispositivos conectados, o ambiente, sistemas de automação residencial, dentre outros.
+Ainda segundo \citeauthor{Noor2017} (\citeyear{Noor2017}), aplicações comuns para os TSDBs são IoT, DevOps e Analise de Dados. Alguns casos de uso incluem monitoramento de sistemas de software como máquinas virtuais, monitoramento de sistemas físicos como dispositivos, ambiente, sistemas de automação residencial, dentre outros.
 
 \subsubsection{InfluxBD}
 
-InfluxDB é o Banco de Dados de Séries Temporais usado neste projeto, sendo o mais apto a guardar os dados de fluxo no tempo. \cite{Lundrigan2017}
+O InfluxDB é o Banco de Dados de Séries Temporais usado neste projeto, sendo o mais apto a guardar os dados de fluxo no tempo. \cite{Lundrigan2017}
 
-É um projeto \textit{open-source} com o opcional de armazenamento pago em nuvem desenvolvido pela empresa InfluxData. É escrito na linguagem de programação Go. Baseado em uma linguagem de consulta parecida com o SQL. \cite{Noor2017}
+É um projeto \textit{open-source} com o opcional de armazenamento pago em nuvem desenvolvido pela empresa InfluxData. É escrito na linguagem de programação Go e baseado em uma linguagem de consulta parecida com o SQL \cite{Noor2017}.
 
 \subsubsection{Grafana}
 
-Grafana é um projeto \textit{open-source} para análise de dados de séries temporais  \cite{Noor2017} que realiza consultas destas séries temporais a partir do InfluxDB exibindo os gráficos de maneira gráfica.\cite{chang2017kubernetes}
+Grafana é um projeto \textit{open-source} para análise de dados de séries temporais  \cite{Noor2017} que realiza consultas destas séries temporais a partir do InfluxDB exibindo os dados de maneira gráfica \cite{chang2017kubernetes}.
 
 \subsection{Banco de dados relacional}
 
 Um Banco de Dados Relacional é capaz de salvar e referenciar dados para uma consulta posterior. Possui uma coleção de tabelas, todas com nomes únicos, que compõem a base de
-dados, podendo estar relacionada a uma ou mais tabelas. Conceitos como integridade referencial de dados – que garante sincronia de dados entre tabelas – e chaves primárias estão presentes e garantem que um conjunto de informações possa ser representado de maneira consistente, independente da forma de acesso. \cite{bancosrelacionais}
+dados. Conceitos como integridade referencial de dados – que garante sincronia de dados entre tabelas – e chaves primárias estão presentes, garantindo que um conjunto de informações possa ser representado de maneira consistente, independente da forma de acesso  \cite{bancosrelacionais}.
 
 \subsubsection{PostgreSQL}
 
-PostgreSQL é uma excelente implementação de um banco de dados relacional, de código aberto e sem custos para o uso. \cite{stones2006beginning}
+O PostgreSQL é uma excelente implementação de um banco de dados relacional, de código aberto e sem custos para o uso  \cite{stones2006beginning}. O 
 PostgreSQL pode ser usado com diversas linguagens de programação, como por exemplo: Python, Javascript, Java e C++.
 
 O PostgreSQL ganhou diversos prêmios, incluindo o \textit{Linux Journal Editor's Choice Award for Best Database} três vezes e o \textit{2004 Linux New Media Award for Best Database System}.
 
 \subsection{Node.JS}
 
-Node.JS, também chamado de Node, é um ambiente de servidor que utiliza a linguagem de programação JavaScript. É baseado no \textit{runtime} do Google, chamado de motor V8. O V8 e o Node são basicamente implementados em C e C++, focando na performance e baixo consumo de memória. Embora o V8 suporte principalmente o uso de JavaScript no navegador, o Node foca no suporte de processos de servidores. \cite{Tilkov2010}
+O Node.JS, também chamado de Node, é um ambiente de servidor que utiliza a linguagem de programação JavaScript. É baseado no \textit{runtime} do Google, chamado de motor V8. O V8 e o Node são implementados em C e C++, focando no desempenho e baixo consumo de memória. Embora o V8 suporte principalmente o uso de JavaScript no navegador, o Node foca no suporte de processos de servidores. \cite{Tilkov2010}
 
-Node.JS utiliza um paradigma baseado em eventos e não-bloqueador de I/O, o que o torna leve e eficiente. É perfeito para aplicações de tempo real que lidam com dados intensos em dispositivos de baixo poder de processamento. \cite{Sapes2016}
+Utiliza um paradigma baseado em eventos e não-bloqueador de I/O, o que o torna leve e eficiente. É perfeito para aplicações de tempo real que lidam com dados intensos em dispositivos de baixo poder de processamento. \cite{Sapes2016}
 
 O Node é um dos ambientes e \textit{frameworks} mais famosos que suportam o desenvolvimento de servidores utilizando o JavaScript. A comunidade criou um grande ecossistema de bibliotecas e vasta documentação de suporte ao Node. \cite{Tilkov2010}
 
@@ -231,7 +231,7 @@ MQTT significa \textit{Message Queuing Telemetry Transport}, traduzido para o po
 
 É um protocolo inicialmente desenvolvido pela IBM\footnote{\url{http://www.hivemq.com/blog/mqtt-essentials-part-1-introducing-mqtt}} em 1999, sendo recentemente reconhecido como padrão pela OASIS (Organizarion for the Advancement of Structured Information Standards).\footnote{\url{https://www.oasis-open.org/news/announcements/ mqtt-version-3-1-1-becomes-an-oasis-standard}}
 
-\citeauthor{Kodali2017} (\citeyear{Kodali2017}) definiu o MQTT como um protocolo baseado em \textit {publisher/subscriber}. Qualquer conexão MQTT envolve dois tipos de agentes, os clientes MQTT e um MQTT \textit {broker}, ou servidor MQTT. Os dados que são transportados pelo MQTT são referenciados como mensagens da aplicação. Qualquer dispositivo ou programa que é conectado pela rede e troca mensagens através do MQTT é chamado de cliente MQTT. Um cliente MQTT pode ser tanto um \textit {publisher} e/ou um \textit {subscriber}. Um \textit {publisher} publica mensagens e um \textit {subscriber} requisita o recebimento de mensagens. Um MQTT \textit {server} é um programa que interconecta os clientes MQTT. Ele aceita e transmite as mensagens através de múltiplos clientes conectados à ele.
+\citeauthor{Kodali2017} (\citeyear{Kodali2017}) definiu o MQTT como um protocolo baseado em \textit {publisher/subscriber}. Qualquer conexão MQTT envolve dois tipos de agentes, os clientes MQTT e um MQTT \textit {broker}, ou servidor MQTT. Qualquer dispositivo ou programa que é conectado pela rede e troca mensagens através do MQTT é chamado de cliente MQTT. Um cliente MQTT pode ser tanto um \textit {publisher} e/ou um \textit {subscriber}. Um \textit {publisher} publica mensagens e um \textit {subscriber} requisita o recebimento de mensagens. Um MQTT \textit {server} é um programa que interconecta os clientes MQTT. Ele aceita e transmite as mensagens através de múltiplos clientes conectados à ele.
 
 \begin{figure}[htbp]
 	\centering
@@ -241,13 +241,15 @@ MQTT significa \textit{Message Queuing Telemetry Transport}, traduzido para o po
 	\label{fig:arquitetura-mqtt}
 \end{figure}
 
-Dispositivos como sensores e celulares, são considerados como clientes MQTT, quando um cliente MQTT tem alguma informação para transmitir, ele publica o dado para o \textit {broker} MQTT.
+\newpage
+
+Dispositivos como sensores e celulares são considerados como clientes MQTT. Quando um cliente MQTT tem alguma informação para transmitir, ele publica o dado para o \textit {broker} MQTT.
 
 A Figura \ref{fig:arquitetura-mqtt} apresenta um exemplo de arquitetura MQTT comum. O \textit {broker} MQTT, ou servidor MQTT é responsável por coletar e organizar os dados. As mensagens publicadas por clientes MQTT são transmitidas para outros clientes MQTT que se inscreverem ao tópico. O MQTT é desenhado para simplificar a implementação no cliente por concentrar todas as complexidades no \textit {broker}. Os \textit {publishers} e \textit {subscribers} são isolados, o que significa que eles não precisam conhecer a existência do outro.
 
 \subsubsection{MQTT Mosquitto}
 
-O Mosquitto é um \textit{broker} MQTT de código aberto \cite{Kodali2017} que entrega uma implementação de servidor e cliente MQTT. Utiliza o modelo \textit{publish/subscribe}, tem uma baixa utilização de rede e pode ser implementado em dispositivos de baixo custo como microcontroladores. \cite{Light}
+O Mosquitto é um \textit{broker} MQTT de código aberto \cite{Kodali2017} que entrega uma implementação de servidor e cliente MQTT. Utiliza o modelo \textit{publisher/subscriber}, tem uma baixa utilização de rede e pode ser implementado em dispositivos de baixo custo como microcontroladores. \cite{Light}
 
 Segundo \citeauthor{Light} (\citeyear{Light}), Mosquitto é recomendado para o uso sempre em que se necessita de mensagens leves, particularmente em dispositivos com recursos limitados.
 

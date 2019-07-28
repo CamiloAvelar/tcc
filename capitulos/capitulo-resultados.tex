@@ -4,11 +4,11 @@ Neste Capítulo encontram-se os experimentos realizados com os sistemas devidame
 
 \section{Manipulação de usuários}
 
-O projeto de usuários utiliza a porta 3001. Para utiliza-lo e testa-lo, devemos utilizar esta porta juntamente com os \textit{endpoints} disponíveis. Aqui realizaremos as consultas em todos estes \textit{endpoints} e discutiremos os resultados obtidos.
+O microsserviço de usuários utiliza a porta 3001. Para utiliza-lo e testa-lo, devemos utilizar esta porta juntamente com os \textit{endpoints} disponíveis (Seção \ref{sec:usuarios}). Aqui realizaremos as consultas em todos estes \textit{endpoints} e discutiremos os resultados obtidos.
 
-Para criar um usuário devemos consumir\footnote{O termo "consumir um \textit{endpoint}"\  significa enviar informações para o \textit{endpoint}, esperando algum retorno, de sucesso ou falha.} o \textit{endpoint} http://localhost:3001/usuario/cadastrar passando os parâmetros via \textit{POST} no formato \textit{JSON}, como na Figura \ref{fig:cadastro}.
+Para criar um usuário devemos consumir\footnote{O termo "consumir um \textit{endpoint}"\  significa enviar informações para o \textit{endpoint}, esperando algum retorno, de sucesso ou falha.} o \textit{endpoint} http://localhost:3001/usuario/cadastrar passando os parâmetros via \textit{POST} no formato \textit{JSON}\footnote{Javascript Object Notation (JSON), é um formato compacto de troca de dados simples e rápida entre sistema}, como na Figura \ref{fig:cadastro}.
 
-A resposta deste \textit{endpoint} pode ser conferida na Figura \ref{fig:cadastro}, e para garantir que o usuário foi incluído no banco de dados, podemos observar a Figura \ref{fig:cadastro}.
+A resposta deste \textit{endpoint} pode ser conferida na Figura \ref{fig:cadastro} e, para garantir que o usuário foi incluído no banco de dados, podemos observar a Figura \ref{fig:cadastro}.
 
 \begin{figure}[htbp]
 	\centering
@@ -19,9 +19,7 @@ A resposta deste \textit{endpoint} pode ser conferida na Figura \ref{fig:cadastr
 
 \clearpage
 
-Para editar um usuário, o \textit{endpoint} http://localhost:3001/usuario/editar-tempo, para editar tempo, e o http://localhost:3001/usuario/editar-senha para editar a senha, deve ser consumido passando os parâmetros via \textit{POST} como na Figura \ref{fig:tempo}, para editar o tempo, e a imagem, para editar a senha.
-
-A resposta pode ser observada na Figura \ref{fig:tempo}, para o tempo, e Figura \ref{fig:senha} para a senha.
+O \textit{endpoint} http://localhost:3001/usuario/editar-tempo deve ser consumido para editar o tempo máximo de banho de um usuário (Figura \ref{fig:tempo}). Para editar a senha do usuário, deve-se consumir o \textit{endpoint} http://localhost:3001/usuario/editar-senha (Figura \ref{fig:senha}).
 
 \begin{figure}[htbp]
 	\centering
@@ -111,7 +109,7 @@ O HomeAssistant é acessado via http://localhost:8123. Ao acessar o link, observ
 	\label{fig:homeassistant-off}
 \end{figure}
 
-Ao cadastrar um usuário, o seu sensor é inserido no HomeAssistant automaticamente, Figura \ref{fig:homeassistant-new}.
+Ao cadastrar um usuário, o seu sensor é inserido no HomeAssistant automaticamente (Figura \ref{fig:homeassistant-new}).
 
 \begin{figure}[htbp]
 	\centering
