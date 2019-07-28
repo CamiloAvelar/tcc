@@ -66,7 +66,9 @@ sensor usa esse efeito para enviar um sinal PWM e, através da contagem deste pu
 
 \subsection{Teclado matricial de membrana}
 
-Teclados são geralmente utilizados em aplicações na qual o usuário precisar interagir com um sistema, como computadores, calculadoras, controles remotos entre outros.\cite{teclado-matricial-1}. O Teclado Matricial de Membrana 4X4, com 16 teclas foi desenvolvido com a finalidade de facilitar a entrada de dados em projetos com plataformas microcontrolada \cite{teclado-matricial}, pode ser visto na Figura \ref{fig:teclado}. Este teclado possui 16 teclas, onde 10 teclas são numerais, 4 literais e 2 de caracteres. As 16 teclas estão dispostas em 4 linhas por 4 colunas e o teclado possui um conector de 8 pinos para ligação.
+Teclados permitem que usuários insiram informações em diversos tipos de sistemas, como computadores, calculadoras, controles remotos entre outros.\cite{teclado-matricial-1}. O Teclado Matricial de Membrana 4X4 (Figura \ref{fig:teclado}), com 16 teclas foi desenvolvido com a finalidade de facilitar a entrada de dados em projetos com plataformas microcontrolada \cite{teclado-matricial}. Este teclado possui 16 teclas, sendo 10 teclas são numéricas, 4 literais e 2 caracteres. 
+	
+As 16 teclas estão dispostas em 4 linhas por 4 colunas e o teclado possui um conector de 8 pinos para ligação. Quando um botão do teclado é pressionado, ele conecta a linha com a coluna na qual está ligado. O circuito do teclado está exemplificado na Figura \ref{fig:teclado-conexoes}.
 
 \begin{figure}[htbp]
 	\centering
@@ -76,8 +78,6 @@ Teclados são geralmente utilizados em aplicações na qual o usuário precisar 
 	\label{fig:teclado}
 \end{figure}
 
-Como o nome indica, este teclado é formado de botões organizados em linhas e colunas de modo a formar uma matriz. Quando pressionado, um botão conecta a linha com a coluna na qual está ligado. O circuito do teclado está exemplificado na Figura \ref{fig:teclado-conexoes}.
-
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.4]{figuras/matrix-1024x558.png}
@@ -86,20 +86,35 @@ Como o nome indica, este teclado é formado de botões organizados em linhas e c
 	\label{fig:teclado-conexoes}
 \end{figure}
 
-O teclado matricial possui a seguinte pinagem:
+A Tabela \ref{table:pinosteclado} possui as informações da distribuição dos pinos em tabelas e colunas, exemplificada na Figura \ref{fig:teclado-pins}.
 
-\begin{itemize}
-	\item Pino 1 (Esquerda na Figura \ref{fig:teclado-pins}) – Primeira Linha (L1)
-	\item Pino 2 – Segunda Linha (L2)
-	\item Pino 3 – Terceira Linha (L3)
-	\item Pino 4 – Quarta Linha (L4)
-	\item Pino 5 – Primeira Coluna (C1)
-	\item Pino 6 – Segunda Coluna (C2)
-	\item Pino 7 – Terceira Coluna (C3)
-	\item Pino 8 – Quarta Coluna (C4)
-\end{itemize}
-
-Esta pinagem está mostrada na Figura \ref{fig:teclado-pins}.
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ |c|c| }
+			\hline
+			\rowcolor{lightgray} Pino & Localização \\
+			 \hline 
+				1 & Linha 1 \\
+			 \hline 
+				2 & Linha 2 \\
+			 \hline 
+				3 & Linha 3 \\
+			 \hline 
+				4 & Linha 4 \\
+			 \hline 
+				5 & Coluna 1 \\
+			 \hline 
+				6 & Coluna 2 \\
+			 \hline 
+				7 & Coluna 3 \\
+			 \hline 
+				8 & Coluna 4 \\
+			\hline
+		\end{tabular}
+	\caption{Tabela de disposição dos pinos do teclado numérico}
+	\label{table:pinosteclado}
+	\end{center}
+\end{table}
 
 \begin{figure}[htbp]
 	\centering
@@ -139,7 +154,7 @@ A Figura \ref{fig:homeassistant-dash} apresenta um exemplo de tela inicial do Ho
 	\centering
 	\includegraphics[width=1\linewidth]{figuras/homeassistant-dash.png}
 	\caption{Dashboard genérico do HomeAssistant}
-	\legend{Fonte: \citeauthor{AlmeidaCosta} (\citeyear{AlmeidaCosta})}
+	\legend{Fonte: Adaptado de \citeauthor{AlmeidaCosta} (\citeyear{AlmeidaCosta})}
 	\label{fig:homeassistant-dash}
 \end{figure}
 
@@ -194,7 +209,7 @@ Node.JS utiliza um paradigma baseado em eventos e não-bloqueador de I/O, o que 
 
 O Node é um dos ambientes e \textit{frameworks} mais famosos que suportam o desenvolvimento de servidores utilizando o JavaScript. A comunidade criou um grande ecossistema de bibliotecas e vasta documentação de suporte ao Node. \cite{Tilkov2010}
 
-\subsubsection{Arquitetura de microsserviços}
+\subsection{Arquitetura de microsserviços}
 
 Seguindo a definição de \citeauthor{ms1} (\citeyear{ms1}), a arquitetura de microsserviços trata do desenvolvimento de uma aplicação que baseia na existência de diversos pequenos serviços independentes. Cada um dos serviços deve rodar em seu próprio processo independente. Estes serviços podem comunicar entre si utilizando mecanismos leves de comunicação (geralmente em torno no HTTP). Os serviços devem ser absolutamente independentes.
 
@@ -210,9 +225,7 @@ Um exemplo da arquitetura de microsserviços está na Figura \ref{fig:arquitetur
 
 Microsserviços são os resultados da decomposição funcional de uma aplicação. São caracterizados pela definição de sua interface e função no sistema. Como cada serviço deve ser independente, uma alteração na sua implementação não deve afetar o funcionamento dos demais. \cite{Pahl}
 
-\subsection{Protocolo de comunicação}
-
-\subsubsection{MQTT}
+\subsection{Protocolo de comunicação MQTT}
 
 MQTT significa \textit{Message Queuing Telemetry Transport}, traduzido para o português como Transporte de Telemetria de Enfileiramento de Mensagens, é um protocolo de transporte leve que otimiza o uso da a largura de banda de rede.\footnote{\url{http://public.dhe. ibm.com/software/dw/webservices/ws-mqtt/mqtt-v3r1.html}} O MQTT trabalha sobre o protocolo TCP e garante a entrega de mensagens de um nó para um servidor. Sendo um protocolo orientado por troca de mensagens, MQTT é ideal para aplicações IoT, que comumente tem recursos e capacidades limitados.
 
@@ -232,7 +245,7 @@ Dispositivos como sensores e celulares, são considerados como clientes MQTT, qu
 
 A Figura \ref{fig:arquitetura-mqtt} apresenta um exemplo de arquitetura MQTT comum. O \textit {broker} MQTT, ou servidor MQTT é responsável por coletar e organizar os dados. As mensagens publicadas por clientes MQTT são transmitidas para outros clientes MQTT que se inscreverem ao tópico. O MQTT é desenhado para simplificar a implementação no cliente por concentrar todas as complexidades no \textit {broker}. Os \textit {publishers} e \textit {subscribers} são isolados, o que significa que eles não precisam conhecer a existência do outro.
 
-\subsection{MQTT Mosquitto}
+\subsubsection{MQTT Mosquitto}
 
 O Mosquitto é um \textit{broker} MQTT de código aberto \cite{Kodali2017} que entrega uma implementação de servidor e cliente MQTT. Utiliza o modelo \textit{publish/subscribe}, tem uma baixa utilização de rede e pode ser implementado em dispositivos de baixo custo como microcontroladores. \cite{Light}
 

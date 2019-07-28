@@ -54,6 +54,7 @@
 \usepackage{lastpage}			% Usado pela Ficha catalográfica
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
+\usepackage[table]{xcolor}
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 \usepackage{supertabular}       % tabela na capa do dosudo apt-get install texlive texlive-latex3cumento
@@ -396,19 +397,20 @@
 % ---
 
 % ---
-% lista de listagens
+% inserir lista de tabelas
+% ---
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+% ---
+
+% ---
+% lista de codigos
 % ---
 \renewcommand{\lstlistingname}{Código}
 \renewcommand{\lstlistlistingname}{Lista de códigos}
 \lstlistoflistings
-
-
-% ---
-% inserir lista de tabelas
-% ---
-%\pdfbookmark[0]{\listtablename}{lot}
-%\listoftables*
-%\cleardoublepage
+\cleardoublepage
 % ---
 
 % ---

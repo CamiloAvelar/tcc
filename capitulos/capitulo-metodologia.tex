@@ -37,7 +37,7 @@ Após digitar a senha, a tecla \textit{\#} deve ser pressionada para o sistema c
 
 A Figura \ref{fig:mockservice} mostra este fluxo de digitação, assim como a identificação do usuário pelo id.
 
-\section{Configuração do RaspberryPi}
+\section{Configuração do RaspberryPi} \label{sec:confrasp}
 
 Para a configuração inicial do RaspberryPi é preciso fazer o download de um sistema operacional compatível com o microcontrolador. Para o sistema deste projeto, utilizamos o Raspbian\footnote{\url{https://www.home-assistant.io/docs/installation/hassbian/installation/}}, que foi instalado no cartão SD a ser inserido no RaspberryPi.
 
@@ -247,7 +247,7 @@ O HomeAssistant pode ser instalado a partir de diversos métodos\footnote{\url{h
 
 Para configurar o HomeAssistant no RaspberryPi é necessário realizar o \textit{download} da imagem do Hassbian. Com o \textit{download} concluído, deve-se copiar a imagem para o cartão SD que será inserido no RaspberryPi. Para isto, utilizamos o \textit{balenaEtcher}.
 
-Com a imagem devidamente escrita no cartão SD, basta inseri-lo no RaspberryPi, configurar a rede como descrito no processo de configuração do RaspberryPi, e, ao iniciar o sistema, o HomeAssistant será carregado automaticamente.
+Com a imagem devidamente escrita no cartão SD, basta inseri-lo no RaspberryPi, configurar a rede como descrito na Seção \ref{sec:confrasp}, e, ao iniciar o sistema, o HomeAssistant será carregado automaticamente.
 
 O HomeAssistant utiliza a porta 8123 e, para conseguir visualizar sua interface, o IP deve ser acessado esta porta. No caso deste sistema, o IP do RaspberryPi foi colocado como estático \textit{192.168.2.60}, então, para acessar a interface deve-se estar conectado na mesma rede do RaspberryPi e acessar o link \textit{http://192.168.2.60:8123}, como podemos ver na Figura \ref{fig:homeassistanthome}.
 
@@ -286,8 +286,6 @@ A configuração do gráfico no Grafana pode ser observada na Figura \ref{fig:gr
 	\caption{Configuração do gráfico no Grafana}
 	\label{fig:grafanaconf}
 \end{figure}
-
-\newpage
 
 Após a configuração do \textit{dashboard}, um atalho será criado na página inicial do Grafana, e para visualizar os dados, basta clicar neste atalho e será aberto um gráfico com os fluxos medidos no sensor.
 

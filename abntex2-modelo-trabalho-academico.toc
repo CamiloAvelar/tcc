@@ -1,54 +1,53 @@
 \changetocdepth {3}
 \babel@toc {brazil}{}
-\contentsline {chapter}{Lista de c\IeC {\'o}digos}{7}{section*.5}
-\contentsline {chapter}{\chapternumberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{11}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objetivos}{12}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Objetivos espec\IeC {\'\i }ficos}{12}{subsection.1.1.1}
-\contentsline {section}{\numberline {1.2}Justificativas e Relev{\^a}ncia}{13}{section.1.2}
-\contentsline {section}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~a}o do trabalho}{13}{section.1.3}
-\contentsline {chapter}{\chapternumberline {2}Materiais e Softwares}{14}{chapter.2}
-\contentsline {section}{\numberline {2.1}Microcontroladores e Microprocessadores}{14}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}ESP8266}{15}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}RaspberryPi}{15}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Sensores e atuadores}{16}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Sensor de fluxo YF-S201}{16}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Teclado matricial de membrana}{16}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}V\IeC {\'a}lvula solenoide}{17}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Softwares}{19}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}HomeAssistant}{19}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Banco de dados de s\IeC {\'e}ries temporais}{20}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}InfluxBD}{20}{subsubsection.2.3.2.1}
-\contentsline {subsubsection}{\numberline {2.3.2.2}Grafana}{21}{subsubsection.2.3.2.2}
-\contentsline {subsection}{\numberline {2.3.3}Banco de dados relacional}{21}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}PostgreSQL}{21}{subsubsection.2.3.3.1}
-\contentsline {subsection}{\numberline {2.3.4}Node.JS}{21}{subsection.2.3.4}
-\contentsline {subsubsection}{\numberline {2.3.4.1}Arquitetura de microsservi\IeC {\c c}os}{22}{subsubsection.2.3.4.1}
-\contentsline {subsection}{\numberline {2.3.5}Protocolo de comunica\IeC {\c c}\IeC {\~a}o}{23}{subsection.2.3.5}
-\contentsline {subsubsection}{\numberline {2.3.5.1}MQTT}{23}{subsubsection.2.3.5.1}
-\contentsline {subsection}{\numberline {2.3.6}MQTT Mosquitto}{23}{subsection.2.3.6}
-\contentsline {chapter}{\chapternumberline {3}Metodologia}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Funcionamento do sistema}{25}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Par\IeC {\^a}metros de opera\IeC {\c c}\IeC {\~a}o}{25}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Dados gerados}{26}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Ligar/desligar atuador}{26}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Configura\IeC {\c c}\IeC {\~a}o do RaspberryPi}{26}{section.3.2}
-\contentsline {section}{\numberline {3.3}Cria\IeC {\c c}\IeC {\~a}o das tabelas no PostgreSQL}{27}{section.3.3}
-\contentsline {section}{\numberline {3.4}Configura\IeC {\c c}\IeC {\~a}o do InfluxDB}{29}{section.3.4}
-\contentsline {section}{\numberline {3.5}Microsservi\IeC {\c c}os}{30}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}\textit {Clean Architecture}}{30}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Sistema de usu\IeC {\'a}rios}{31}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Sistema de comunica\IeC {\c c}\IeC {\~a}o MQTT}{32}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Sistema de simula\IeC {\c c}\IeC {\~a}o dos dados}{32}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}Configura\IeC {\c c}\IeC {\~a}o do HomeAssistant}{33}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Sensores}{34}{subsection.3.6.1}
-\contentsline {section}{\numberline {3.7}Configura\IeC {\c c}\IeC {\~a}o do Grafana}{35}{section.3.7}
-\contentsline {chapter}{\chapternumberline {4}Experimentos e Resultados}{38}{chapter.4}
-\contentsline {section}{\numberline {4.1}Manipula\IeC {\c c}\IeC {\~a}o de usu\IeC {\'a}rios}{38}{section.4.1}
-\contentsline {section}{\numberline {4.2}Visualiza\IeC {\c c}\IeC {\~a}o via Grafana}{43}{section.4.2}
-\contentsline {section}{\numberline {4.3}Estado do atuador via HomeAssistant}{43}{section.4.3}
-\contentsline {chapter}{\chapternumberline {5}Considera\IeC {\c c}\IeC {\~o}es Finais}{45}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{46}{section*.9}
+\contentsline {chapter}{Lista de c\IeC {\'o}digos}{8}{section*.5}% 
+\contentsline {chapter}{\chapternumberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{12}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Objetivos}{13}{section.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}Objetivos espec\IeC {\'\i }ficos}{13}{subsection.1.1.1}% 
+\contentsline {section}{\numberline {1.2}Justificativas e Relev{\^a}ncia}{14}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~a}o do trabalho}{14}{section.1.3}% 
+\contentsline {chapter}{\chapternumberline {2}Materiais e Softwares}{15}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Microcontroladores e Microprocessadores}{15}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}ESP8266}{16}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}RaspberryPi}{16}{subsection.2.1.2}% 
+\contentsline {section}{\numberline {2.2}Sensores e atuadores}{17}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Sensor de fluxo YF-S201}{17}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Teclado matricial de membrana}{17}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}V\IeC {\'a}lvula solenoide}{18}{subsection.2.2.3}% 
+\contentsline {section}{\numberline {2.3}Softwares}{20}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}HomeAssistant}{20}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Banco de dados de s\IeC {\'e}ries temporais}{21}{subsection.2.3.2}% 
+\contentsline {subsubsection}{\numberline {2.3.2.1}InfluxBD}{21}{subsubsection.2.3.2.1}% 
+\contentsline {subsubsection}{\numberline {2.3.2.2}Grafana}{22}{subsubsection.2.3.2.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Banco de dados relacional}{22}{subsection.2.3.3}% 
+\contentsline {subsubsection}{\numberline {2.3.3.1}PostgreSQL}{22}{subsubsection.2.3.3.1}% 
+\contentsline {subsection}{\numberline {2.3.4}Node.JS}{22}{subsection.2.3.4}% 
+\contentsline {subsection}{\numberline {2.3.5}Arquitetura de microsservi\IeC {\c c}os}{23}{subsection.2.3.5}% 
+\contentsline {subsection}{\numberline {2.3.6}Protocolo de comunica\IeC {\c c}\IeC {\~a}o MQTT}{23}{subsection.2.3.6}% 
+\contentsline {subsubsection}{\numberline {2.3.6.1}MQTT Mosquitto}{25}{subsubsection.2.3.6.1}% 
+\contentsline {chapter}{\chapternumberline {3}Metodologia}{26}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Funcionamento do sistema}{26}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Par\IeC {\^a}metros de opera\IeC {\c c}\IeC {\~a}o}{26}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Dados gerados}{27}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Ligar/desligar atuador}{27}{subsection.3.1.3}% 
+\contentsline {section}{\numberline {3.2}Configura\IeC {\c c}\IeC {\~a}o do RaspberryPi}{27}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Cria\IeC {\c c}\IeC {\~a}o das tabelas no PostgreSQL}{28}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Configura\IeC {\c c}\IeC {\~a}o do InfluxDB}{30}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Microsservi\IeC {\c c}os}{31}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}\textit {Clean Architecture}}{31}{subsection.3.5.1}% 
+\contentsline {subsection}{\numberline {3.5.2}Sistema de usu\IeC {\'a}rios}{32}{subsection.3.5.2}% 
+\contentsline {subsection}{\numberline {3.5.3}Sistema de comunica\IeC {\c c}\IeC {\~a}o MQTT}{33}{subsection.3.5.3}% 
+\contentsline {subsection}{\numberline {3.5.4}Sistema de simula\IeC {\c c}\IeC {\~a}o dos dados}{33}{subsection.3.5.4}% 
+\contentsline {section}{\numberline {3.6}Configura\IeC {\c c}\IeC {\~a}o do HomeAssistant}{34}{section.3.6}% 
+\contentsline {subsection}{\numberline {3.6.1}Sensores}{35}{subsection.3.6.1}% 
+\contentsline {section}{\numberline {3.7}Configura\IeC {\c c}\IeC {\~a}o do Grafana}{36}{section.3.7}% 
+\contentsline {chapter}{\chapternumberline {4}Experimentos e Resultados}{38}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Manipula\IeC {\c c}\IeC {\~a}o de usu\IeC {\'a}rios}{38}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Visualiza\IeC {\c c}\IeC {\~a}o via Grafana}{43}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Estado do atuador via HomeAssistant}{43}{section.4.3}% 
+\contentsline {chapter}{\chapternumberline {5}Considera\IeC {\c c}\IeC {\~o}es Finais}{45}{chapter.5}% 
+\contentsline {chapter}{Refer\^encias}{46}{chapter*.8}% 
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\contentsline {part}{Ap\^endices}{49}{section*.10}
-\contentsline {appendix}{\chapternumberline {A}C\IeC {\'o}digo sistema de usu\IeC {\'a}rios}{50}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}C\IeC {\'o}digo sistema de comunica\IeC {\c c}\IeC {\~a}o MQTT}{56}{appendix.B}
+\contentsline {part}{Ap\^endices}{49}{section*.9}% 
+\contentsline {appendix}{\chapternumberline {A}C\IeC {\'o}digo sistema de usu\IeC {\'a}rios}{50}{appendix.A}% 
+\contentsline {appendix}{\chapternumberline {B}C\IeC {\'o}digo sistema de comunica\IeC {\c c}\IeC {\~a}o MQTT}{56}{appendix.B}% 
