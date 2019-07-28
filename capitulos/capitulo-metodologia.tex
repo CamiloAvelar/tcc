@@ -44,6 +44,8 @@ Para a configuração inicial do RaspberryPi é preciso fazer o download de um s
 
 Os sistemas deste projeto foram desenvolvidos diretamente no RaspberryPi, e, para possibilitar este desenvolvimento, é necessário primeiramente configurar o ambiente do RaspberryPi.
 
+\newpage
+
 O RaspberryPi foi configurado para ser \textit{headless}\footnote{\url{https://www.raspberrypi.org/documentation/configuration/wireless/headless.md}}, o que faz com que ele não necessite de teclado, mouse ou monitor para poder ser acessado. Para conseguir acessar o RaspberryPi nesta configuração é necessária a utilização do SSH, ou \textit{Secure Shell}, que é um protocolo de rede criptográfico para operação de serviços de rede de forma segura\footnote{\url{https://www.ssh.com/ssh/}}. O SSH permite o login remoto no sistema operacional do Raspberry, possibilitando o completo controle do sistema operacional de forma remota.
 
 A configuração de rede do RaspberryPi foi realizada para conter um IP estático (\textit{192.168.2.60}), que facilita o acesso SSH ao sistema.
@@ -84,7 +86,20 @@ static domain_name_servers=192.168.2.1
 
 \section{Criação das tabelas no PostgreSQL}
 
-Em bancos de dados relacionais, para salvar os dados é necessário criar um banco de dados com o nome desejado. Dentro do banco, são criadas tabelas que se relacionam entre si, e, dentro das tabelas, existem colunas, referente ao dado que deseja guardar. Nesta seção estão as descrições do banco de dados criado, suas tabelas e colunas.
+Todos os dados de um banco de dados relacional são armazenados em tabelas. Uma tabela é uma simples estrutura de linhas e colunas. Em um banco de dados podem existir uma ou centenas de tabelas, sendo que o limite pode ser imposto tanto pela ferramenta de software utilizada, quanto pelos recursos de hardware disponíveis no equipamento.
+
+As tabelas associam-se entre si por meio de regras de relacionamentos, que consistem em associar um ou vários atributos de uma tabela com um ou vários atributos de outra tabela.
+
+\newpage
+
+A Figura \ref{fig:erpostgre} mostra o diagrama Entidade Relacionamento do banco de dados \textit{users} criado para a aplicação. Um diagrama Entidade Relacionamento é capaz de descrever um modelo de tabelas (entidades) que são ligadas umas as outras por relacionamentos que expressam as dependências e exigências entre si. No caso do sistema planejado, existem três entidades: Usuário, Configuração e Banho. O usuário se relaciona com as outras duas entidades: ele possui uma configuração e pode tomar um banho.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figuras/ERPostgre.png}
+	\caption{Modelo Entidade Relacionamento do PostgreSQL}
+	\label{fig:erpostgre}
+\end{figure}
 
 Para o sistema desenvolvido, foi criado um banco de dados com o nome \textit{users} com três tabelas: \textit{user\_baths}, \textit{user\_settings} e \textit{users}.
 
@@ -117,21 +132,11 @@ A tabela \textit{user\_baths} guarda informações de tempo de todos os banhos t
 	\item \textit{updated\_at}: data e hora da ultima atualização do usuário;
 \end{itemize}
 
-A Figura \ref{fig:erpostgre} mostra o diagrama Entidade Relacionamento do banco de dados \textit{users} criado para a aplicação. Um diagrama Entidade Relacionamento é capaz de descrever um modelo de dados como componentes (entidades) que são ligadas umas as outras por relacionamentos que expressam as dependências e exigências entre si. No caso do sistema planejado, existem três entidades: Usuário, Configuração e Banho. O usuário se relaciona com as outras duas entidades: ele possui uma configuração e pode tomar um banho.
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.6\linewidth]{figuras/ERPostgre.png}
-	\caption{Modelo Entidade Relacionamento do PostgreSQL}
-	\label{fig:erpostgre}
-\end{figure}
-
-
 \section{Configuração do InfluxDB}
 
 Na configuração do InfluxDB, foi utilizada a biblioteca \textit{influx}\footnote{\url{https://www.npmjs.com/package/influx}}. Esta biblioteca permite a criação do banco de dados diretamente do código fonte do sistema, assim como as tabelas para guardar os dados temporais.
 
-Foi criado o banco de dados \textit{water\_flow\_data}, que guarda os dados temporais dos banhos dos usuários. Neste banco, os dados são guardados com a \textit{tag} referente ao id do usuário cadastrado no banco relacional PostgreSQL. Nos \textit{fields} são guardados os dados que chegam diretamente do sensor, que significa o fluxo de água naquele determinado instante.
+Foi criado o banco de dados \textit{water\_flow\_data}, que guarda os dados temporais dos banhos dos usuários. Neste banco, os dados são guardados com a \textit{tag} referente ao id do usuário cadastrado no banco relacional PostgreSQL. Nos \textit{fields} são guardados os dados que chegam diretamente do sensor, ou seja, o fluxo de água naquele determinado instante.
 
 O InfluxDB salva automaticamente os \textit{timestamps}\footnote{\textit{Timestamps} são marcas temporais, informa a data e a hora que um certo evento ocorreu.} de cada dado incluido nele, o que facilita a manipulação dos dados, pois não é necessário informar a data e a hora toda vez que for incluir algum dado no banco.
 
@@ -180,6 +185,8 @@ class InfluxHandler {
 }
 \end{lstlisting}
 
+\newpage
+
 \section{Microsserviços}
 
 Nesta seção são apresentadas as etapas de desenvolvimento dos microsserviços utilizados no sistema elaborado, assim como o serviço de simulação para viabilizar os testes e validação do sistema.
@@ -192,7 +199,7 @@ Os microsserviços desenvolvidos foram projetados para seguir a \textit{Clean Ar
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.25\linewidth]{figuras/cleanarch.png}
+	\includegraphics[width=0.22\linewidth]{figuras/cleanarch.png}
 	\caption{Divisão dos arquivos do Sistema de Usuários}
 	\label{fig:clean}
 \end{figure}
@@ -203,7 +210,7 @@ O propósito desta aplicação está em ter o controle e informações sobre o c
 
 O microsserviço de usuários é responsável por cadastrar e editar usuários, cadastrar informações sobre o tempo de banho do usuário e autorizar o usuário a tomar o banho.
 
-As operações são realizadas através dos \textit{endpoints}\footnote{Um \textit{endpoint} é uma forma de comunicação entre os sistemas, o sistema disponibiliza \textit{endpoints} que servem como como endereços para acesso ao sistema, que podem receber e enviar informações, dependendo do que foi programado.}, que são \textit{links} em que são passados parâmetros contendo a informação específica que o \textit{endpoint} requer.
+As operações são realizadas através dos \textit{endpoints}, que é uma forma de comunicação entre os sistemas. O sistema os disponibiliza como endereços para acesso, que podem receber e enviar informações, dependendo do que foi programado.
 
 Este microsserviço salva todos os dados recebidos nas tabelas do PostgreSQL.
 
@@ -260,6 +267,8 @@ A Figura \ref{fig:mockservice} mostra o sistema de simulação funcionando, com 
 	\caption{Exemplo do sistema de simulação}
 	\label{fig:mockservice}
 \end{figure}
+
+\newpage
 
 \section{Configuração do HomeAssistant}
 

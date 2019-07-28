@@ -9,7 +9,7 @@ Buscando aumentar a eficiência no processamento de dados, na década de 70
 começaram a ser utilizados microprocessadores em computadores \cite{martins2005sistemas}. Os microprocessadores são componentes dedicados ao processamento de informações com
 capacidade de cálculos matemáticos e endereçamento de memória externa \cite{chase2007sistemas}.
 
-Por sua vez, os microcontroladores são pequenos sistemas computacionais poderosos que englobam em um único chip: interfaces de entrada/saída digitais e analógicas, memória RAM, memória FLASH, interfaces de comunicação serial, conversores analógicos/digitais, temporizadores/contadores e um microprocessador. Com o advento dos microcontroladores de 16 e 32 bits - o padrão mais difundido atualmente é o de 8bits - a capacidade de prover soluções mais complexas e maior velocidade de processamento se iguala ao do microprocessador \cite{chase2007sistemas}.
+Por sua vez, os microcontroladores são pequenos sistemas computacionais poderosos que englobam em um único chip: interfaces de entrada/saída digitais e analógicas, memória RAM, memória FLASH, interfaces de comunicação serial, conversores analógicos/digitais, temporizadores/contadores e um microprocessador \cite{chase2007sistemas}.
 
 Na Figura \ref{fig:microprocessador-microcontrolador}, pode-se observar algumas das diferenças entre Microprocessadores e Microcontroladores. O microcontrolador embarca todos os componentes necessários ao seu funcionamento, enquanto o microprocessador precisa de comunicar externamente com os periféricos similares.
 
@@ -55,7 +55,7 @@ Nesta seção serão apresentados os sensores e atuadores a serem utilizados no 
 
 O sensor YF-S201 (Figura \ref{fig:sensor}) é um sensor do tipo turbina que mede a quantidade de líquido que passa pela tubulação, girando uma turbina que
 gera pulsos de onda quadrada através de um sensor de efeito Hall \cite{roque2018sistema}. O
-sensor usa esse efeito para enviar um sinal PWM e, através da contagem deste pulso é possível mensurar a quantidade de água que passa pelo cata-vento no interior do sensor. \cite{ms2017automaccao}
+sensor usa esse efeito para enviar um sinal PWM e, através da contagem deste sinal é possível mensurar a quantidade de água que passa pelo cata-vento no interior do sensor. \cite{ms2017automaccao}
 
 \begin{figure}[htbp]
 		\centering
@@ -66,17 +66,19 @@ sensor usa esse efeito para enviar um sinal PWM e, através da contagem deste pu
 
 \subsection{Teclado matricial de membrana}
 
-Teclados permitem que usuários insiram informações em diversos tipos de sistemas, como computadores, calculadoras, controles remotos entre outros \cite{teclado-matricial-1}. O Teclado Matricial de Membrana 4X4 (Figura \ref{fig:teclado}) foi desenvolvido com a finalidade de facilitar a entrada de dados em projetos com plataformas microcontrolada \cite{teclado-matricial}. Este teclado possui 16 teclas, sendo 10 teclas são numéricas, 4 literais e 2 caracteres. 
-	
-As teclas estão dispostas em 4 linhas por 4 colunas e o teclado possui um conector de 8 pinos para ligação. Quando um botão do teclado é pressionado, ele conecta a linha com a coluna na qual está ligado. O circuito do teclado está exemplificado na Figura \ref{fig:teclado-conexoes}.
+Teclados permitem que usuários insiram informações em diversos tipos de sistemas, como computadores, calculadoras, controles remotos entre outros \cite{teclado-matricial-1}. O Teclado Matricial de Membrana 4X4 (Figura \ref{fig:teclado}) foi desenvolvido com a finalidade de facilitar a entrada de dados em projetos com plataformas microcontrolada \cite{teclado-matricial}. Este teclado possui 16 teclas, sendo 10 teclas são numéricas, 4 literais e 2 caracteres.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.3]{figuras/teclado-matricial.jpg}
+	\includegraphics[scale=0.2]{figuras/teclado-matricial.jpg}
 	\caption{Teclado Matricial de Membrana}
 	\legend{Fonte: \citeauthor{teclado-matricial-1} (\citeyear{teclado-matricial-1})}
 	\label{fig:teclado}
 \end{figure}
+	
+\newpage
+
+As teclas estão dispostas em 4 linhas por 4 colunas e o teclado possui um conector de 8 pinos para ligação. Quando um botão do teclado é pressionado, ele conecta a linha com a coluna na qual está ligado. O circuito do teclado está exemplificado na Figura \ref{fig:teclado-conexoes}.
 
 \begin{figure}[htbp]
 	\centering
@@ -124,6 +126,8 @@ A Tabela \ref{table:pinosteclado} possui as informações da distribuição dos 
 	\label{fig:teclado-pins}
 \end{figure}
 
+\newpage
+
 \subsection{Válvula solenoide}
 
 Solenóides são dispositivos eletromecânicos baseados no deslocamento causado pela ação de um campo magnético gerado por uma bobina e são muito utilizados na construção de outros dispositivos, como é o caso das válvulas para controle de fluidos. Em particular, as válvulas para baixas vazões (da ordem de mililitros por minuto) e baixas pressões têm sido amplamente aplicadas em equipamentos e montagens para uso em laboratórios clínicos e químicos  \cite{da2002modulo}. Elas são de pequenas dimensões e requerem baixa tensão e corrente de acionamento.
@@ -136,6 +140,8 @@ A válvula utilizada neste trabalho pode ser vista na Figura \ref{fig:valvula-so
 	\caption{Válvula Solenoide}
 	\label{fig:valvula-solenoide}
 \end{figure}
+
+\newpage
 
 Segundo \citeauthor{da2002modulo} (\citeyear{da2002modulo}), a estratégia para fechamento e abertura dos canais fluídicos depende do fabricante, mas o princípio de acionamento elétrico é comumente o mesmo. Uma tensão é aplicada sobre um solenoide, criando um campo magnético que desloca um núcleo ferromagnético móvel, causando a alteração do estado da válvula. O núcleo
 ferromagnético comprime uma mola que é a responsável por retornar o núcleo a sua posição original quando a corrente elétrica é interrompida.
@@ -252,6 +258,8 @@ A Figura \ref{fig:arquitetura-mqtt} apresenta um exemplo de arquitetura MQTT com
 O Mosquitto é um \textit{broker} MQTT de código aberto \cite{Kodali2017} que entrega uma implementação de servidor e cliente MQTT. Utiliza o modelo \textit{publisher/subscriber}, tem uma baixa utilização de rede e pode ser implementado em dispositivos de baixo custo como microcontroladores. \cite{Light}
 
 Segundo \citeauthor{Light} (\citeyear{Light}), Mosquitto é recomendado para o uso sempre em que se necessita de mensagens leves, particularmente em dispositivos com recursos limitados.
+
+\newpage
 
 O Projeto Mosquitto é um membro da Eclipse Foundation. Existem três partes no projeto:
 
