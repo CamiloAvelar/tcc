@@ -1,8 +1,13 @@
 \babel@toc {brazil}{}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {1}{\ignorespaces Tabela de disposi\IeC {\c c}\IeC {\~a}o dos pinos do teclado num\IeC {\'e}rico}}{18}{table.2.1}% 
+\contentsline {table}{\numberline {1}{\ignorespaces Tabela de disposi\IeC {\c c}\IeC {\~a}o dos pinos do teclado num\IeC {\'e}rico.}}{19}{table.2.1}
 \addvspace {10pt}
+\contentsline {table}{\numberline {2}{\ignorespaces Colunas da tabela \textit {users}.}}{30}{table.3.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Colunas da tabela \textit {user\_settings}.}}{30}{table.3.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Colunas da tabela \textit {user\_baths}.}}{30}{table.3.4}
+\contentsline {table}{\numberline {5}{\ignorespaces \textit {Endpoints} do sistema de usu\IeC {\'a}rios.}}{34}{table.3.5}
+\contentsline {table}{\numberline {6}{\ignorespaces T\IeC {\'o}picos do \textit {broker} MQTT.}}{35}{table.3.6}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

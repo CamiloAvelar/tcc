@@ -1,7 +1,7 @@
 \chapter{Metodologia}
 
-Este Capítulo apresenta a estrutura geral do sistema, a configuração inicial do RaspberryPi, a construção dos microsserviços, assim como as etapas de realização do projeto. A
-primeira etapa consiste no desenvolvimento do microsserviço de cadastro e controle de usuários. Em seguida, foi desenvolvido o sistema que recebe os dados via MQTT, guardando-os no InfluxDB. Com os dados sendo recebidos e devidamente guardados, foi configurado o HomeAssistant juntamente com o Grafana.
+Este Capítulo apresenta a estrutura geral do sistema, a configuração inicial do Raspberry Pi, a construção dos microsserviços, assim como as etapas de realização do projeto. A
+primeira etapa consiste no desenvolvimento do microsserviço de cadastro e controle de usuários. Em seguida, foi desenvolvido o sistema que recebe os dados via MQTT, guardando-os no InfluxDB. Com os dados sendo recebidos e devidamente guardados, foram configurados o HomeAssistant e Grafana.
 
 A validação do projeto será feita através de um sistema criado para emular os dados vindos dos sensores, atuadores e teclado. %Este sistema é capaz de criar dados que simulam os sinais recebidos pelo sensor YF-S201, pelo teclado numérico e atuador.
 
@@ -12,13 +12,13 @@ Nesta seção estão descritos os parâmetros utilizados pelo sistema, os dados 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figuras/arquiteturaprojeto.png}
-	\caption{Arquitetura geral do projeto}
+	\caption{Arquitetura geral do projeto.}
 	\label{fig:arqgeral}
 \end{figure}
 
 \subsection{Parâmetros de operação}
 
-Os parâmetros de operação ditam o funcionamento do sistema. São os parâmetros utilizados pelo sistema para garantir o funcionamento esperado. Estes parâmetros são:
+Os parâmetros de operação são utilizados pelo sistema para garantir o funcionamento esperado. Estes parâmetros são:
 
 \begin{itemize}
 	\item Tempo de banho permitido: é o tempo máximo de banho permitido para cada usuário;
@@ -26,36 +26,36 @@ Os parâmetros de operação ditam o funcionamento do sistema. São os parâmetr
 	\item Estado do usuário: autorizado ou não autorizado;
 \end{itemize}
 
-Ao se criar um usuário é necessário informar três dados: nome do usuário, senha e tempo de banho permitido. A senha é utilizada para autorizar o usuário a tomar o banho, para iniciar o banho, o usuário deve digitar sua senha no teclado numérico. O tempo de banho permitido é o tempo máximo em que o chuveiro pode ficar ligado, ao exceder este limite, o atuador irá interromper o fluxo de água.
+Ao se criar um usuário é necessário informar três dados: nome do usuário, senha e tempo de banho permitido. A senha é utilizada para autorizar o usuário a tomar o banho, para iniciar o banho, o usuário deve digitar sua senha no teclado numérico. O tempo de banho permitido é o tempo máximo em que o chuveiro pode ficar ligado; ao exceder este limite, o atuador irá interromper o fluxo de água.
 
-O estado do chuveiro poderá ser observado no HomeAssistant, que dirá se o usuário está com o chuveiro ligado ou desligado. Cada usuário terá sua própria informação do seu sensor no HomeAssistant.
+O estado do chuveiro poderá ser observado no HomeAssistant, que dirá se o usuário está com o chuveiro ligado ou desligado. O HomeAssistant proverá  informações personalizadas de acordo com o usuário.
 
 \subsection{Dados gerados}
 
-O usuário, ao digitar a sua senha correta no teclado numérico, liberará o atuador e o fluxo de água começará a passar pelo sensor de fluxo. Este sensor irá gerar dados que dizem informações a respeito da quantidade de água por segundo que está passando por ele.
+O usuário, ao digitar a sua senha correta no teclado numérico, liberará o atuador e o fluxo de água começará a passar pelo sensor de fluxo. Este sensor irá gerar dados que dizem informações a respeito do fluxo volumétrico de água passado por ele.
 
-Os dados do sensor são gravados no InfluxDB e poderão ser vistos no Grafana em forma de gráfico, sendo possível distinguir os usuários. O sistema, ao perceber uma parada no fluxo, ou se o tempo de banho ultrapassar o limite de banho do usuário, fecha o atuador e contabiliza o tempo total do banho tomado guardando-o no Banco de Dados PostgreSQL.
+Os dados do sensor são gravados no InfluxDB e poderão ser vistos no Grafana em forma de gráfico, sendo possível distinguir os usuários. O sistema, ao perceber uma parada no fluxo, ou se o tempo de banho ultrapassar o limite de banho do usuário, fecha o atuador e contabiliza o tempo total do banho tomado, salvando-o no Banco de Dados PostgreSQL.
 
 \subsection{Ligar/desligar atuador}
 
-Para ligar o atuador, o sistema necessita identificar o usuário e autentica-lo. Esta identificação e autenticação é realizada via teclado numérico. O usuário é identificado pelo seu id, que é fornecido no momento do seu cadastro. Para realizar a identificação, o usuário deve pressionar a tecla \textit{\*} seguido pelo seu id e \textit{\#}. Ao realizar a consulta, o sistema retorna o nome do usuário e requisita a senha.
+Para ligar o atuador, o sistema necessita identificar o usuário e autenticá-lo. Esta identificação e autenticação é realizada via teclado numérico. O usuário é identificado pelo seu id, que é fornecido no momento do seu cadastro. Para realizar a identificação, o usuário deve pressionar a tecla \textit{*} seguido pelo seu id e \textit{\#}. Ao realizar a consulta, o sistema retorna o nome do usuário e requisita a senha.
 
-Após digitar a senha, a tecla \textit{\#} deve ser pressionada e o sistema irá comparar a senha digitada com a cadastrada no banco de dados. Caso as senhas forem iguais, o atuador é ligado, caso forem diferentes, o sistema retorna que o usuário não está autenticado e não liga o atuador. 
+Após digitar a senha, a tecla \textit{\#} deve ser pressionada e o sistema irá comparar a senha digitada com a cadastrada no banco de dados. Caso as senhas forem iguais, o atuador é ligado; caso forem diferentes, o sistema retorna que o usuário não está autenticado e não liga o atuador. 
 
 A Figura \ref{fig:mockservice} mostra este fluxo de digitação, assim como a identificação do usuário pelo id.
 
-\section{Configuração do RaspberryPi} \label{sec:confrasp}
+\section{Configuração do Raspberry Pi} \label{sec:confrasp}
 
-Para a configuração inicial do RaspberryPi é preciso fazer o download de um sistema operacional compatível com o microcontrolador. Para o sistema deste projeto, utilizamos o Hassbian\footnote{\url{https://www.home-assistant.io/docs/installation/hassbian/installation/}}, que foi instalado no cartão SD a ser inserido no RaspberryPi.
+Para a configuração inicial do Raspberry Pi é preciso fazer o download de um sistema operacional compatível com o microcontrolador. Para o sistema deste projeto, utilizamos o Hassbian\footnote{\url{https://www.home-assistant.io/docs/installation/hassbian/installation/}}, que foi instalado no cartão SD a ser inserido no Raspberry Pi.
 
 
-Os sistemas deste projeto foram desenvolvidos diretamente no RaspberryPi, e, para possibilitar este desenvolvimento, é necessário primeiramente configurar o ambiente do RaspberryPi.
+Os sistemas deste projeto foram desenvolvidos diretamente no Raspberry Pi e, para possibilitar este desenvolvimento, é necessário primeiramente configurar o ambiente do Raspberry Pi.
 
-O RaspberryPi foi configurado para ser \textit{headless}\footnote{\url{https://www.raspberrypi.org/documentation/configuration/wireless/headless.md}}, o que faz com que ele não necessite de teclado, mouse ou monitor para poder ser acessado. Para conseguir acessar o RaspberryPi nesta configuração é necessária a utilização do SSH, ou \textit{Secure Shell}, que é um protocolo de rede criptográfico para operação de serviços de rede de forma segura\footnote{\url{https://www.ssh.com/ssh/}}. O SSH permite o login remoto no sistema operacional do Raspberry, possibilitando o completo controle do sistema operacional de forma remota.
+O Raspberry Pi foi configurado para ser \textit{headless}\footnote{\url{https://www.raspberrypi.org/documentation/configuration/wireless/headless.md}}, o que faz com que ele não necessite de teclado, mouse ou monitor para poder ser acessado. Para conseguir acessar o Raspberry Pi nesta configuração é necessária a utilização do SSH, ou \textit{Secure Shell}, que é um protocolo de rede criptográfico para operação de serviços de rede de forma segura\footnote{\url{https://www.ssh.com/ssh/}}. O SSH permite o login remoto no sistema operacional do Raspberry, possibilitando o completo controle do sistema operacional de forma remota.
 
-A configuração de rede do RaspberryPi foi realizada para conter um IP estático (\textit{192.168.2.60}), que facilita o acesso SSH ao sistema.
+A configuração de rede do Raspberry Pi foi realizada para conter um IP estático (\textit{192.168.2.60}), que facilita o acesso SSH ao sistema.
 
-O Código \ref{cod:headless} mostra um exemplo do arquivo \textit{wpa\_supplicant.conf}, que faz parte da configuração \textit{headless}, servindo para conectar à rede automaticamente ao iniciar os RaspberryPi. Já no Código \ref{cod:static}, podemos observar a configuração do ip estático.
+O Código \ref{cod:headless} mostra um exemplo do arquivo \textit{wpa\_supplicant.conf}, que faz parte da configuração \textit{headless}, servindo para conectar à rede automaticamente ao iniciar os Raspberry Pi. Já no Código \ref{cod:static}, podemos observar a configuração do ip estático.
 
 \begin{lstlisting}[caption=Exemplo de configuração \textit{headless}, label=cod:headless]
 update_config=1
@@ -66,6 +66,8 @@ network={
     psk="<Senha da sua rede Wi-Fi>"
 }
 \end{lstlisting}
+
+\newpage
 
 \begin{lstlisting}[caption=Exemplo de configuração do IP estático, label=cod:static]
 update_config=1
@@ -104,36 +106,87 @@ A Figura \ref{fig:erpostgre} mostra o diagrama Entidade Relacionamento do banco 
 	\label{fig:erpostgre}
 \end{figure}
 
+\newpage
+
 Para o sistema desenvolvido, foi criado um banco de dados com o nome \textit{users} com três tabelas: \textit{user\_baths}, \textit{user\_settings} e \textit{users}.
 
-A tabela \textit{users} contém 5 colunas, que guardam informações dos usuários cadastrados, que são:
-\begin{itemize}
-	\item id: gera um id que se auto incrementa e é único para cada usuário;
-	\item \textit{name}: referente ao nome do usuário;
-	\item \textit{password}: informação da senha do usuário, que é criptografada;
-	\item \textit{created\_at}: data e hora da criação do usuário;
-	\item \textit{updated\_at}: data e hora da ultima atualização do usuário;
-\end{itemize}
+A tabela \textit{users} contém 5 colunas que guardam informações dos usuários cadastrados, que são mostradas na Tabela \ref{tab:users}.
 
-A tabela \textit{user\_settings} guarda informações de configuração dos usuários, e também contém 5 colunas:
+%\begin{itemize}
+%	\item id: gera um id que se auto incrementa e é único para cada usuário;
+%	\item \textit{name}: referente ao nome do usuário;
+%	\item \textit{password}: informação da senha do usuário, que é criptografada;
+%	\item \textit{created\_at}: data e hora da criação do usuário;
+%	\item \textit{updated\_at}: data e hora da ultima atualização do usuário;
+%\end{itemize}
 
-\begin{itemize}
-	\item id: identificador único;
-	\item \textit{user\_id}: referente ao id do usuário;
-	\item \textit{allowedBathTime}: tempo de banho permitido do usuário;
-	\item \textit{created\_at}: data e hora da criação do usuário;
-	\item \textit{updated\_at}: data e hora da ultima atualização do usuário;
-\end{itemize}
+\begin{table}[]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\rowcolor[HTML]{ECF4FF} 
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Coluna} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}Função} \\ \hline
+		id                                                   & identificador único que se auto incrementa          \\ \hline
+		\textit{name}                                        & nome do usuário cadastrado                          \\ \hline
+		\textit{password}                                    & senha criptografada do usuário cadastrado           \\ \hline
+		\textit{created\_at}                                 & data e hora da criação do usuário                   \\ \hline
+		\textit{updated\_at}                                 & data e hora da última atualização no usuário        \\ \hline
+	\end{tabular}
+	\caption{Colunas da tabela \textit{users}.}
+	\label{tab:users}
+\end{table}
 
-A tabela \textit{user\_baths} guarda informações de tempo de todos os banhos tomados, possuindo 5 colunas:
+A Tabela \ref{tab:user-settings} é a implementação da \textit{user\_settings}, que guarda informações de configuração dos usuários, e também contém 5 colunas.
 
-\begin{itemize}
-	\item id: identificador único;
-	\item \textit{user\_id}: referente ao id do usuário;
-	\item \textit{time}: tempo total do banho, em milissegundos;
-	\item \textit{created\_at}: data e hora da criação do usuário;
-	\item \textit{updated\_at}: data e hora da ultima atualização do usuário;
-\end{itemize}
+%\begin{itemize}
+%	\item id: identificador único;
+%	\item \textit{user\_id}: referente ao id do usuário;
+%	\item \textit{allowedBathTime}: tempo de banho permitido do usuário;
+%	\item \textit{created\_at}: data e hora da criação do usuário;
+%	\item \textit{updated\_at}: data e hora da ultima atualização do usuário;
+%\end{itemize}
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\rowcolor[HTML]{ECF4FF} 
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Coluna} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}Função} \\ \hline
+		id                                                   & identificador único que se auto incrementa          \\ \hline
+		\textit{user\_id}                                    & referência ao id do usuário                         \\ \hline
+		\textit{allowed\_bath\_time}                         & tempo máximo de banho permitido                     \\ \hline
+		\textit{created\_at}                                 & data e hora da criação do usuário                   \\ \hline
+		\textit{updated\_at}                                 & data e hora da última atualização no usuário        \\ \hline
+	\end{tabular}
+	\caption{Colunas da tabela \textit{user\_settings}.}
+	\label{tab:user-settings}
+\end{table}
+
+A tabela \textit{user\_baths} guarda informações de tempo de todos os banhos tomados, possuindo 5 colunas, mostradas na Tabela \ref{tab:user-baths}.
+
+%\begin{itemize}
+%	\item id: identificador único;
+%	\item \textit{user\_id}: referente ao id do usuário;
+%	\item \textit{time}: tempo total do banho, em milissegundos;
+%	\item \textit{created\_at}: data e hora da criação do usuário;
+%	\item \textit{updated\_at}: data e hora da ultima atualização do usuário;
+%\end{itemize}
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\rowcolor[HTML]{ECF4FF} 
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Coluna} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}Função} \\ \hline
+		id                                                   & identificador único que se auto incrementa          \\ \hline
+		\textit{user\_id}                                    & referência ao id do usuário                         \\ \hline
+		\textit{time}                                        & tempo total do banho, em milissegundos              \\ \hline
+		\textit{created\_at}                                 & data e hora da criação do usuário                   \\ \hline
+		\textit{updated\_at}                                 & data e hora da última atualização no usuário        \\ \hline
+	\end{tabular}
+	\caption{Colunas da tabela \textit{user\_baths}.}
+	\label{tab:user-baths}
+\end{table}
 
 A Figura \ref{fig:modeltables} ilustra o banco de dados criado juntamente com as tabelas contidas nele.
 
@@ -207,7 +260,7 @@ Nesta seção são apresentadas as etapas de desenvolvimento dos microsserviços
 
 \subsection{\textit{Clean Architecture}}
 
-Os microsserviços desenvolvidos foram projetados para seguir a \textit{Clean Architecture}. Esta arquitetura consiste em dividir as responsabilidades dentro de uma aplicação, encapsulando e abstraindo o código para facilitar a leitura e entendimento das devidas funções de cada arquivo.
+Os microsserviços desenvolvidos foram projetados para seguir a \textit{Clean Architecture}. Esta arquitetura consiste em dividir as responsabilidades dentro de uma aplicação, encapsulando e abstraindo o código para facilitar a leitura e entendimento das devidas funções de cada arquivo \cite{martin2000clean}.
 
 É possível ver a divisão dos arquivos utilizando a \textit{Clean Architecture} do Sistema de Usuários na Figura \ref{fig:clean}. Explicando esta divisão, na pasta routes encontram-se as configuração das rotas que são utilizadas no sistema, nos \textit{controllers}, são feitas o tratamento dos \textit{inputs} e respostas das rotas, redirecionando para os interactors, que é onde está a lógica principal da aplicação. Nos \textit{repositories} é onde acontece a interação com o banco de dados, neste caso, com o PostgreSQL.
 
@@ -230,45 +283,83 @@ As operações são realizadas através dos \textit{endpoints}, que é uma forma
 
 Este microsserviço salva todos os dados recebidos nas tabelas do PostgreSQL.
 
-O sistema possui os seguintes \textit{endpoints}:
+Os \textit{endpoints} do sistema podem ser vistos na Tabela \ref{tab:endpoints}.
 
+%\begin{itemize} \label{item:endpoints}
+%	\item /cadastrar: possibilita cadastrar o usuário com as informações do nome, senha e tempo de banho permitido.
+%	\item /autorizar: recebe o id do usuário e a senha, compara a senha enviada com a senha cadastrada e retorna se o usuário está ou não autorizado.
+%	\item /editar-tempo: possibilita editar o tempo de banho permitido do usuário.
+%	\item /editar-senha: possibilita editar a senha do usuário.
+%	\item /banho: salva no banco de dados informações do banho, o tempo e o usuário que tomou o banho.
+%	\item /banho/:id: retorna informações sobre todos os banhos do usuário.
+%\end{itemize}
 
-\begin{itemize} \label{item:endpoints}
-	\item /cadastrar: possibilita cadastrar o usuário com as informações do nome, senha e tempo de banho permitido.
-	\item /autorizar: recebe o id do usuário e a senha, compara a senha enviada com a senha cadastrada e retorna se o usuário está ou não autorizado.
-	\item /editar-tempo: possibilita editar o tempo de banho permitido do usuário.
-	\item /editar-senha: possibilita editar a senha do usuário.
-	\item /banho: salva no banco de dados informações do banho, o tempo e o usuário que tomou o banho.
-	\item /banho/:id: retorna informações sobre todos os banhos do usuário.
-\end{itemize}
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\rowcolor[HTML]{ECF4FF} 
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}\textit{Endpoint}} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}Característica}                                                                                                                      \\ \hline
+		/cadastrar                                             & \begin{tabular}[c]{@{}l@{}}possibilita cadastrar o usuário com as informações do nome, senha e\\ tempo de banho permitido\end{tabular}                                   \\ \hline
+		/autorizar                                    & \begin{tabular}[c]{@{}l@{}}recebe o id do usuário e a senha, compara a senha enviada com a senha\\ cadastrada e retorna se o usuário está ou não autorizado\end{tabular} \\ \hline
+		/editar-tempo                                 & possibilita editar o tempo de banho permitido do usuário                                                                                                                 \\ \hline
+		/editar-senha                                 & possibilita editar a senha do usuário                                                                                                                                    \\ \hline
+		/banho                                        & \begin{tabular}[c]{@{}l@{}}salva no banco de dados informações do banho, o tempo e o usuário que\\ tomou o banho\end{tabular}                                            \\ \hline
+		/banho/:id                                             & retorna informações sobre todos os banhos do usuário                                                                                                                     \\ \hline
+	\end{tabular}
+	\caption{\textit{Endpoints} do sistema de usuários.}
+	\label{tab:endpoints}
+\end{table}
 
 Os códigos de implementação deste sistema podem ser observados no Apêndice \ref{ap:users}.
 
-\subsection{Sistema de comunicação MQTT}
+\subsection{Sistema de comunicação MQTT} \label{sec:sistemacomunicacao}
 
 Este microsserviço é responsável pelo recebimento e manipulação dos dados recebidos dos sensores e do teclado numérico via MQTT. Também é responsável por comunicar com o sistema de usuários para a autorização do usuário, ligar ou desligar o atuador, além de salvar os dados no InfluxDB.
 
 O sistema de comunicação recebe informações sobre as teclas digitadas e comunica com o sistema de usuários para autorizar ou não o ligamento do atuador, que significa o início do banho.
 
-O sistema se subscreve nos seguintes tópicos do \textit{broker} MQTT para receber as informações:
+O sistema se subscreve nos tópicos do \textit{broker} MQTT descritos na Tabela \ref{tab:topics} para receber e enviar as informações.
 
-\begin{itemize}
-	\item \textit{keys}: é o tópico em que contém a tecla digitada no teclado numérico
-	\item \textit{actuator}: é o tópico para enviar informações do atuador, para liga-lo ou desliga-lo
-	\item \textit{user}: é o tópico para enviar informações do usuário, como o nome e se ele está autorizado ou não.
-	\item \textit{sensor}: é o tópico para enviar informações do sensor de fluxo.
-\end{itemize}
+%\begin{itemize}
+%	\item \textit{keys}: é o tópico em que contém a tecla digitada no teclado numérico
+%	\item \textit{actuator}: é o tópico para enviar informações do atuador, para liga-lo ou desliga-lo
+%	\item \textit{user}: é o tópico para enviar informações do usuário, como o nome e se ele está autorizado ou não.
+%	\item \textit{sensor}: é o tópico para enviar informações do sensor de fluxo.
+%\end{itemize}
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\rowcolor[HTML]{ECF4FF} 
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Tópico} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}Função}                        \\ \hline
+		\textit{keys}                                        & contém a tecla digitada no teclado numérico                                    \\ \hline
+		\textit{actuator}                                    & envia informações do atuador, para liga-lo ou desliga-lo                       \\ \hline
+		\textit{user}                                        & envia informações sobre o usuário, como o nome e se ele está autorizado ou não \\ \hline
+		\textit{sensor}                                      & envia informações do sensor de fluxo                                           \\ \hline
+	\end{tabular}
+	\caption{Tópicos do \textit{broker} MQTT.}
+	\label{tab:topics}
+\end{table}
 
 Os códigos de implementação deste sistema podem ser observados no Apêndice \ref{ap:mqtt}.
 
-\subsection{Sistema de simulação de dados}
+\subsection{Sistema de simulação de dados} \label{sec:sistemasimulacao}
 
 O sistema de simulação de dados emula todos os dados que podem ser capturados e enviados ao sistema físico, que são:
 
 \begin{itemize}
-	\item Dados do fluxo de água: informação recebida pelo sensor YF-S201;
-	\item Dados do teclado numérico: informação de qual tecla foi pressionada;
-	\item Informações para o atuador: informação para ligar/desligar o atuador;
+	\item Dados do fluxo de água: informação recebida pelo sensor YF-S201 (Seção \ref{sec:sensor});
+	\item Dados do teclado numérico: informação de qual tecla foi pressionada (Seção \ref{sec:teclado});
+	\item Informações para o atuador: informação para ligar/desligar o atuador (Seção \ref{sec:valvula});
 \end{itemize}
 
 Este sistema se inscreve nos tópicos do servidor MQTT e envia os dados simulados como se fosse o próprio sistema físico. Ao se iniciar o sistema, ele fica em estado de espera até alguma tecla for pressionada. Ao se pressionar uma tecla, ele a envia para o tópico \textit{keys}. O Sistema de Comunicação, que se inscreve nesse tópico, reconhece a tecla e toma as devidas ações, como requisitar a senha ou ligar/desligar o atuador.
@@ -288,18 +379,18 @@ A Figura \ref{fig:mockservice} mostra o sistema de simulação funcionando, com 
 
 \section{Configuração do HomeAssistant}
 
-O HomeAssistant pode ser instalado a partir de diversos métodos\footnote{\url{https://www.home-assistant.io/docs/installation}}, neste sistema, a instalação foi feita utilizando o Hassbian, que é um sistema operacional linux para o RaspberryPi com o HomeAssistant pré-instalado.
+O HomeAssistant pode ser instalado a partir de diversos métodos\footnote{\url{https://www.home-assistant.io/docs/installation}}, neste sistema, a instalação foi feita utilizando o Hassbian, que é um sistema operacional linux para o Raspberry Pi com o HomeAssistant pré-instalado.
 
-Para configurar o HomeAssistant no RaspberryPi é necessário realizar o download da imagem do Hassbian. Com o download concluído, deve-se copiar a imagem para o cartão SD a ser inserido no RaspberryPi. Para isto, utilizamos o \textit{balenaEtcher}.
+Para configurar o HomeAssistant no Raspberry Pi é necessário realizar o download da imagem do Hassbian. Com o download concluído, deve-se copiar a imagem para o cartão SD a ser inserido no Raspberry Pi. Para isto, utilizamos o \textit{balenaEtcher}.
 
-Com a imagem devidamente escrita no cartão SD, basta inseri-lo no RaspberryPi, configurar a rede como descrito na Seção \ref{sec:confrasp}, e, ao iniciar o sistema, o HomeAssistant será carregado automaticamente.
+Com a imagem devidamente escrita no cartão SD, basta inseri-lo no Raspberry Pi, configurar a rede como descrito na Seção \ref{sec:confrasp}, e, ao iniciar o sistema, o HomeAssistant será carregado automaticamente.
 
-O HomeAssistant utiliza a porta 8123 e, para conseguir visualizar sua interface, o IP do servidor deve ser acessado esta porta. No caso deste sistema, o IP do RaspberryPi foi colocado como estático \textit{192.168.2.60}, então, para acessar a interface deve-se estar conectado na mesma rede do RaspberryPi e acessar o link \textit{http://192.168.2.60:8123}, como podemos ver na Figura \ref{fig:homeassistanthome}.
+O HomeAssistant utiliza a porta 8123 e, para conseguir visualizar sua interface, o IP do servidor deve ser acessado esta porta. No caso deste sistema, o IP do Raspberry Pi foi colocado como estático \textit{192.168.2.60}. Então, para acessar a interface deve-se estar conectado na mesma rede do Raspberry Pi e acessar o link \textit{http://192.168.2.60:8123}, como podemos ver na Figura \ref{fig:homeassistanthome}.
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\linewidth]{figuras/homeassistanthome.png}
-	\caption{Página inicial do HomeAssistant acessado por um cliente conectado na mesma rede local do servidor Hassbian}
+	\caption{Página inicial do HomeAssistant acessado por um cliente conectado na mesma rede local do servidor Hassbian.}
 	\label{fig:homeassistanthome}
 \end{figure}
 
@@ -312,12 +403,12 @@ A interface do HomeAssistant permite diversas configurações e inclusão de dif
 
 A instalação do Grafana foi realizada através do download\footnote{\url{https://grafana.com/get}} e extração do pacote para o sistema operacional Debian.
 
-Com o pacote devidamente instalado no sistema, o Grafana utiliza a porta 3003 como interface. Para acessa-la, deve-se conectar à porta 3003 do RaspberryPi, ou seja, acessar o link \textit{http://192.168.2.60:3003}, como na Figura \ref{fig:grafanahome}.
+Com o pacote devidamente instalado no sistema, o Grafana utiliza a porta 3003 como interface. Para acessá-la, deve-se conectar à porta 3003 do Raspberry Pi, ou seja, acessar o link \textit{http://192.168.2.60:3003}, como na Figura \ref{fig:grafanahome}.
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\linewidth]{figuras/grafanahome.png}
-	\caption{Página inicial do Grafana}
+	\caption{Página inicial do Grafana.}
 	\label{fig:grafanahome}
 \end{figure}
 
@@ -328,7 +419,7 @@ A configuração do gráfico no Grafana pode ser observada na Figura \ref{fig:gr
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\linewidth]{figuras/grafanaconf.png}
-	\caption{Configuração do gráfico no Grafana}
+	\caption{Configuração do gráfico no Grafana.}
 	\label{fig:grafanaconf}
 \end{figure}
 

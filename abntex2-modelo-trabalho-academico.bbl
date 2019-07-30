@@ -107,6 +107,11 @@ Dispon{\'\i}vel em:
 [S.l.], 2017. Dispon{\'\i}vel em:
   $<$https:\-/\-/arxiv\-.org\-/pdf\-/1709\-.02233\-.pdf$>$.}
 
+\bibitem[Martin 2000]{martin2000clean}
+\abntrefinfo{Martin}{MARTIN}{2000}
+{MARTIN, R. \emph{Clean Architecture: A Craftsman's Guide to Software Structure
+  and Design/Robert Martin}. [S.l.]: New York: Prentice Hall, 2000.}
+
 \bibitem[Martins 2005]{martins2005sistemas}
 \abntrefinfo{Martins}{MARTINS}{2005}
 {MARTINS, N.~A. Sistemas microcontrolados.
@@ -129,11 +134,6 @@ Dispon{\'\i}vel em:
 {OLIVEIRA, E. \emph{Blog Masterwalker}. 2018.
   \url{http://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-teclado-matricial-de-membrana-4x4/}.
 Accessed: 2019-06-02.}
-
-\bibitem[Oliveira 2017]{de2017internet}
-\abntrefinfo{Oliveira}{OLIVEIRA}{2017}
-{OLIVEIRA, S. de. \emph{Internet das Coisas com ESP8266, Arduino e Raspberry
-  Pi}. [S.l.]: Novatec Editora, 2017.}
 
 \bibitem[Pahl e Jamshidi 2016]{Pahl}
 \abntrefinfo{Pahl e Jamshidi}{PAHL; JAMSHIDI}{2016}
@@ -207,10 +207,5 @@ ISSN 10897801.}
   ENGENHARIA DE SOFTWARE Dom{\'{o}}tica de baixo custo usando princ{\'{i}}pios
   de IoT}}.
 [S.l.], 2016.}
-
-\bibitem[Vertigo 2018]{msmisc}
-\abntrefinfo{Vertigo}{VERTIGO}{2018}
-{VERTIGO. \emph{O que são microsserviços}. 2018.
-  \url{https://vertigo.com.br/o-que-sao-microsservicos/}.}
 
 \end{thebibliography}

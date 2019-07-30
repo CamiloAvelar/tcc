@@ -54,7 +54,7 @@
 \usepackage{lastpage}			% Usado pela Ficha catalográfica
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
-\usepackage[table]{xcolor}
+\usepackage[table,xcdraw]{xcolor}
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 \usepackage{supertabular}       % tabela na capa do dosudo apt-get install texlive texlive-latex3cumento
@@ -141,10 +141,10 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Domótica aplicada no controle de água utilizando comunicação MQTT e arquitetura de microsserviços: uma solução IoT.}
+\titulo{Domótica aplicada no monitoramento de água utilizando comunicação MQTT e arquitetura de microsserviços: uma solução IoT.}
 \autor{Camilo Esteves Mendes de Avelar}
 \local{Ouro Preto}
-\data{agosto 2019}
+\data{agosto de 2019}
 \orientador{Filipe Augusto Santos Rocha}
 \coorientador{}
 \instituicao{Universidade Federal de Ouro Preto - UFOP}
@@ -290,13 +290,15 @@
 %
 \begin{folhadeaprovacao}
 % 
-   Monografia defendida e aprovada, em $XX$ de $XX$ de \imprimirdata, pela comiss{\~a}o avaliadora constitu{\'i}da pelos professores:
+   Monografia defendida e aprovada, em $01$ de \imprimirdata, pela comiss{\~a}o avaliadora constitu{\'i}da pelos professores:
    \vspace*{\fill}
    \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
    \vspace*{\fill}
-   \assinatura{\textbf{ \\ Convidado}}
+   \assinatura{\textbf{Agnaldo José da Rocha Reis} \\ Coorientador} 
    \vspace*{\fill}
-   \assinatura{\textbf{ \\ Convidado}}
+   \assinatura{\textbf{Wolmar Araujo Neto} \\ Convidado}
+   \vspace*{\fill}
+   \assinatura{\textbf{Thomas Vargas Barsante e Pinto} \\ Convidado}
    \vspace*{\fill}
    %\assinatura{\textbf{Professor} \\ Convidado 3}
   % \vspace*{\fill}
@@ -351,21 +353,21 @@
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
  \noindent
- A economia de água é um assunto recorrente que há muito deixou de ser restrito às regiões áridas e desérticas com baixa disponibilidade de água per capita. Com isto, existe uma crescente demanda para aumentar a economia de água em todo o mundo. Com o avanço da tecnologia e seu fácil acesso, tornou-se mais simples desenvolver sistemas visando uma melhora nesta economia. Este trabalho tem o propósito de criar um sistema para Domótica para controle de água utilizando um sensor de fluxo de água, uma válvula solenoide como atuador e um RaspberryPi. O sistema será capaz de monitorar o uso de água, mostrando os dados em gráfico e salvando-os em um banco de dados. Será construído um sistema de controle de usuários que será capaz de criar, editar e salvar dados de usuários para integrar no sistema. Toda a comunicação entre o sensor de o RaspberryPi será feita via MQTT e os sistemas de comunicação e usuários serão construídos de acordo com a arquitetura de microsserviços, sendo dois sistemas diferentes que se completam para realizar as operações necessárias. Os sistemas de usuário e comunicação, juntamente com os softwares utilizados para monitoramento serão configurados, testados e os resultados serão aprentados no decorrer no trabalho.
+ A economia de água é um assunto recorrente que há muito deixou de ser restrito às regiões áridas e desérticas com baixa disponibilidade de água per capita. Com isto, existe uma crescente demanda para aumentar a economia de água em todo o mundo. Com o avanço da tecnologia e seu fácil acesso, tornou-se mais simples desenvolver sistemas visando uma melhora nesta economia. Este trabalho tem o propósito de criar um sistema de Domótica para controle de água simulando dados de um sensor de fluxo de água, uma válvula solenoide como atuador e utilizando um RaspberryPi. O sistema será capaz de monitorar o uso de água, mostrando os dados em gráfico e salvando-os em um banco de dados. Será construído um sistema de controle de usuários que será capaz de criar, editar e salvar dados de clientes para integrar no sistema. A comunicação entre o sensor e o Raspberry Pi será feita via MQTT. Os sistemas de comunicação e usuários serão construídos de acordo com a arquitetura de microsserviços, sendo dois sistemas diferentes que se completam para realizar as operações necessárias. Os sistemas de usuário e comunicação, juntamente com os softwares utilizados para monitoramento serão configurados, testados e os resultados serão apresentados no decorrer no trabalho. A validação do projeto será feita através de dados emulados a partir de um sistema criado para simular as informações dos sensores.
 
- \textbf{Palavras-chaves}: iot, monitoramento, microsserviços, mqtt, node, domótica, raspberry pi
+ \textbf{Palavras-chaves}: iot, monitoramento, microsserviços, mqtt, node, domótica, raspberry pi.
 \end{resumo}
 
 % resumo em inglês
 \begin{resumo}[Abstract]
   \begin{otherlanguage*}{english}
 
- \noindent Water saving is a recurring issue that has long ceased to be restricted to arid and desert regions with low per capita water availability. With this, there is a growing demand to increase water savings worldwide. With the advancement of technology and its easy access, it has become simpler to develop systems aimed at improving water savings. This paper has the porpouse of create a Domotic system for water control using a water flux sensor, solenoid valve as actuator and a Raspberry Pi. The system will be able to monitorize the use of the water, showing the data and saving it in a database. A user control system will also be created that will be able to create, edit and save data about the system users to integrate with the whole system. All the comunications between the sensor and the Raspberry Pi will be done via MQTT and the comunication system and the users system will be built using the microservices architeture, being two different systems that comunicate with each other to do the necessary operations. The users and comunication services, together with the softwares used for the monitoring will be set up, tested and the results will be shown in this paper.
+ \noindent Water saving is a recurring issue that has long ceased to be restricted to arid and desert regions with low per capita water availability. Hence, there is a growing demand to increase water savings worldwide. Since the tecnology has been modernised, it has become simpler to develop systems aimed at improving water savings. This paper has the porpouse of create a Domotic system for water control simulating data from a water flux sensor, solenoid valve as actuator and using a Raspberry Pi. The system will be able to monitorize the use of the water, showing the data and saving it in a database. A user control system will also be created that will be able to create, edit and save data about the system users to integrate with the whole system. All the comunications between the sensor and the Raspberry Pi will be done via MQTT and the comunication system and the users system will be built using the microservices architeture, being two different systems that comunicate with each other to do the necessary operations. The users and comunication services, together with the softwares used for the monitoring will be set up, tested and the results will be shown in this paper.
 
    \vspace{\onelineskip}
  
    \noindent 
-   \textbf{Key-words}: iot, monitoring, microservices, mqtt, node, domotic, raspberry pi
+   \textbf{Key-words}: iot, monitoring, microservices, mqtt, node, domotic, raspberry pi.
   \end{otherlanguage*}
 \end{resumo}
 
@@ -428,8 +430,6 @@
   \item[MHz] \textit{mega hertz}
   \item[WiFi] \textit{Wireless Fidelity}
   \item[PWM] \textit{Pulse with modulation}
-  \item[mm] Milimetro
-  \item[ms] Milissegundo
   \item[HTTP] \textit{Hypertext Transfer Protocol}
   \item[RESTful] \textit{Representational State Transfer}
   \item[API] \textit{Application Programming Interface}
