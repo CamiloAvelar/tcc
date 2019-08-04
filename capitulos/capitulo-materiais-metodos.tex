@@ -55,7 +55,7 @@ Nesta seção serão apresentados os sensores e atuadores a terem seus sinais ut
 
 O sensor YF-S201 (Figura \ref{fig:sensor}) é um sensor do tipo turbina que mede a quantidade de líquido que passa pela tubulação, girando aletas que
 geram pulsos de onda quadrada através de um sensor de efeito Hall \cite{roque2018sistema}. O
-sensor usa esse efeito para enviar um sinal PWM e, através da contagem deste sinal é possível mensurar a quantidade de água que passa pela turbina no interior do sensor. \cite{ms2017automaccao}
+sensor usa esse efeito para enviar um sinal PWM (\textit{Pulse Width Modulation}) e, através da contagem deste sinal é possível mensurar a quantidade de água que passa pela turbina no interior do sensor. \cite{ms2017automaccao}
 
 \begin{figure}[htbp]
 		\centering
@@ -63,6 +63,8 @@ sensor usa esse efeito para enviar um sinal PWM e, através da contagem deste si
 		\caption{Sensor de fluxo de água YF-S201.}
 		\label{fig:sensor}
 \end{figure}
+
+\newpage
 
 \subsection{Teclado matricial de membrana} \label{sec:teclado}
 
@@ -139,8 +141,6 @@ A válvula solenoide pode ser vista na Figura \ref{fig:valvula-solenoide}.
 	\label{fig:valvula-solenoide}
 \end{figure}
 
-\newpage
-
 Segundo \citeauthor{da2002modulo} (\citeyear{da2002modulo}), a estratégia para fechamento e abertura dos canais fluídicos depende do fabricante, mas o princípio de acionamento elétrico é comumente o mesmo. Uma tensão é aplicada sobre um solenoide, criando um campo magnético que desloca um núcleo ferromagnético móvel, causando a alteração do estado da válvula. O núcleo
 ferromagnético comprime uma mola que é a responsável por retornar o núcleo a sua posição original quando a corrente elétrica é interrompida.
 
@@ -162,7 +162,7 @@ A Figura \ref{fig:homeassistant-dash} apresenta um exemplo de tela inicial do Ho
 	\label{fig:homeassistant-dash}
 \end{figure}
 
-O HomeAssistant tem suporte para diversos tipos de protocolos \textit{wireless}, como BLE, ZigBee, Z-Wave e Wi-Fi. Conta também com um RESTful API e suporta HTTP, MQTT, TCP sockets e componentes customizados. Estes componentes customizados permitem aos usuários adicionar funções próprias no HomeAssistant sem a necessidade de mudar o seu código fonte. Isto torna a integração de novos dispositivos e sensores muito mais fácil com o Home Assistant \cite{Gomes2018}.
+O HomeAssistant tem suporte para diversos tipos de protocolos \textit{wireless}, como BLE, ZigBee, Z-Wave e Wi-Fi. Conta também com um RESTful API e suporta HTTP, MQTT, TCP \textit{sockets} e componentes customizados. Estes componentes customizados permitem aos usuários adicionar funções próprias no HomeAssistant sem a necessidade de mudar o seu código fonte. Isto torna a integração de novos dispositivos e sensores muito mais fácil com o HomeAssistant \cite{Gomes2018}.
 
 
 %O HomeAssistant conta com uma grande comunidade de desenvolvedores com mais de 1.450 contribuidores e 23.700 estrelas no GitHub\footnote{\url{https://github.com/home-assistant/home-assistant}}, o que significa uma abundância em sua documentação sobre os seus componentes, fóruns e chats para conseguir ajuda de outros usuários, e diversos posts em blogs e vídeos sobre como começar a utilizar o programa.
@@ -175,15 +175,15 @@ Tendo em vista a gama de protocolos sem fio disponíveis no HomeAssistant, escol
 	\item Sensores Wi-Fi tem integração facilitada com demais equipamentos residenciais.
 \end{itemize}
 
-O HomeAssistant pode ser instalado em qualquer sistema operacional devido ao fato de ser muito pequeno e leve. O que o faz ser compatível para o uso no Rasberry Pi como um hub de automação pequeno e barato. É importante lembrar que o Home Assistant age apenas como uma central de controle que pode informar outros serviços, como o Philips Hue ou o Nest, para realizar alguma função \cite{AlmeidaCosta}. O Home Assistant é gratuito e de fácil configuração.
+O HomeAssistant pode ser instalado em qualquer sistema operacional devido ao fato de ser muito pequeno e leve. O que o faz ser compatível para o uso no Rasberry Pi como um hub de automação pequeno e barato. É importante lembrar que o HomeAssistant age apenas como uma central de controle que pode informar outros serviços, como o Philips Hue ou o Nest, que são produtos para automação residencial, para realizar alguma função \cite{AlmeidaCosta}. O Home Assistant é gratuito e de fácil configuração.
 
 \subsection{Banco de dados de séries temporais}
 
 Um Banco de Dados de Séries Temporais, do inglês \textit{Temporal Series Database} (TSDB), é um tipo de banco otimizado para dados coletados no tempo. É implementado especificamente para lidar com métricas, eventos ou medidas que variam no tempo. Um TSDB permite o usuário criar, enumerar, alterar, destruir e organizar várias séries temporais de métodos mais eficientes. Atualmente, a maioria das empresas estão gerando um grande volume de dados sobre métricas e eventos que são mapeados no tempo, aumentando a relevância de tal arquitetura \cite{Noor2017}.
 
-Ainda segundo \citeauthor{Noor2017} (\citeyear{Noor2017}), aplicações comuns para os TSDBs são IoT, DevOps e Analise de Dados. Alguns casos de uso incluem monitoramento de sistemas de software como máquinas virtuais, monitoramento de sistemas físicos como dispositivos, ambiente, sistemas de automação residencial, dentre outros.
+Ainda segundo \citeauthor{Noor2017} (\citeyear{Noor2017}), aplicações comuns para os TSDBs são IoT, DevOps e Analise de Dados. Alguns casos de uso incluem monitoramento de sistemas de \textit{software} como máquinas virtuais, monitoramento de sistemas físicos como dispositivos, ambiente, sistemas de automação residencial, dentre outros.
 
-\subsubsection{InfluxBD}
+\subsubsection{InfluxDB}
 
 O InfluxDB é o Banco de Dados de Séries Temporais usado neste projeto, sendo o mais apto a guardar os dados de fluxo no tempo. \cite{Lundrigan2017}
 

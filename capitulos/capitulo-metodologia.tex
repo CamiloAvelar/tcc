@@ -93,7 +93,7 @@ static domain_name_servers=192.168.2.1
 
 \section{Criação das tabelas no PostgreSQL}
 
-Todos os dados de um banco de dados relacional são armazenados em tabelas. Uma tabela é uma simples estrutura de linhas e colunas. Em um banco de dados podem existir uma ou centenas de tabelas, sendo que o limite pode ser imposto tanto pela ferramenta de software utilizada, quanto pelos recursos de hardware disponíveis no equipamento.
+Todos os dados de um banco de dados relacional são armazenados em tabelas. Uma tabela é uma simples estrutura de linhas e colunas. Em um banco de dados podem existir uma ou centenas de tabelas, sendo que o limite pode ser imposto tanto pela ferramenta de \textit{software} utilizada, quanto pelos recursos de hardware disponíveis no equipamento.
 
 As tabelas associam-se entre si por meio de regras de relacionamentos, que consistem em associar um ou vários atributos de uma tabela com um ou vários atributos de outra tabela.
 
@@ -252,8 +252,6 @@ class InfluxHandler {
 }
 \end{lstlisting}
 
-\newpage
-
 \section{Microsserviços}
 
 Nesta seção são apresentadas as etapas de desenvolvimento dos microsserviços utilizados no sistema elaborado, assim como o serviço de simulação para viabilizar os testes e validação do sistema.
@@ -279,11 +277,9 @@ O propósito desta aplicação está em ter o controle e informações sobre o c
 
 O microsserviço de usuários é responsável por cadastrar e editar usuários, cadastrar informações sobre o tempo de banho do usuário e autorizar o usuário a tomar o banho.
 
-As operações são realizadas através dos \textit{endpoints}, que é uma forma de comunicação entre os sistemas. O sistema os disponibiliza como endereços para acesso, que podem receber e enviar informações, dependendo do que foi programado.
+As operações são realizadas através dos \textit{endpoints} (Tabela \ref{tab:endpoints}), que é uma forma de comunicação entre os sistemas. O sistema os disponibiliza como endereços para acesso, que podem receber e enviar informações, dependendo do que foi programado.
 
 Este microsserviço salva todos os dados recebidos nas tabelas do PostgreSQL.
-
-Os \textit{endpoints} do sistema podem ser vistos na Tabela \ref{tab:endpoints}.
 
 %\begin{itemize} \label{item:endpoints}
 %	\item /cadastrar: possibilita cadastrar o usuário com as informações do nome, senha e tempo de banho permitido.
@@ -352,6 +348,8 @@ O sistema se subscreve nos tópicos do \textit{broker} MQTT descritos na Tabela 
 
 Os códigos de implementação deste sistema podem ser observados no Apêndice \ref{ap:mqtt}.
 
+\newpage
+
 \subsection{Sistema de simulação de dados} \label{sec:sistemasimulacao}
 
 O sistema de simulação de dados emula todos os dados que podem ser capturados e enviados ao sistema físico, que são:
@@ -385,7 +383,7 @@ Para configurar o HomeAssistant no Raspberry Pi é necessário realizar o downlo
 
 Com a imagem devidamente escrita no cartão SD, basta inseri-lo no Raspberry Pi, configurar a rede como descrito na Seção \ref{sec:confrasp}, e, ao iniciar o sistema, o HomeAssistant será carregado automaticamente.
 
-O HomeAssistant utiliza a porta 8123 e, para conseguir visualizar sua interface, o IP do servidor deve ser acessado esta porta. No caso deste sistema, o IP do Raspberry Pi foi colocado como estático \textit{192.168.2.60}. Então, para acessar a interface deve-se estar conectado na mesma rede do Raspberry Pi e acessar o link \textit{http://192.168.2.60:8123}, como podemos ver na Figura \ref{fig:homeassistanthome}.
+O HomeAssistant utiliza a porta 8123 e, para conseguir visualizar sua interface, o IP do servidor deve ser acessado por esta porta. No caso deste sistema, o IP do Raspberry Pi foi colocado como estático \textit{192.168.2.60}. Então, para acessar a interface deve-se estar conectado na mesma rede do Raspberry Pi e acessar o link \textit{http://192.168.2.60:8123}, como podemos ver na Figura \ref{fig:homeassistanthome}.
 
 \begin{figure}[htbp]
 	\centering
@@ -411,6 +409,8 @@ Com o pacote devidamente instalado no sistema, o Grafana utiliza a porta 3003 co
 	\caption{Página inicial do Grafana.}
 	\label{fig:grafanahome}
 \end{figure}
+
+\newpage
 
 Ao acessar a interface do Grafana, é necessário criar um \textit{dashboard}\footnote{\textit{Dashboards} são painéis que mostram métricas e indicadores importantes para alcançar objetivos e metas traçadas de forma visual, facilitando a compreensão das informações geradas.} para a visualização dos dados do InfluxDB. Neste sistema criamos o \textit{dashboard AllBaths}, que se conecta no ip e porta do InfluxDB e realiza as consultas no banco \textit{water\_flow\_data} criado para guardar os dados temporais do fluxo de água.
 
